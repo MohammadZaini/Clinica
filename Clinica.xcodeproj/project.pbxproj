@@ -19,6 +19,8 @@
 		35A2549928B6540D00C2FBB6 /* FavoritesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2549828B6540D00C2FBB6 /* FavoritesPage.swift */; };
 		35A2549B28B656C900C2FBB6 /* ClinicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2549A28B656C900C2FBB6 /* ClinicsCollectionViewCell.swift */; };
 		35A2549E28B78EBA00C2FBB6 /* ClinicsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2549D28B78EBA00C2FBB6 /* ClinicsTableView.swift */; };
+		35A728FD28BBB97500A76795 /* ClinicsTableViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A728FC28BBB97500A76795 /* ClinicsTableViewNew.swift */; };
+		35A728FF28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A728FE28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		35A2549828B6540D00C2FBB6 /* FavoritesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPage.swift; sourceTree = "<group>"; };
 		35A2549A28B656C900C2FBB6 /* ClinicsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsCollectionViewCell.swift; sourceTree = "<group>"; };
 		35A2549D28B78EBA00C2FBB6 /* ClinicsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsTableView.swift; sourceTree = "<group>"; };
+		35A728FC28BBB97500A76795 /* ClinicsTableViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsTableViewNew.swift; sourceTree = "<group>"; };
+		35A728FE28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsTableViewCellNew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */,
 				35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */,
 				35A2548428B64E6A00C2FBB6 /* Main.storyboard */,
+				35A728FE28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift */,
+				35A728FC28BBB97500A76795 /* ClinicsTableViewNew.swift */,
 				35A2548728B64E6B00C2FBB6 /* Assets.xcassets */,
 				35A2548928B64E6B00C2FBB6 /* LaunchScreen.storyboard */,
 				35A2548C28B64E6B00C2FBB6 /* Info.plist */,
@@ -168,7 +174,9 @@
 				35A2548328B64E6A00C2FBB6 /* ViewController.swift in Sources */,
 				35A2549528B653C400C2FBB6 /* HealthCarePage.swift in Sources */,
 				35A2549928B6540D00C2FBB6 /* FavoritesPage.swift in Sources */,
+				35A728FD28BBB97500A76795 /* ClinicsTableViewNew.swift in Sources */,
 				35A2547F28B64E6A00C2FBB6 /* AppDelegate.swift in Sources */,
+				35A728FF28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift in Sources */,
 				35A2548128B64E6A00C2FBB6 /* SceneDelegate.swift in Sources */,
 				35A2549728B653EA00C2FBB6 /* AppointmentsPage.swift in Sources */,
 				35A2549B28B656C900C2FBB6 /* ClinicsCollectionViewCell.swift in Sources */,
