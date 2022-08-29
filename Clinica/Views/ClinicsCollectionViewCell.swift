@@ -15,6 +15,10 @@ class ClinicsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var ClinicName: UILabel!
     
     func setUpCell(photo: UIImage,name : String) {
+        
+        
+        ClinicImage.layer.cornerRadius = ClinicImage.frame.size.width / 2
+        ClinicImage.clipsToBounds = true
         ClinicImage.image = photo
         ClinicName.text = name 
     

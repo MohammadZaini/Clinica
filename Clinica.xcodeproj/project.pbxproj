@@ -21,6 +21,8 @@
 		35A2549E28B78EBA00C2FBB6 /* ClinicsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2549D28B78EBA00C2FBB6 /* ClinicsTableView.swift */; };
 		35A728FD28BBB97500A76795 /* ClinicsTableViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A728FC28BBB97500A76795 /* ClinicsTableViewNew.swift */; };
 		35A728FF28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A728FE28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift */; };
+		35A7290328BCF2A700A76795 /* TopCollectionViewCellHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7290228BCF2A700A76795 /* TopCollectionViewCellHomePage.swift */; };
+		35A7290728BD326D00A76795 /* ClinicsCvHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7290628BD326D00A76795 /* ClinicsCvHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		35A2549D28B78EBA00C2FBB6 /* ClinicsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsTableView.swift; sourceTree = "<group>"; };
 		35A728FC28BBB97500A76795 /* ClinicsTableViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsTableViewNew.swift; sourceTree = "<group>"; };
 		35A728FE28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsTableViewCellNew.swift; sourceTree = "<group>"; };
+		35A7290228BCF2A700A76795 /* TopCollectionViewCellHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCellHomePage.swift; sourceTree = "<group>"; };
+		35A7290628BD326D00A76795 /* ClinicsCvHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsCvHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */,
 				35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */,
 				35A2548428B64E6A00C2FBB6 /* Main.storyboard */,
+				35A7290628BD326D00A76795 /* ClinicsCvHeader.swift */,
+				35A7290228BCF2A700A76795 /* TopCollectionViewCellHomePage.swift */,
 				35A728FE28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift */,
 				35A728FC28BBB97500A76795 /* ClinicsTableViewNew.swift */,
 				35A2548728B64E6B00C2FBB6 /* Assets.xcassets */,
@@ -172,6 +178,8 @@
 			files = (
 				35A2549E28B78EBA00C2FBB6 /* ClinicsTableView.swift in Sources */,
 				35A2548328B64E6A00C2FBB6 /* ViewController.swift in Sources */,
+				35A7290328BCF2A700A76795 /* TopCollectionViewCellHomePage.swift in Sources */,
+				35A7290728BD326D00A76795 /* ClinicsCvHeader.swift in Sources */,
 				35A2549528B653C400C2FBB6 /* HealthCarePage.swift in Sources */,
 				35A2549928B6540D00C2FBB6 /* FavoritesPage.swift in Sources */,
 				35A728FD28BBB97500A76795 /* ClinicsTableViewNew.swift in Sources */,

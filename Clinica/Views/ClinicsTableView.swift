@@ -40,6 +40,7 @@ class ClinicsTableView: UIViewController ,UITableViewDataSource , UITableViewDel
     }
     
    
+   
     
     
     
