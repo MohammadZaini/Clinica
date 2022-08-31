@@ -23,6 +23,8 @@
 		35A728FF28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A728FE28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift */; };
 		35A7290328BCF2A700A76795 /* TopCollectionViewCellHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7290228BCF2A700A76795 /* TopCollectionViewCellHomePage.swift */; };
 		35A7290728BD326D00A76795 /* ClinicsCvHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7290628BD326D00A76795 /* ClinicsCvHeader.swift */; };
+		35FDB8F328BE4FB0001F7231 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FDB8F228BE4FB0001F7231 /* GoogleService-Info.plist */; };
+		35FDB8F728BE5C4F001F7231 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FDB8F628BE5C4F001F7231 /* MapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		35A728FE28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsTableViewCellNew.swift; sourceTree = "<group>"; };
 		35A7290228BCF2A700A76795 /* TopCollectionViewCellHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCellHomePage.swift; sourceTree = "<group>"; };
 		35A7290628BD326D00A76795 /* ClinicsCvHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsCvHeader.swift; sourceTree = "<group>"; };
+		35FDB8F228BE4FB0001F7231 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		35FDB8F628BE5C4F001F7231 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		35A2547228B64E6A00C2FBB6 = {
 			isa = PBXGroup;
 			children = (
+				35FDB8F628BE5C4F001F7231 /* MapVC.swift */,
 				35A2547D28B64E6A00C2FBB6 /* Clinica */,
 				35A2547C28B64E6A00C2FBB6 /* Products */,
 			);
@@ -87,6 +92,7 @@
 				35A2548728B64E6B00C2FBB6 /* Assets.xcassets */,
 				35A2548928B64E6B00C2FBB6 /* LaunchScreen.storyboard */,
 				35A2548C28B64E6B00C2FBB6 /* Info.plist */,
+				35FDB8F228BE4FB0001F7231 /* GoogleService-Info.plist */,
 			);
 			path = Clinica;
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35A2548B28B64E6B00C2FBB6 /* LaunchScreen.storyboard in Resources */,
+				35FDB8F328BE4FB0001F7231 /* GoogleService-Info.plist in Resources */,
 				35A2548828B64E6B00C2FBB6 /* Assets.xcassets in Resources */,
 				35A2548628B64E6A00C2FBB6 /* Main.storyboard in Resources */,
 			);
@@ -187,6 +194,7 @@
 				35A728FF28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift in Sources */,
 				35A2548128B64E6A00C2FBB6 /* SceneDelegate.swift in Sources */,
 				35A2549728B653EA00C2FBB6 /* AppointmentsPage.swift in Sources */,
+				35FDB8F728BE5C4F001F7231 /* MapVC.swift in Sources */,
 				35A2549B28B656C900C2FBB6 /* ClinicsCollectionViewCell.swift in Sources */,
 				35A2549328B6539400C2FBB6 /* HomePage.swift in Sources */,
 			);

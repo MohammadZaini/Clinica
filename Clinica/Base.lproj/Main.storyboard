@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JFh-2r-cxe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Qw-AX-qPO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -167,12 +167,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cib-cY-x2A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="1511"/>
+            <point key="canvasLocation" x="1414" y="1547"/>
         </scene>
-        <!--View Controller-->
+        <!--MapVC-->
         <scene sceneID="klB-7G-rYV">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="dL6-q6-7qg" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="dL6-q6-7qg" customClass="MapVC" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="He2-dl-sIr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,6 +191,9 @@
                         <viewLayoutGuide key="safeArea" id="vFX-ZY-w06"/>
                     </view>
                     <navigationItem key="navigationItem" id="HgA-f2-yQq"/>
+                    <connections>
+                        <outlet property="MapView" destination="4WC-Vc-sUR" id="M87-hx-DwM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NC7-iI-tem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -204,7 +207,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9u9-Vz-NEl">
+                            <searchBar contentMode="redraw" placeholder="Search Clinics" translatesAutoresizingMaskIntoConstraints="NO" id="9u9-Vz-NEl">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -227,24 +230,24 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nXx-4g-X7k">
-                                                    <rect key="frame" x="8" y="8" width="23.5" height="227"/>
+                                                    <rect key="frame" x="8" y="8" width="50" height="227"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teletype" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Ib-GF-bwo">
-                                                            <rect key="frame" x="0.0" y="0.5" width="23.5" height="47.5"/>
+                                                            <rect key="frame" x="0.0" y="0.5" width="50" height="47.5"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g3b-aA-uTL">
-                                                            <rect key="frame" x="0.0" y="60" width="23.5" height="48"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g3b-aA-uTL">
+                                                            <rect key="frame" x="0.0" y="59.5" width="50" height="49"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Rhi-R6-X6Q">
-                                                            <rect key="frame" x="0.0" y="120" width="23.5" height="47"/>
+                                                            <rect key="frame" x="0.0" y="120" width="50" height="47"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.text.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fdm-0z-r9A">
-                                                            <rect key="frame" x="0.0" y="178" width="23.5" height="49"/>
+                                                            <rect key="frame" x="0.0" y="178" width="50" height="49"/>
                                                         </imageView>
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="jbE-K4-cpT">
-                                                    <rect key="frame" x="34.5" y="19" width="359.5" height="213"/>
+                                                    <rect key="frame" x="61" y="19" width="333" height="213"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6x1-en-P5d">
                                                             <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
@@ -316,11 +319,12 @@
                     </view>
                     <connections>
                         <outlet property="ClinicaTableView" destination="udc-9J-U6K" id="slW-Hh-Fkr"/>
+                        <outlet property="SearchBar" destination="9u9-Vz-NEl" id="z2Y-Lm-ces"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7FY-9b-5XD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="1511"/>
+            <point key="canvasLocation" x="2722" y="1536"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1WQ-b6-M9Q">
@@ -368,6 +372,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img8" translatesAutoresizingMaskIntoConstraints="NO" id="fhA-5k-U8e">
+                                <rect key="frame" x="0.0" y="90" width="414" height="161"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.34008467199999998" blue="0.79611653090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -375,10 +382,14 @@
                             <constraint firstItem="XpP-Sl-aW1" firstAttribute="bottom" secondItem="fUv-hE-8zY" secondAttribute="bottom" constant="250" id="5w1-RY-Jj5"/>
                             <constraint firstItem="MIE-qk-eZR" firstAttribute="top" secondItem="fUv-hE-8zY" secondAttribute="bottom" constant="91" id="93K-Dz-wB0"/>
                             <constraint firstItem="XpP-Sl-aW1" firstAttribute="trailing" secondItem="1SJ-EU-Mtd" secondAttribute="trailing" constant="20" id="H8a-bx-ps7"/>
+                            <constraint firstItem="fhA-5k-U8e" firstAttribute="leading" secondItem="XpP-Sl-aW1" secondAttribute="leading" id="OF1-TG-d03"/>
                             <constraint firstItem="fUv-hE-8zY" firstAttribute="leading" secondItem="XpP-Sl-aW1" secondAttribute="leading" constant="30" id="VYc-ZA-SFG"/>
                             <constraint firstItem="XpP-Sl-aW1" firstAttribute="bottom" secondItem="MIE-qk-eZR" secondAttribute="bottom" constant="129" id="XEL-tf-wHS"/>
+                            <constraint firstItem="fhA-5k-U8e" firstAttribute="top" secondItem="XpP-Sl-aW1" secondAttribute="top" constant="2" id="XEU-hv-2Lf"/>
                             <constraint firstItem="MIE-qk-eZR" firstAttribute="leading" secondItem="XpP-Sl-aW1" secondAttribute="leading" constant="70" id="YLZ-aR-XJs"/>
+                            <constraint firstItem="XpP-Sl-aW1" firstAttribute="trailing" secondItem="fhA-5k-U8e" secondAttribute="trailing" id="bTy-Dl-D3Q"/>
                             <constraint firstItem="XpP-Sl-aW1" firstAttribute="trailing" secondItem="MIE-qk-eZR" secondAttribute="trailing" constant="70" id="cAk-wZ-5Wx"/>
+                            <constraint firstItem="1SJ-EU-Mtd" firstAttribute="top" secondItem="fhA-5k-U8e" secondAttribute="bottom" constant="37.5" id="ePv-6i-Q02"/>
                             <constraint firstItem="1SJ-EU-Mtd" firstAttribute="leading" secondItem="XpP-Sl-aW1" secondAttribute="leading" constant="20" id="o3f-oy-NZR"/>
                             <constraint firstItem="1SJ-EU-Mtd" firstAttribute="top" secondItem="XpP-Sl-aW1" secondAttribute="top" constant="200.5" id="prd-0L-qj7"/>
                         </constraints>
@@ -388,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYb-f7-B6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1077" y="745"/>
+            <point key="canvasLocation" x="-765.21739130434787" y="803.57142857142856"/>
         </scene>
         <!--Home-->
         <scene sceneID="rzW-WB-d4Z">
@@ -566,7 +577,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Ir-Wb-SvK">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HealthCareCella" id="I1B-hk-r1W">
@@ -663,14 +674,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mpw-fI-iFK"/>
+        <segue reference="kcE-Ff-0ib"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="doc.text.fill" catalog="system" width="115" height="128"/>
         <image name="doctor5" width="400" height="200"/>
         <image name="house" catalog="system" width="128" height="110"/>
-        <image name="location.fill" catalog="system" width="128" height="115"/>
+        <image name="img8" width="259" height="194"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="teletype" catalog="system" width="128" height="98"/>
         <image name="thermometer.snowflake" catalog="system" width="113" height="128"/>

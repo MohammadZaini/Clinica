@@ -68,8 +68,8 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         arrClinics.append(Clinic(photo: UIImage(named: "Eye")!, name: "ophthalmology") )
         arrClinics.append(Clinic(photo: UIImage(named: "tooth")!, name: "ophthalmology") )
         arrClinics.append(Clinic(photo: UIImage(named: "kidney")!, name: "ophthalmology") )
-        arrClinics.append(Clinic(photo: UIImage(named: "Eye")!, name: "ophthalmology") )
-        arrClinics.append(Clinic(photo: UIImage(named: "Eye")!, name: "ophthalmology") )
+        arrClinics.append(Clinic(photo: UIImage(named: "heartIcon")!, name: "ophthalmology") )
+        arrClinics.append(Clinic(photo: UIImage(named: "tooth")!, name: "ophthalmology") )
         arrClinics.append(Clinic(photo: UIImage(named: "Eye")!, name: "ophthalmology") )
         
         
