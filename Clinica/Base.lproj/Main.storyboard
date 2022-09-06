@@ -582,10 +582,10 @@
             </objects>
             <point key="canvasLocation" x="955" y="727"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tab Bar-->
         <scene sceneID="pbK-Tf-Uth">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="CDF-3a-i6b" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeVC" modalPresentationStyle="fullScreen" id="CDF-3a-i6b" customClass="HomeTabBar" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aZd-8j-AAT"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CyD-Sd-cgR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -755,7 +755,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2a-iU-5L9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-268.1159420289855" y="-56.25"/>
+            <point key="canvasLocation" x="196" y="-39"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dyP-fK-fue">
