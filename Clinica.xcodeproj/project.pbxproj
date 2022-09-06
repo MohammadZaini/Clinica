@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35339BE528C7DCCB00F72A87 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BE428C7DCCA00F72A87 /* SignUpPage.swift */; };
+		35339BE728C7E22E00F72A87 /* Helpers in Resources */ = {isa = PBXBuildFile; fileRef = 35339BE628C7E22E00F72A87 /* Helpers */; };
+		35339BE928C7E23C00F72A87 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BE828C7E23C00F72A87 /* Utilities.swift */; };
+		35339BEB28C7E24400F72A87 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BEA28C7E24400F72A87 /* Constants.swift */; };
+		35339BED28C7EC6900F72A87 /* LoginSignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BEC28C7EC6900F72A87 /* LoginSignUpPage.swift */; };
 		35A2547F28B64E6A00C2FBB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */; };
 		35A2548128B64E6A00C2FBB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */; };
 		35A2548328B64E6A00C2FBB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2548228B64E6A00C2FBB6 /* ViewController.swift */; };
@@ -25,9 +30,18 @@
 		35A7290728BD326D00A76795 /* ClinicsCvHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7290628BD326D00A76795 /* ClinicsCvHeader.swift */; };
 		35FDB8F328BE4FB0001F7231 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FDB8F228BE4FB0001F7231 /* GoogleService-Info.plist */; };
 		35FDB8F728BE5C4F001F7231 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FDB8F628BE5C4F001F7231 /* MapVC.swift */; };
+		A8E0563F82F0F91D6B49BD96 /* Pods_Clinica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157748DFA0AD46134DA0370D /* Pods_Clinica.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		157748DFA0AD46134DA0370D /* Pods_Clinica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clinica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B1C4CC7C0D8EAEFFFBF8CC /* Pods-Clinica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinica.release.xcconfig"; path = "Target Support Files/Pods-Clinica/Pods-Clinica.release.xcconfig"; sourceTree = "<group>"; };
+		2A66828FCC93048D5B5B1FE6 /* Pods-Clinica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinica.debug.xcconfig"; path = "Target Support Files/Pods-Clinica/Pods-Clinica.debug.xcconfig"; sourceTree = "<group>"; };
+		35339BE428C7DCCA00F72A87 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		35339BE628C7E22E00F72A87 /* Helpers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Helpers; sourceTree = "<group>"; };
+		35339BE828C7E23C00F72A87 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		35339BEA28C7E24400F72A87 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		35339BEC28C7EC6900F72A87 /* LoginSignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpPage.swift; sourceTree = "<group>"; };
 		35A2547B28B64E6A00C2FBB6 /* Clinica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clinica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,18 +69,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E0563F82F0F91D6B49BD96 /* Pods_Clinica.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AC690AE61E6F9A9505DB7B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				157748DFA0AD46134DA0370D /* Pods_Clinica.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		35A2547228B64E6A00C2FBB6 = {
 			isa = PBXGroup;
 			children = (
 				35FDB8F628BE5C4F001F7231 /* MapVC.swift */,
 				35A2547D28B64E6A00C2FBB6 /* Clinica */,
 				35A2547C28B64E6A00C2FBB6 /* Products */,
+				7F4B5DA26A9D378694192D3A /* Pods */,
+				2AC690AE61E6F9A9505DB7B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +106,14 @@
 		35A2547D28B64E6A00C2FBB6 /* Clinica */ = {
 			isa = PBXGroup;
 			children = (
+				35339BE628C7E22E00F72A87 /* Helpers */,
+				35339BE828C7E23C00F72A87 /* Utilities.swift */,
+				35339BEA28C7E24400F72A87 /* Constants.swift */,
 				35A2549C28B78A1A00C2FBB6 /* Views */,
 				35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */,
 				35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */,
 				35A2548428B64E6A00C2FBB6 /* Main.storyboard */,
+				35339BE428C7DCCA00F72A87 /* SignUpPage.swift */,
 				35A7290628BD326D00A76795 /* ClinicsCvHeader.swift */,
 				35A7290228BCF2A700A76795 /* TopCollectionViewCellHomePage.swift */,
 				35A728FE28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift */,
@@ -107,8 +136,19 @@
 				35A2549828B6540D00C2FBB6 /* FavoritesPage.swift */,
 				35A2549428B653C400C2FBB6 /* HealthCarePage.swift */,
 				35A2548228B64E6A00C2FBB6 /* ViewController.swift */,
+				35339BEC28C7EC6900F72A87 /* LoginSignUpPage.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7F4B5DA26A9D378694192D3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A66828FCC93048D5B5B1FE6 /* Pods-Clinica.debug.xcconfig */,
+				27B1C4CC7C0D8EAEFFFBF8CC /* Pods-Clinica.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35A2548F28B64E6B00C2FBB6 /* Build configuration list for PBXNativeTarget "Clinica" */;
 			buildPhases = (
+				E3B808F9014CC8A4F84F5374 /* [CP] Check Pods Manifest.lock */,
 				35A2547728B64E6A00C2FBB6 /* Sources */,
 				35A2547828B64E6A00C2FBB6 /* Frameworks */,
 				35A2547928B64E6A00C2FBB6 /* Resources */,
+				67D23894185806BBE5F30AC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,10 +215,53 @@
 				35FDB8F328BE4FB0001F7231 /* GoogleService-Info.plist in Resources */,
 				35A2548828B64E6B00C2FBB6 /* Assets.xcassets in Resources */,
 				35A2548628B64E6A00C2FBB6 /* Main.storyboard in Resources */,
+				35339BE728C7E22E00F72A87 /* Helpers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67D23894185806BBE5F30AC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clinica/Pods-Clinica-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clinica/Pods-Clinica-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Clinica/Pods-Clinica-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3B808F9014CC8A4F84F5374 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clinica-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35A2547728B64E6A00C2FBB6 /* Sources */ = {
@@ -184,11 +269,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				35A2549E28B78EBA00C2FBB6 /* ClinicsTableView.swift in Sources */,
+				35339BEB28C7E24400F72A87 /* Constants.swift in Sources */,
 				35A2548328B64E6A00C2FBB6 /* ViewController.swift in Sources */,
 				35A7290328BCF2A700A76795 /* TopCollectionViewCellHomePage.swift in Sources */,
 				35A7290728BD326D00A76795 /* ClinicsCvHeader.swift in Sources */,
 				35A2549528B653C400C2FBB6 /* HealthCarePage.swift in Sources */,
 				35A2549928B6540D00C2FBB6 /* FavoritesPage.swift in Sources */,
+				35339BE928C7E23C00F72A87 /* Utilities.swift in Sources */,
+				35339BE528C7DCCB00F72A87 /* SignUpPage.swift in Sources */,
 				35A728FD28BBB97500A76795 /* ClinicsTableViewNew.swift in Sources */,
 				35A2547F28B64E6A00C2FBB6 /* AppDelegate.swift in Sources */,
 				35A728FF28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift in Sources */,
@@ -196,6 +284,7 @@
 				35A2549728B653EA00C2FBB6 /* AppointmentsPage.swift in Sources */,
 				35FDB8F728BE5C4F001F7231 /* MapVC.swift in Sources */,
 				35A2549B28B656C900C2FBB6 /* ClinicsCollectionViewCell.swift in Sources */,
+				35339BED28C7EC6900F72A87 /* LoginSignUpPage.swift in Sources */,
 				35A2549328B6539400C2FBB6 /* HomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +427,7 @@
 		};
 		35A2549028B64E6B00C2FBB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A66828FCC93048D5B5B1FE6 /* Pods-Clinica.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -355,6 +445,7 @@
 		};
 		35A2549128B64E6B00C2FBB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27B1C4CC7C0D8EAEFFFBF8CC /* Pods-Clinica.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

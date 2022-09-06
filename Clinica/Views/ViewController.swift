@@ -11,15 +11,34 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var EmailTextfield: UITextField!
-    @IBOutlet weak var LoginButton: UIButton!
+    
     
     @IBOutlet weak var PasswordTextfield: UITextField!
     
+    @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setUpElements()
     }
 
-
+    @IBAction func loginTapped(_ sender: UIButton) {
+        
+        
+        
+        
+        
+    }
+    
+    func setUpElements(){
+        
+        errorLabel.alpha = 0
+        
+        Utilities.styleTextField(EmailTextfield)
+        Utilities.styleTextField(PasswordTextfield)
+    
+        
+        
+    }
+    
 }
 

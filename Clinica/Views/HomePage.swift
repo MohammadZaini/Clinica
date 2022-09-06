@@ -17,12 +17,45 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
     
     @IBOutlet weak var ClinicsCollectionView: UICollectionView!
     
-    var arrTopVC = [UIImage(named: "doc7")!, UIImage(named: "doc6")!,UIImage(named: "doctor4")!]
-    
-    var arrClinics = [Clinic]()
+    var arrTopVC = [UIImage(named: "doctor3")!, UIImage(named: "doc6")!,UIImage(named: "doctor4")!]
     
     var timer : Timer?
+
+    var arrClinics = [Clinic]()
+    
     var currentCellIndex = 0
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        ClinicsCollectionView.delegate = self
+        ClinicsCollectionView.dataSource = self
+        
+        startTimer()
+        PageControl.numberOfPages = arrTopVC.count
+        
+        ClinicsCollectionView.backgroundColor = .systemBlue
+        
+        
+        TopCollectionView.delegate = self
+        TopCollectionView.dataSource = self
+        
+        
+        
+        
+        
+        arrClinics.append(Clinic(photo: UIImage(named: "Eye")!, name: "ophthalmology") )
+        arrClinics.append(Clinic(photo: UIImage(named: "tooth")!, name: "Dentistry") )
+        arrClinics.append(Clinic(photo: UIImage(named: "kidney")!, name: "Nephrology") )
+        arrClinics.append(Clinic(photo: UIImage(named: "heartIcon")!, name: "Cardiology") )
+        arrClinics.append(Clinic(photo: UIImage(named: "Ear")!, name: "Otology") )
+        arrClinics.append(Clinic(photo: UIImage(named: "bone")!, name: "Orthopedics") )
+        
+        
+    }
+
     
     func startTimer(){
         
@@ -37,10 +70,12 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
             currentCellIndex += 1
             
         }else{
+            
             currentCellIndex = 0
             
             
         }
+        
         TopCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
         
         PageControl.currentPage = currentCellIndex
@@ -49,32 +84,7 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        ClinicsCollectionView.delegate = self
-        ClinicsCollectionView.dataSource = self
         
-        ClinicsCollectionView.backgroundColor = .systemBlue
-        
-        
-        TopCollectionView.delegate = self
-        TopCollectionView.dataSource = self
-        
-        PageControl.numberOfPages = arrTopVC.count
-        
-        startTimer()
-        
-        arrClinics.append(Clinic(photo: UIImage(named: "Eye")!, name: "ophthalmology") )
-        arrClinics.append(Clinic(photo: UIImage(named: "tooth")!, name: "ophthalmology") )
-        arrClinics.append(Clinic(photo: UIImage(named: "kidney")!, name: "ophthalmology") )
-        arrClinics.append(Clinic(photo: UIImage(named: "heartIcon")!, name: "ophthalmology") )
-        arrClinics.append(Clinic(photo: UIImage(named: "tooth")!, name: "ophthalmology") )
-        arrClinics.append(Clinic(photo: UIImage(named: "Eye")!, name: "ophthalmology") )
-        
-        
-    }
-    
        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
           if collectionView == self.ClinicsCollectionView{
               
@@ -109,27 +119,59 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
               
           }
       }
-      
-      
-      
-      func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-          if  collectionView == self.TopCollectionView {
-              return 0
-          }
-          else {
-              return 0
-          }
-          
-      }
-      
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = ClinicsCollectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as! ClinicsCvHeader
-        header.Header.text = "Categories"
-        header.Header.textColor = .white
-
-        return header
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        if  collectionView == self.TopCollectionView {
+            return 0
+        }
+        else {
+            return 0
+        }
         
     }
+    
+  func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+      let header = ClinicsCollectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as! ClinicsCvHeader
+      header.Header.text = "Categories"
+      header.Header.textColor = .white
+
+      return header
+      
+  }
+    
+    
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if collectionView == ClinicsCollectionView {
+            
+            performSegue(withIdentifier: "Segue1", sender: self)
+          
+            
+        }
+         
+    }
+  /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Segue"{
+            
+            let vc = segue.destination as! ClinicsTableViewNew
+            
+        }
+            
+    
+    }*/
+    
+        
+   
+  
+    
+    
+      
+      
+     
     
     
     
