@@ -21,6 +21,7 @@ class SignUpPage: UIViewController {
     
     
     @IBOutlet weak var passwordTextfield: UITextField!
+    @IBOutlet weak var SignUpButton: UIButton!
     
     @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
@@ -86,6 +87,8 @@ class SignUpPage: UIViewController {
         
         errorLabel.text = message
         errorLabel.alpha = 1
+        
+        
     }
     
     func transitionToHome() {
@@ -101,6 +104,13 @@ class SignUpPage: UIViewController {
         
         
         errorLabel.alpha = 0
+        
+        Utilities.styleTextField(firstNameTextfield)
+        Utilities.styleTextField(lastNameTextfield)
+        Utilities.styleTextField(emailTextfield)
+        Utilities.styleTextField(PhoneNumberTextfield)
+        Utilities.styleTextField(passwordTextfield)
+        Utilities.styleHollowButton(SignUpButton)
        
         
     }
