@@ -8,7 +8,70 @@
 
 import UIKit
 
-class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
+class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout ,UITableViewDelegate , UITableViewDataSource {
+    var arrSideMenu = ["Profile","Settings","asd"]
+    var arrSideMenuImages = [UIImage(named: "doc6")!, UIImage(named: "Doctor1")!,UIImage(named: "doctor5")!]
+    var isSideMenuOpen : Bool = false
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrSideMenu.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = sideMenuTableView.dequeueReusableCell(withIdentifier: "sideCell", for: indexPath) as! SideMenuTVCell
+        cell.sideMenuImage.image = arrSideMenuImages[indexPath.row]
+        cell.sideMenuLabel.text = arrSideMenu[indexPath.row]
+        return   cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            let profile : ProfilePage = self.storyboard?.instantiateViewController(withIdentifier: "Profile") as! ProfilePage
+            self.navigationController?.pushViewController(profile, animated: true)
+            
+            
+        }
+    }
+    
+    
+    @IBAction func sideMenuButton(_ sender: UIButton) {
+        
+        sideMenuView.isHidden = false
+        sideMenuTableView.isHidden = false
+        self.view.bringSubviewToFront(sideMenuView)
+        
+        if isSideMenuOpen {
+            isSideMenuOpen = true
+            sideMenuView.frame = CGRect(x: 0, y: 56, width: 311, height: 632)
+            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 632)
+            UIView.setAnimationDuration(0.3)
+            UIView.setAnimationDelegate(self)
+            UIView.beginAnimations("TableAnimation", context: nil )
+            sideMenuView.frame = CGRect(x: 0, y: 56, width: 311, height: 632)
+            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 632)
+            UIView.commitAnimations()
+            
+        }/*else{
+            sideMenuView.isHidden = true
+            sideMenuTableView.isEditing = true
+            isSideMenuOpen = false
+            sideMenuView.frame = CGRect(x: 0, y: 56, width: 311, height: 632)
+            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 632)
+            UIView.setAnimationDuration(0.3)
+            UIView.setAnimationDelegate(self)
+            UIView.beginAnimations("TableAnimation", context: nil )
+            sideMenuView.frame = CGRect(x: 0, y: 56, width: 311, height: 632)
+            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 632)
+            UIView.commitAnimations()
+            
+            
+            
+            
+        }*/
+        
+        
+    }
     
     
     @IBOutlet weak var TopCollectionView: UICollectionView!
@@ -16,7 +79,9 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
     @IBOutlet weak var PageControl: UIPageControl!
     
     @IBOutlet weak var ClinicsCollectionView: UICollectionView!
+    @IBOutlet weak var sideMenuView: UIView!
     
+    @IBOutlet weak var sideMenuTableView: UITableView!
     var arrTopVC = [UIImage(named: "doctor3")!, UIImage(named: "doc6")!,UIImage(named: "doctor4")!]
     
     var timer : Timer?
@@ -41,6 +106,13 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         
         TopCollectionView.delegate = self
         TopCollectionView.dataSource = self
+        
+        
+        sideMenuTableView.delegate = self
+        sideMenuTableView.dataSource = self
+        sideMenuView.isHidden = true
+        sideMenuTableView.backgroundColor = UIColor.groupTableViewBackground
+        isSideMenuOpen = false
         
         
         
@@ -148,9 +220,15 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         
         if collectionView == ClinicsCollectionView {
             
-            performSegue(withIdentifier: "Segue1", sender: self)
-          
             
+            if indexPath.row == 0 {
+                performSegue(withIdentifier: "Segue1", sender: self)
+                let VCv = storyboard?.instantiateViewController(withIdentifier: "Segue1") as! ClinicsTableViewNew
+                self.navigationController?.pushViewController(VCv, animated: true)
+                
+            view.window?.rootViewController = VCv
+            view.window?.makeKeyAndVisible()
+            }
         }
          
     }
@@ -187,3 +265,4 @@ struct Clinic {
     let name : String
     
 }
+

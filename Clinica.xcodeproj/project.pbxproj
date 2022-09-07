@@ -14,6 +14,8 @@
 		35339BED28C7EC6900F72A87 /* LoginSignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BEC28C7EC6900F72A87 /* LoginSignUpPage.swift */; };
 		35339BEF28C8005F00F72A87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35339BEE28C8005F00F72A87 /* GoogleService-Info.plist */; };
 		35339BF128C8036400F72A87 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BF028C8036400F72A87 /* HomeTabBar.swift */; };
+		35339BF328C8E51600F72A87 /* SideMenuTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BF228C8E51500F72A87 /* SideMenuTVCell.swift */; };
+		35339BF528C8F06400F72A87 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BF428C8F06400F72A87 /* ProfilePage.swift */; };
 		35A2547F28B64E6A00C2FBB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */; };
 		35A2548128B64E6A00C2FBB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */; };
 		35A2548328B64E6A00C2FBB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2548228B64E6A00C2FBB6 /* ViewController.swift */; };
@@ -45,6 +47,8 @@
 		35339BEC28C7EC6900F72A87 /* LoginSignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpPage.swift; sourceTree = "<group>"; };
 		35339BEE28C8005F00F72A87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		35339BF028C8036400F72A87 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
+		35339BF228C8E51500F72A87 /* SideMenuTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTVCell.swift; sourceTree = "<group>"; };
+		35339BF428C8F06400F72A87 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		35A2547B28B64E6A00C2FBB6 /* Clinica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clinica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */,
 				35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */,
 				35A2548428B64E6A00C2FBB6 /* Main.storyboard */,
+				35339BF428C8F06400F72A87 /* ProfilePage.swift */,
+				35339BF228C8E51500F72A87 /* SideMenuTVCell.swift */,
 				35339BF028C8036400F72A87 /* HomeTabBar.swift */,
 				35339BE428C7DCCA00F72A87 /* SignUpPage.swift */,
 				35A7290628BD326D00A76795 /* ClinicsCvHeader.swift */,
@@ -273,6 +279,8 @@
 				35A2549E28B78EBA00C2FBB6 /* ClinicsTableView.swift in Sources */,
 				35339BEB28C7E24400F72A87 /* Constants.swift in Sources */,
 				35A2548328B64E6A00C2FBB6 /* ViewController.swift in Sources */,
+				35339BF528C8F06400F72A87 /* ProfilePage.swift in Sources */,
+				35339BF328C8E51600F72A87 /* SideMenuTVCell.swift in Sources */,
 				35A7290328BCF2A700A76795 /* TopCollectionViewCellHomePage.swift in Sources */,
 				35A7290728BD326D00A76795 /* ClinicsCvHeader.swift in Sources */,
 				35A2549528B653C400C2FBB6 /* HealthCarePage.swift in Sources */,
