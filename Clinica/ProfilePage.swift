@@ -53,7 +53,7 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
         
         let picker = UIImagePickerController()
         picker.sourceType = type
-        //picker.isEditing = true 
+        picker.allowsEditing = true 
         picker.delegate = self
         present(picker, animated: true, completion: nil)
         
