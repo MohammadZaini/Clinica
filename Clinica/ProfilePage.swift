@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseStorage
 
 class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -14,10 +16,39 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
     @IBOutlet weak var AddphotoButton: UIButton!
     @IBOutlet weak var UploadPhotoButton: UIButton!
     
+    @IBOutlet weak var progressView: UIProgressView!
     @IBAction func AddPhotoTapped(_ sender: UIButton) {
         ShowPhotoAlert()
     }
     
+    @IBAction func UploadphotoTapped(_ sender: UIButton) {
+        progressView.isHidden = false 
+        let randomID = UUID.init().uuidString
+        let uploadRef = Storage.storage().reference(withPath: "images/\(randomID).jpg")
+        guard let imageData = PatientImage.image?.jpegData(compressionQuality: 0.75) else {return}
+        let uploadMetaData = StorageMetadata.init()
+        
+         uploadMetaData.contentType = "images/jpeg"
+        
+        let taskReference =  uploadRef.putData(imageData, metadata: uploadMetaData) { (downloadMetaData, error) in
+            if let error = error {
+                
+                
+                print("There is an error! \(error.localizedDescription)")
+                return
+            }
+            
+            print("Put data is complete and I got this back : \(String(describing: downloadMetaData))")
+        }
+        
+        taskReference.observe(.progress) {[weak self] (snapshot) in
+            guard let pctThere = snapshot.progress?.fractionCompleted else{return}
+            
+                print("you are \(pctThere) complete")
+            self?.progressView.progress = Float(pctThere)
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
