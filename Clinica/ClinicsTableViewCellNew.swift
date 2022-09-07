@@ -38,8 +38,8 @@ class ClinicsTableViewCellNew: UITableViewCell {
                    forthImage : UIImage , doctorName1 : String , TelephoneNumber1 : Int,
                    locationName1 : String , review1 :String){
         personImage.image = firstImage
-         TelephoneImage.image = secondImage
-         locationImage.image = thirdImage
+         locationImage.image = secondImage
+         TelephoneImage.image = thirdImage
          reviewsImage.image = forthImage
         
         doctorName.text = doctorName1

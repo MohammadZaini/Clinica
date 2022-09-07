@@ -12,6 +12,7 @@ import FirebaseFirestore
 
 class SignUpPage: UIViewController {
 
+    @IBOutlet weak var SignUpImage: UIImageView!
     @IBOutlet weak var firstNameTextfield: UITextField!
     @IBOutlet weak var lastNameTextfield: UITextField!
     

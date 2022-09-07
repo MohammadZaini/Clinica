@@ -25,11 +25,9 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
         
         filterdData = ["\(arrClinics)"]
         
-        arrClinics.append(Clinics.init(doctorPhoto: UIImage(systemName: "person")!, telephonePhoto: UIImage(systemName: "teletype")!, locationPhoto: UIImage(systemName: "location.fill" )!, reviewPhoto: UIImage(systemName: "doc.text.fill")!, doctorN: "Dr.Ahmad", telePhoneNum: 0775148625, locationN: "KHalda", reviews: "Reviews"))
+        arrClinics.append(Clinics.init(doctorPhoto: UIImage(systemName: "person")!, telephonePhoto: UIImage(systemName: "teletype")!, locationPhoto: UIImage(systemName: "location.fill" )!, reviewPhoto: UIImage(systemName: "doc.text.fill")!, doctorN: "Dr.Ahmad", telePhoneNum:  0775148625, locationN: "KHalda", reviews: "Reviews"))
         
-        arrClinics.append(Clinics.init(doctorPhoto: UIImage(systemName: "person")!, telephonePhoto: UIImage(systemName: "teletype")!, locationPhoto: UIImage(systemName: "location.fill" )!, reviewPhoto: UIImage(systemName: "doc.text.fill")!, doctorN: "Dr.Ahmad", telePhoneNum: 0775148625, locationN: "KHalda", reviews: "Reviews"))
-
-       arrClinics.append(Clinics.init(doctorPhoto: UIImage(systemName: "person")!, telephonePhoto: UIImage(systemName: "teletype")!, locationPhoto: UIImage(systemName: "location.fill" )!, reviewPhoto: UIImage(systemName: "doc.text.fill")!, doctorN: "Dr.Ahmad", telePhoneNum: 0775148625, locationN: "KHalda", reviews: "Reviews"))
+       
 
 
 
