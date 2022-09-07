@@ -22,7 +22,7 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         let cell = sideMenuTableView.dequeueReusableCell(withIdentifier: "sideCell", for: indexPath) as! SideMenuTVCell
         cell.sideMenuImage.image = arrSideMenuImages[indexPath.row]
         cell.sideMenuLabel.text = arrSideMenu[indexPath.row]
-        cell.backgroundColor = .red
+        cell.backgroundColor = .systemOrange
         cell.tintColor = .white
         return   cell
     }
@@ -116,7 +116,7 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         sideMenuTableView.backgroundColor = UIColor.groupTableViewBackground
         isSideMenuOpen = false
         sideMenuView.layer.cornerRadius = 15
-        sideMenuTableView.backgroundColor = .red
+        sideMenuTableView.backgroundColor = .systemOrange
         
         
         

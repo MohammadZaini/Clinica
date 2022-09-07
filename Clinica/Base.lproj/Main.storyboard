@@ -631,10 +631,12 @@
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe2-GM-nqj">
-                                <rect key="frame" x="0.0" y="34" width="41" height="31"/>
+                                <rect key="frame" x="0.0" y="44" width="54" height="36.5"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="restart" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="list.triangle" catalog="system" title=" ">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="19"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="sideMenuButton:" destination="aCg-kf-JgG" eventType="touchUpInside" id="fNx-77-vYu"/>
                                 </connections>
@@ -645,20 +647,22 @@
                         <constraints>
                             <constraint firstItem="HH8-dc-Nb5" firstAttribute="leading" secondItem="Olg-5q-rF8" secondAttribute="leading" id="0UP-2L-9jN"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Fhu-hW-z9M" secondAttribute="bottom" constant="-37" id="1QI-dO-oDG"/>
-                            <constraint firstItem="Fhu-hW-z9M" firstAttribute="top" secondItem="pe2-GM-nqj" secondAttribute="bottom" constant="30" id="Ai0-Uf-XjR"/>
+                            <constraint firstItem="cBF-Ex-4Xx" firstAttribute="trailing" secondItem="pe2-GM-nqj" secondAttribute="trailing" constant="360" id="7Ho-fH-QY6"/>
                             <constraint firstItem="6R0-k2-js8" firstAttribute="top" secondItem="cBF-Ex-4Xx" secondAttribute="top" constant="170" id="BlX-8l-OhA"/>
                             <constraint firstItem="6R0-k2-js8" firstAttribute="centerX" secondItem="Olg-5q-rF8" secondAttribute="centerX" id="Eiz-r4-Lbe"/>
+                            <constraint firstItem="HH8-dc-Nb5" firstAttribute="top" secondItem="pe2-GM-nqj" secondAttribute="bottom" constant="12.5" id="GMV-IM-Sq1"/>
                             <constraint firstItem="6R0-k2-js8" firstAttribute="leading" secondItem="cBF-Ex-4Xx" secondAttribute="leading" constant="149.5" id="MGN-WW-Wnj"/>
                             <constraint firstItem="Olg-5q-rF8" firstAttribute="trailing" secondItem="cBF-Ex-4Xx" secondAttribute="trailing" id="Q4T-ME-Nty"/>
                             <constraint firstItem="cBF-Ex-4Xx" firstAttribute="trailing" secondItem="Fhu-hW-z9M" secondAttribute="trailing" constant="103" id="UJD-Xe-XC8"/>
                             <constraint firstItem="6R0-k2-js8" firstAttribute="centerX" secondItem="HH8-dc-Nb5" secondAttribute="centerX" id="VUu-m4-obk"/>
                             <constraint firstItem="Olg-5q-rF8" firstAttribute="top" secondItem="6R0-k2-js8" secondAttribute="bottom" constant="89" id="VxW-Qo-ago"/>
                             <constraint firstItem="Olg-5q-rF8" firstAttribute="top" secondItem="HH8-dc-Nb5" secondAttribute="bottom" constant="52" id="WFS-Hg-HCM"/>
+                            <constraint firstItem="pe2-GM-nqj" firstAttribute="top" secondItem="cBF-Ex-4Xx" secondAttribute="top" id="WOr-2d-H2M"/>
                             <constraint firstItem="cBF-Ex-4Xx" firstAttribute="bottom" secondItem="Olg-5q-rF8" secondAttribute="bottom" constant="127" id="cyF-3C-XIf"/>
                             <constraint firstItem="HH8-dc-Nb5" firstAttribute="leading" secondItem="Fhu-hW-z9M" secondAttribute="leading" id="dhm-R0-7NU"/>
                             <constraint firstItem="Olg-5q-rF8" firstAttribute="leading" secondItem="cBF-Ex-4Xx" secondAttribute="leading" id="edG-md-Csl"/>
-                            <constraint firstItem="Fhu-hW-z9M" firstAttribute="leading" secondItem="pe2-GM-nqj" secondAttribute="leading" id="jNb-Mz-fqh"/>
                             <constraint firstItem="Fhu-hW-z9M" firstAttribute="top" secondItem="g8b-3w-lP9" secondAttribute="top" constant="95" id="kod-Pi-ZnR"/>
+                            <constraint firstItem="pe2-GM-nqj" firstAttribute="leading" secondItem="cBF-Ex-4Xx" secondAttribute="leading" id="ncB-JL-k1d"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="4Io-sN-K3l"/>
@@ -878,9 +882,9 @@
         <image name="doctor5" width="400" height="200"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="img8" width="259" height="194"/>
+        <image name="list.triangle" catalog="system" width="128" height="91"/>
         <image name="per" width="128" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>
-        <image name="restart" catalog="system" width="120" height="128"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="teletype" catalog="system" width="128" height="98"/>
         <image name="thermometer.sun" catalog="system" width="103" height="128"/>
