@@ -10,7 +10,7 @@ import UIKit
 
 class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout ,UITableViewDelegate , UITableViewDataSource {
     var arrSideMenu = ["Profile","Settings","asd"]
-    var arrSideMenuImages = [UIImage(named: "doc6")!, UIImage(named: "Doctor1")!,UIImage(named: "doctor5")!]
+    var arrSideMenuImages = [UIImage(systemName: "person")!, UIImage(named: "Doctor1")!,UIImage(named: "doctor5")!]
     var isSideMenuOpen : Bool = false
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -22,6 +22,8 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         let cell = sideMenuTableView.dequeueReusableCell(withIdentifier: "sideCell", for: indexPath) as! SideMenuTVCell
         cell.sideMenuImage.image = arrSideMenuImages[indexPath.row]
         cell.sideMenuLabel.text = arrSideMenu[indexPath.row]
+        cell.backgroundColor = .red
+        cell.tintColor = .white
         return   cell
     }
     
@@ -41,34 +43,34 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         sideMenuTableView.isHidden = false
         self.view.bringSubviewToFront(sideMenuView)
         
-        if isSideMenuOpen {
+        if !isSideMenuOpen {
             isSideMenuOpen = true
             sideMenuView.frame = CGRect(x: 0, y: 56, width: 311, height: 632)
-            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 632)
+            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 757)
             UIView.setAnimationDuration(0.3)
             UIView.setAnimationDelegate(self)
             UIView.beginAnimations("TableAnimation", context: nil )
-            sideMenuView.frame = CGRect(x: 0, y: 56, width: 311, height: 632)
-            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 632)
+            sideMenuView.frame = CGRect(x: 0, y: 56, width: 311, height: 757)
+            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 757)
             UIView.commitAnimations()
             
-        }/*else{
+        }else{
             sideMenuView.isHidden = true
             sideMenuTableView.isEditing = true
             isSideMenuOpen = false
-            sideMenuView.frame = CGRect(x: 0, y: 56, width: 311, height: 632)
-            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 632)
+            sideMenuView.frame = CGRect(x: 0, y: 56, width: 311, height: 757)
+            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 757)
             UIView.setAnimationDuration(0.3)
             UIView.setAnimationDelegate(self)
             UIView.beginAnimations("TableAnimation", context: nil )
-            sideMenuView.frame = CGRect(x: 0, y: 56, width: 311, height: 632)
-            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 632)
+            sideMenuView.frame = CGRect(x: 0, y: 56, width: 311, height: 757)
+            sideMenuTableView.frame = CGRect(x: 0, y: 0, width: 311, height: 757)
             UIView.commitAnimations()
             
             
             
             
-        }*/
+        }
         
         
     }
@@ -113,6 +115,8 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         sideMenuView.isHidden = true
         sideMenuTableView.backgroundColor = UIColor.groupTableViewBackground
         isSideMenuOpen = false
+        sideMenuView.layer.cornerRadius = 15
+        sideMenuTableView.backgroundColor = .red
         
         
         
