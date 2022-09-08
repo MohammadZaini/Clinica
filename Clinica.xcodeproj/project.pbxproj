@@ -17,6 +17,7 @@
 		35339BF328C8E51600F72A87 /* SideMenuTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BF228C8E51500F72A87 /* SideMenuTVCell.swift */; };
 		35339BF528C8F06400F72A87 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BF428C8F06400F72A87 /* ProfilePage.swift */; };
 		35339BF728C91C1E00F72A87 /* BookingAppointmentsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BF628C91C1C00F72A87 /* BookingAppointmentsPage.swift */; };
+		35339BF928CA3C0F00F72A87 /* users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BF828CA3C0F00F72A87 /* users.swift */; };
 		35A2547F28B64E6A00C2FBB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */; };
 		35A2548128B64E6A00C2FBB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */; };
 		35A2548328B64E6A00C2FBB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2548228B64E6A00C2FBB6 /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		35339BF228C8E51500F72A87 /* SideMenuTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTVCell.swift; sourceTree = "<group>"; };
 		35339BF428C8F06400F72A87 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		35339BF628C91C1C00F72A87 /* BookingAppointmentsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingAppointmentsPage.swift; sourceTree = "<group>"; };
+		35339BF828CA3C0F00F72A87 /* users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = users.swift; sourceTree = "<group>"; };
 		35A2547B28B64E6A00C2FBB6 /* Clinica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clinica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				35A2548428B64E6A00C2FBB6 /* Main.storyboard */,
 				35339BF628C91C1C00F72A87 /* BookingAppointmentsPage.swift */,
 				35339BF428C8F06400F72A87 /* ProfilePage.swift */,
+				35339BF828CA3C0F00F72A87 /* users.swift */,
 				35339BF228C8E51500F72A87 /* SideMenuTVCell.swift */,
 				35339BF028C8036400F72A87 /* HomeTabBar.swift */,
 				35339BE428C7DCCA00F72A87 /* SignUpPage.swift */,
@@ -299,6 +302,7 @@
 				35A2549728B653EA00C2FBB6 /* AppointmentsPage.swift in Sources */,
 				35FDB8F728BE5C4F001F7231 /* MapVC.swift in Sources */,
 				35A2549B28B656C900C2FBB6 /* ClinicsCollectionViewCell.swift in Sources */,
+				35339BF928CA3C0F00F72A87 /* users.swift in Sources */,
 				35339BED28C7EC6900F72A87 /* LoginSignUpPage.swift in Sources */,
 				35A2549328B6539400C2FBB6 /* HomePage.swift in Sources */,
 			);

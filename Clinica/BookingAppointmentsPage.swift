@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class BookingAppointmentsPage: UIViewController {
     
@@ -26,5 +28,10 @@ class BookingAppointmentsPage: UIViewController {
         
         self.AppointmentTextfield.text = "\(AppointmentsDatePicker.date)"
     }
-
+    
+    func getDate(name : String  , sadas : Int){
+        
+    }
+    
+  
 }

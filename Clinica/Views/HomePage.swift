@@ -9,8 +9,8 @@
 import UIKit
 
 class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout ,UITableViewDelegate , UITableViewDataSource {
-    var arrSideMenu = ["Profile","Settings","asd"]
-    var arrSideMenuImages = [UIImage(systemName: "person")!, UIImage(named: "Doctor1")!,UIImage(named: "doctor5")!]
+    var arrSideMenu = ["Profile","Settings","Sign Out"]
+    var arrSideMenuImages = [UIImage(systemName: "person")!, UIImage(systemName: "command")!,UIImage(systemName:"arrowshape.turn.up.backward")!]
     var isSideMenuOpen : Bool = false
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,10 +29,16 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            let profile : ProfilePage = self.storyboard?.instantiateViewController(withIdentifier: "Profile") as! ProfilePage
+            /*let profile : ProfilePage = self.storyboard?.instantiateViewController(withIdentifier: "Profile") as! ProfilePage
+            self.navigationController?.pushViewController(profile, animated: true)*/
+            
+            self.performSegue(withIdentifier: "theSegue", sender: self)
+            
+            
+        } else if indexPath.row == 1 {
+            
+            let profile : ClinicsTableViewNew = self.storyboard?.instantiateViewController(withIdentifier: "Segue") as! ClinicsTableViewNew
             self.navigationController?.pushViewController(profile, animated: true)
-            
-            
         }
     }
     
@@ -227,11 +233,11 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
             
             if indexPath.row == 0 {
                 performSegue(withIdentifier: "Segue1", sender: self)
-                let VCv = storyboard?.instantiateViewController(withIdentifier: "Segue1") as! ClinicsTableViewNew
+                /*let VCv = storyboard?.instantiateViewController(withIdentifier: "Segue1") as! ClinicsTableViewNew
                 self.navigationController?.pushViewController(VCv, animated: true)
                 
             view.window?.rootViewController = VCv
-            view.window?.makeKeyAndVisible()
+            view.window?.makeKeyAndVisible()*/
             }
         }
          

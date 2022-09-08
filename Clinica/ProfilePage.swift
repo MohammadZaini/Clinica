@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseStorage
+import FirebaseFirestore
 
 class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -20,9 +21,11 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
     @IBAction func AddPhotoTapped(_ sender: UIButton) {
         ShowPhotoAlert()
     }
+    @IBOutlet weak var emailLabel: UILabel!
     
     @IBAction func UploadphotoTapped(_ sender: UIButton) {
-        progressView.isHidden = false 
+        progressView.isHidden = false
+        progressView.alpha = 1
         let randomID = UUID.init().uuidString
         let uploadRef = Storage.storage().reference(withPath: "images/\(randomID).jpg")
         guard let imageData = PatientImage.image?.jpegData(compressionQuality: 0.75) else {return}
@@ -106,6 +109,33 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    
+    //test
+   @Published var list = [Users]()
+    func getData(){
+        // Get a reference to the database
+        let db = Firestore.firestore()
+        
+        // Read a document at a specific path
+        
+        db.collection("users").getDocuments { snapshot, error in
+            if error == nil {
+                
+                if let snapshot  = snapshot{
+                     self.list =  snapshot.documents.map { d in
+                        return Users(id: d.documentID, firstname: d["firstname"] as? String ?? "", lastname: d["lastname"] as? String ?? "", email: d["email"] as? String ?? "", PhoneNumber: d["PhoneNumber"] as? String ?? "")
+                    }
+                }
+                
+            }else{
+                
+                
+            }
+        }
+        
+        
     }
 
 }
