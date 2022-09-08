@@ -14,6 +14,9 @@ struct Constants {
         
         static let homeViewController = "HomeVC"
         static let ClinicsTableView = "ClinicsVC"
+        static let vc = "Profile"
+        static let settings = "Settings"
+        static let BookingAppointments = "Appointments"
     }
     
     

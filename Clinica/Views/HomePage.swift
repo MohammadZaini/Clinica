@@ -28,19 +28,38 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            /*let profile : ProfilePage = self.storyboard?.instantiateViewController(withIdentifier: "Profile") as! ProfilePage
+       /* if indexPath.row == 0 {
+            let profile : ProfilePage = self.storyboard?.instantiateViewController(withIdentifier: "Profile") as! ProfilePage
             self.navigationController?.pushViewController(profile, animated: true)*/
-            
-            self.performSegue(withIdentifier: "theSegue", sender: self)
-            
-            
-        } else if indexPath.row == 1 {
-            
-            let profile : ClinicsTableViewNew = self.storyboard?.instantiateViewController(withIdentifier: "Segue") as! ClinicsTableViewNew
-            self.navigationController?.pushViewController(profile, animated: true)
+        
+        if indexPath.row == 0 {
+        let vc = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.vc) as? ProfilePage
+            self.view.window?.rootViewController = vc
+            self.view.window?.makeKeyAndVisible()
+        
         }
-    }
+        
+        else if indexPath.row == 1 {
+            
+            let settings = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.settings) as? SettingPage
+                self.view.window?.rootViewController = settings
+                self.view.window?.makeKeyAndVisible()
+            
+            
+            /*let profile : ClinicsTableViewNew = self.storyboard?.instantiateViewController(withIdentifier: "Segue") as! ClinicsTableViewNew
+            self.navigationController?.pushViewController(profile, animated: true)*/
+        }else if indexPath.row == 2 {
+            let appointments = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.BookingAppointments) as? BookingAppointmentsPage
+                self.view.window?.rootViewController = appointments
+                self.view.window?.makeKeyAndVisible()
+            
+        }
+            
+            //self.performSegue(withIdentifier: "theSegue", sender: self)
+            
+            
+        }
+    
     
     
     @IBAction func sideMenuButton(_ sender: UIButton) {
@@ -232,7 +251,15 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
             
             
             if indexPath.row == 0 {
-                performSegue(withIdentifier: "Segue1", sender: self)
+                
+                let vc = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.vc) as? ProfilePage
+                    self.view.window?.rootViewController = vc
+                    self.view.window?.makeKeyAndVisible()
+                
+                
+                //performSegue(withIdentifier: "Segue1", sender: self)
+                
+                
                 /*let VCv = storyboard?.instantiateViewController(withIdentifier: "Segue1") as! ClinicsTableViewNew
                 self.navigationController?.pushViewController(VCv, animated: true)
                 
