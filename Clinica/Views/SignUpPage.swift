@@ -33,6 +33,7 @@ class SignUpPage: UIViewController {
     
 
     @IBAction func SignUpTapped(_ sender: UIButton) {
+        
         // Validate the fields
         let error = validateFields()
         

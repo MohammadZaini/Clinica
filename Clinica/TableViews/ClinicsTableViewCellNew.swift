@@ -18,6 +18,11 @@ class ClinicsTableViewCellNew: UITableViewCell {
     
     @IBOutlet weak var reviewsImage: UIImageView!
     
+    @IBOutlet weak var workingHoursImage: UIImageView!
+    
+    @IBOutlet weak var appointmentImage: UIImageView!
+    
+    
     
     @IBOutlet weak var doctorName: UILabel!
     
@@ -27,7 +32,9 @@ class ClinicsTableViewCellNew: UITableViewCell {
     	
     @IBOutlet weak var reviewsLabel: UILabel!
     
+    @IBOutlet weak var AppointmentLabel: UILabel!
     
+    @IBOutlet weak var workingHoursLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,17 +42,25 @@ class ClinicsTableViewCellNew: UITableViewCell {
     }
     
     func setUpCell(firstImage : UIImage , secondImage : UIImage , thirdImage : UIImage,
-                   forthImage : UIImage , doctorName1 : String , TelephoneNumber1 : Int,
-                   locationName1 : String , review1 :String){
-        personImage.image = firstImage
-         locationImage.image = secondImage
-         TelephoneImage.image = thirdImage
-         reviewsImage.image = forthImage
+                   forthImage : UIImage , fifthImage :UIImage , sixthImage :UIImage,
+                   
+                   doctorName1 : String , TelephoneNumber1 : Int,
+                   locationName1 : String ,WorkingHours : String , appointment : String ,review1 :String){
         
-        doctorName.text = doctorName1
-        telephoneNumber.text = "\(TelephoneNumber1)"
-        locationName.text = locationName1
-        reviewsLabel.text = review1
+        personImage.image       = firstImage
+        locationImage.image     = secondImage
+        TelephoneImage.image    = thirdImage
+        workingHoursImage.image = forthImage
+        appointmentImage.image  = fifthImage
+        reviewsImage.image      = sixthImage
+       
+        
+        doctorName.text        = doctorName1
+        telephoneNumber.text   = "\(TelephoneNumber1)"
+        locationName.text      = locationName1
+        reviewsLabel.text      = review1
+        AppointmentLabel.text  = appointment
+        workingHoursLabel.text = WorkingHours
         
         
         

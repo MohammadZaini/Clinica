@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 
 class ViewController: UIViewController {
+    var AgreeIconClick : Bool! = false
 
     @IBOutlet weak var EmailTextfield: UITextField!
     
@@ -18,12 +19,76 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var RemeberMeButton: UIButton!
+    
+   /*@IBAction func RememberMeTapped(_ sender: UIButton) {
+        
+        if(AgreeIconClick == false) {
+
+         if let image = UIImage(named: "checkImg") {
+           RemeberMeButton.setBackgroundImage(image, for: .normal)
+         }
+            AgreeIconClick = true
+            
+         } else {
+         if let image = UIImage(named: "uncheckimg") {
+           RemeberMeButton.setBackgroundImage(image, for: .normal)
+        }
+            AgreeIconClick = false
+        }
+        
+        
+       
+        
+        
+    }*/
+    
+   /*func checkAndAdd(){
+        
+        if UserDefaults.standard.string(forKey: "rememberMe") == "1" {
+
+         if let image = UIImage(named: "checkImg") {
+         RemeberMeButton.setBackgroundImage(image, for: .normal)
+          }
+
+         AgreeIconClick = true
+
+         // Set values
+                  self.EmailTextfield.text = UserDefaults.standard.string(forKey: "userMail") ?? ""
+                  self.PasswordTextfield.text = UserDefaults.standard.string(forKey: "userPassword") ?? ""
+
+         }else{
+
+         if let image = UIImage(named: "uncheckimg") {
+         RemeberMeButton.setBackgroundImage(image, for: .normal)
+         }
+
+         AgreeIconClick = false
+        }
+    }*/
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
+        //checkAndAdd()
+        
     }
 
     @IBAction func loginTapped(_ sender: UIButton) {
+        
+       /* if(AgreeIconClick == true) {
+
+        UserDefaults.standard.set("1", forKey: "rememberMe")
+        UserDefaults.standard.set(EmailTextfield.text ?? "" , forKey: "userMail")
+        UserDefaults.standard.set(PasswordTextfield.text ?? "", forKey: "userPassword")
+
+        print("Mail & Password Saved Successfully")
+
+        }else{
+
+        UserDefaults.standard.set("2", forKey: "rememberMe")
+
+        }*/
         
         // TODO: Validate Text Fields
         

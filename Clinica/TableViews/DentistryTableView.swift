@@ -1,23 +1,15 @@
 //
-//  AppointmentsPage.swift
+//  DentistryTableView.swift
 //  Clinica
 //
-//  Created by HTU on 8/24/22.
+//  Created by htu on 11/09/2022.
 //  Copyright © 2022 HTU. All rights reserved.
 //
 
 import UIKit
-import Firebase
-import FirebaseFirestore
 
+class DentistryTableView: UIViewController {
 
-class AppointmentsPage: UIViewController  {
-
-    //var AppointmentsArray = []()
-    
-    
-
-    @IBOutlet weak var AppointmentsTV: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

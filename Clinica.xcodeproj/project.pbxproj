@@ -19,6 +19,8 @@
 		35339BF728C91C1E00F72A87 /* BookingAppointmentsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BF628C91C1C00F72A87 /* BookingAppointmentsPage.swift */; };
 		35339BF928CA3C0F00F72A87 /* users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BF828CA3C0F00F72A87 /* users.swift */; };
 		35339BFB28CA4B8500F72A87 /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BFA28CA4B8500F72A87 /* SettingPage.swift */; };
+		35339BFE28CE6D0100F72A87 /* DentistryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BFD28CE6D0100F72A87 /* DentistryTableView.swift */; };
+		35339C0128CE6F4500F72A87 /* DentistryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339C0028CE6F4500F72A87 /* DentistryTVCell.swift */; };
 		35A2547F28B64E6A00C2FBB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */; };
 		35A2548128B64E6A00C2FBB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */; };
 		35A2548328B64E6A00C2FBB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2548228B64E6A00C2FBB6 /* ViewController.swift */; };
@@ -55,6 +57,8 @@
 		35339BF628C91C1C00F72A87 /* BookingAppointmentsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingAppointmentsPage.swift; sourceTree = "<group>"; };
 		35339BF828CA3C0F00F72A87 /* users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = users.swift; sourceTree = "<group>"; };
 		35339BFA28CA4B8500F72A87 /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		35339BFD28CE6D0100F72A87 /* DentistryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentistryTableView.swift; sourceTree = "<group>"; };
+		35339C0028CE6F4500F72A87 /* DentistryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentistryTVCell.swift; sourceTree = "<group>"; };
 		35A2547B28B64E6A00C2FBB6 /* Clinica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clinica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		35339BFC28CA95E700F72A87 /* Sidemenu */ = {
+			isa = PBXGroup;
+			children = (
+				35339BF228C8E51500F72A87 /* SideMenuTVCell.swift */,
+				35339BF428C8F06400F72A87 /* ProfilePage.swift */,
+				35339BFA28CA4B8500F72A87 /* SettingPage.swift */,
+			);
+			path = Sidemenu;
+			sourceTree = "<group>";
+		};
+		35339BFF28CE6D2300F72A87 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				35A728FC28BBB97500A76795 /* ClinicsTableViewNew.swift */,
+				35A728FE28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift */,
+				35339BFD28CE6D0100F72A87 /* DentistryTableView.swift */,
+				35339C0028CE6F4500F72A87 /* DentistryTVCell.swift */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
 		35A2547228B64E6A00C2FBB6 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +143,8 @@
 		35A2547D28B64E6A00C2FBB6 /* Clinica */ = {
 			isa = PBXGroup;
 			children = (
+				35339BFF28CE6D2300F72A87 /* TableViews */,
+				35339BFC28CA95E700F72A87 /* Sidemenu */,
 				35339BE628C7E22E00F72A87 /* Helpers */,
 				35339BE828C7E23C00F72A87 /* Utilities.swift */,
 				35339BEA28C7E24400F72A87 /* Constants.swift */,
@@ -125,17 +152,11 @@
 				35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */,
 				35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */,
 				35A2548428B64E6A00C2FBB6 /* Main.storyboard */,
-				35339BFA28CA4B8500F72A87 /* SettingPage.swift */,
 				35339BF628C91C1C00F72A87 /* BookingAppointmentsPage.swift */,
-				35339BF428C8F06400F72A87 /* ProfilePage.swift */,
 				35339BF828CA3C0F00F72A87 /* users.swift */,
-				35339BF228C8E51500F72A87 /* SideMenuTVCell.swift */,
 				35339BF028C8036400F72A87 /* HomeTabBar.swift */,
-				35339BE428C7DCCA00F72A87 /* SignUpPage.swift */,
 				35A7290628BD326D00A76795 /* ClinicsCvHeader.swift */,
 				35A7290228BCF2A700A76795 /* TopCollectionViewCellHomePage.swift */,
-				35A728FE28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift */,
-				35A728FC28BBB97500A76795 /* ClinicsTableViewNew.swift */,
 				35A2548728B64E6B00C2FBB6 /* Assets.xcassets */,
 				35A2548928B64E6B00C2FBB6 /* LaunchScreen.storyboard */,
 				35339BEE28C8005F00F72A87 /* GoogleService-Info.plist */,
@@ -155,6 +176,7 @@
 				35A2549428B653C400C2FBB6 /* HealthCarePage.swift */,
 				35A2548228B64E6A00C2FBB6 /* ViewController.swift */,
 				35339BEC28C7EC6900F72A87 /* LoginSignUpPage.swift */,
+				35339BE428C7DCCA00F72A87 /* SignUpPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35339C0128CE6F4500F72A87 /* DentistryTVCell.swift in Sources */,
 				35A2549E28B78EBA00C2FBB6 /* ClinicsTableView.swift in Sources */,
 				35339BEB28C7E24400F72A87 /* Constants.swift in Sources */,
 				35A2548328B64E6A00C2FBB6 /* ViewController.swift in Sources */,
@@ -306,6 +329,7 @@
 				35FDB8F728BE5C4F001F7231 /* MapVC.swift in Sources */,
 				35A2549B28B656C900C2FBB6 /* ClinicsCollectionViewCell.swift in Sources */,
 				35339BF928CA3C0F00F72A87 /* users.swift in Sources */,
+				35339BFE28CE6D0100F72A87 /* DentistryTableView.swift in Sources */,
 				35339BED28C7EC6900F72A87 /* LoginSignUpPage.swift in Sources */,
 				35A2549328B6539400C2FBB6 /* HomePage.swift in Sources */,
 				35339BFB28CA4B8500F72A87 /* SettingPage.swift in Sources */,

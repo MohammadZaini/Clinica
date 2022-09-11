@@ -17,6 +17,7 @@ class BookingAppointmentsPage: UIViewController {
         
     @IBOutlet weak var AppointmentTextfield: UITextField!
     @IBOutlet weak var ConfirmButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,16 +46,65 @@ class BookingAppointmentsPage: UIViewController {
         
     }
     
-    func addDate(date : Int  , time : Int){
+    @IBAction func ConfirmButtonTapped(_ sender: UIButton) {
+        
+       // let db = Firestore.firestore()
+        let appointmentDate = AppointmentTextfield.text!
         
         let db = Firestore.firestore()
         
-       // db.collection("Appointments").addDocument(data: []) { <#Error?#> in
+        db.collection("Appointments").addDocument(data: ["Date": appointmentDate]) { error in
             
-        //}
+            //check for errors
+            
+            if error == nil {
+                // No errors
+                
+            }else{
+                
+                // Handle the error
+                
+                self.showAlert(msg: "Please book an appointment")
+                
+            }
+            
+            
+            
+        }
+        
+        self.performSegue(withIdentifier: "appointmentSegue", sender: self)
+        
+        self.fetchData()
+       
+    }
+    
+    func fetchData(){
+        
+        let db = Firestore.firestore()
+        db.collection("Appointments").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
+    }
+    
+    func showAlert(msg : String){
+        let alert = UIAlertController(title: "Alert", message: "Please book an appointment", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "close", style: .default))
+        present(alert,animated: true,completion: nil)
+        
+        
+    }
+
+    
+  
         
         
     }
     
   
-}
+
