@@ -8,23 +8,50 @@
 
 import UIKit
 
-class DentistryTableView: UIViewController {
-
+class DentistryTableView: UIViewController , UITableViewDelegate , UITableViewDataSource {
+    var DentistryArray = [DentistryClinics]()
+    
+    @IBOutlet weak var DentistryTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        DentistryTableView.delegate = self
+        DentistryTableView.dataSource = self
+        
+        DentistryArray.append(DentistryClinics.init(DocImage: UIImage(systemName: "person")!, TeleImage: UIImage(systemName: "teletype")!, LocImg: UIImage(systemName: "location.fill")!, WorkingHImage: UIImage(systemName: "clock")!, AppointImage: UIImage(systemName:"calendar")!, RevImage: UIImage(systemName: "doc.text.fill")!, DocName: "Dr.Rashed", teleNum: 0799988442, LocLabel: "Marj-Alhamam", WorkingHLabel: "9-5", AppointLabel: "Book an appointment", RevLabel: "Leave a review"))
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return DentistryArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = DentistryTableView.dequeueReusableCell(withIdentifier: "DentistryCell", for: indexPath) as! DentistryTVCell
+        
+        let data = DentistryArray[indexPath.row]
+        cell.setUpCell(firstImage: data.DocImage, secondImage: data.TeleImage, thirdImage: data.LocImg, ForthImage: data.WorkingHImage, FifthImage: data.AppointImage, SixthImage: data.RevImage, firstLabel: data.DocName, SecondLabel: data.teleNum, ThirdLabel: data.LocLabel, ForthLabel: data.WorkingHLabel, FifthLabel: data.AppointLabel, SixthLabel: data.RevLabel)
+        return cell
     }
     
 
-    /*
-    // MARK: - Navigation
+   
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+}
 
+struct DentistryClinics{
+    
+    let DocImage : UIImage
+    let TeleImage : UIImage
+    let LocImg : UIImage
+    let WorkingHImage : UIImage
+    let AppointImage : UIImage
+    let RevImage : UIImage
+    
+    let DocName : String
+    let teleNum : Int
+    let LocLabel : String
+    let WorkingHLabel : String
+    let AppointLabel : String
+    let RevLabel : String
+    
 }
