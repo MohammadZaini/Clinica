@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout ,UITableViewDelegate , UITableViewDataSource {
     var arrSideMenu = ["Profile","Settings","Sign Out"]
@@ -53,6 +54,7 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
                 self.view.window?.rootViewController = appointments
                 self.view.window?.makeKeyAndVisible()
             
+        
         }
             
             //self.performSegue(withIdentifier: "theSegue", sender: self)
@@ -247,10 +249,14 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+       
+        
         if collectionView == ClinicsCollectionView {
-            
+            print("It is working!!")
             
             if indexPath.row == 0 {
+                
+                
                 
                 let vc = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.vc) as? ProfilePage
                     self.view.window?.rootViewController = vc

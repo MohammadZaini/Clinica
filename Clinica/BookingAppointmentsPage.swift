@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
+import FirebaseAuth
 
 class BookingAppointmentsPage: UIViewController {
     
@@ -48,23 +49,27 @@ class BookingAppointmentsPage: UIViewController {
     
     @IBAction func ConfirmButtonTapped(_ sender: UIButton) {
         
-       // let db = Firestore.firestore()
+        if AppointmentTextfield.text == "" {
+            self.showAlert()
+        }else{
+            
         let appointmentDate = AppointmentTextfield.text!
         
         let db = Firestore.firestore()
         
-        db.collection("Appointments").addDocument(data: ["Date": appointmentDate]) { error in
+        db.collection("Appointments").addDocument(data: ["Date": appointmentDate, "user_id" : Auth.auth().currentUser!.uid]) { error in
             
             //check for errors
             
             if error == nil {
                 // No errors
+               // self.test()
                 
             }else{
                 
                 // Handle the error
                 
-                self.showAlert(msg: "Please book an appointment")
+                self.showAlert()
                 
             }
             
@@ -72,10 +77,16 @@ class BookingAppointmentsPage: UIViewController {
             
         }
         
-        self.performSegue(withIdentifier: "appointmentSegue", sender: self)
-        
-        self.fetchData()
-       
+        //self.performSegue(withIdentifier: "appointmentSegue", sender: self)
+            self.test()
+        //self.fetchData()
+        }
+    }
+    
+    func test(){
+        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeTabBar
+        view.window?.rootViewController = homeViewController
+        self.view.window?.makeKeyAndVisible()
     }
     
     func fetchData(){
@@ -92,11 +103,11 @@ class BookingAppointmentsPage: UIViewController {
         }
     }
     
-    func showAlert(msg : String){
+    func showAlert(){
         let alert = UIAlertController(title: "Alert", message: "Please book an appointment", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "close", style: .default))
         present(alert,animated: true,completion: nil)
-        
+       
         
     }
 
