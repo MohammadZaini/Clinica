@@ -43,14 +43,14 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
 
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+   /*func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         
         return "Opthalmology Clinics"
-    }
+    }*/
 
     /*func numberOfSections(in tableView: UITableView) -> Int {
-        return arrSection.count */
+        return 1*/
       
       
       

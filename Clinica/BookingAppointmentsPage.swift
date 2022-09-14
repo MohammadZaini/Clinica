@@ -104,7 +104,7 @@ class BookingAppointmentsPage: UIViewController {
     }
     
     func showAlert(){
-        let alert = UIAlertController(title: "Alert", message: "Please book an appointment", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Alert", message: "You have to book an appointment first", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "close", style: .default))
         present(alert,animated: true,completion: nil)
        

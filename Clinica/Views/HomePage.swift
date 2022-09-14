@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout ,UITableViewDelegate , UITableViewDataSource {
+class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout, UITableViewDelegate , UITableViewDataSource {
     var arrSideMenu = ["Profile","Settings","Sign Out"]
     var arrSideMenuImages = [UIImage(systemName: "person")!, UIImage(systemName: "command")!,UIImage(systemName:"arrowshape.turn.up.backward")!]
     var isSideMenuOpen : Bool = false
@@ -23,7 +23,8 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         let cell = sideMenuTableView.dequeueReusableCell(withIdentifier: "sideCell", for: indexPath) as! SideMenuTVCell
         cell.sideMenuImage.image = arrSideMenuImages[indexPath.row]
         cell.sideMenuLabel.text = arrSideMenu[indexPath.row]
-        cell.backgroundColor = .systemOrange
+        cell.sideMenuLabel.textColor = .white
+        //cell.backgroundColor = .purple
         cell.tintColor = .white
         return   cell
     }
@@ -126,6 +127,9 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
 
         ClinicsCollectionView.delegate = self
         ClinicsCollectionView.dataSource = self
+    
+        
+    
         
         startTimer()
         PageControl.numberOfPages = arrTopVC.count
@@ -135,15 +139,16 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         
         TopCollectionView.delegate = self
         TopCollectionView.dataSource = self
+       
         
         
         sideMenuTableView.delegate = self
         sideMenuTableView.dataSource = self
         sideMenuView.isHidden = true
-        sideMenuTableView.backgroundColor = UIColor.groupTableViewBackground
+        //sideMenuTableView.backgroundColor = UIColor.groupTableViewBackground
         isSideMenuOpen = false
         sideMenuView.layer.cornerRadius = 15
-        sideMenuTableView.backgroundColor = .systemOrange
+        //sideMenuTableView.backgroundColor = .purple
         
         
         
@@ -204,7 +209,7 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
           let data = arrClinics[indexPath.row]
           cell.setUpCell(photo: data.photo, name: data.name)
               return cell}
-          else {
+         else {
               let cell2 = TopCollectionView.dequeueReusableCell(withReuseIdentifier: "TopCell", for: indexPath) as!TopCollectionViewCellHomePage
               
               cell2.TopImage.image = arrTopVC[indexPath.row]
@@ -213,7 +218,7 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
       }
       
       
-      func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
           if collectionView == self.ClinicsCollectionView {
               return CGSize(width: self.view.frame.width * 0.25, height: self.view.frame.width * 0.25)
           }
@@ -224,8 +229,8 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
       }
     
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        if  collectionView == self.TopCollectionView {
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        if  collectionView == self.ClinicsCollectionView {
             return 0
         }
         else {
@@ -244,23 +249,40 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
   }
     
     
-    
+
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-       
         
-        if collectionView == ClinicsCollectionView {
-            print("It is working!!")
+      
+            print("it is working sdf")
+        
+          if collectionView == self.ClinicsCollectionView{
+           
+           print("working!!!")
             
-            if indexPath.row == 0 {
+           if let vc = storyboard?.instantiateViewController(withIdentifier: "theTestSegue") as? ClinicsTableViewNew {
+                self.navigationController?.pushViewController(vc, animated: true)
+                
+            }
+            
+            /*if indexPath.row == 0 {
                 
                 
+                print("It is working!!")
+                 
                 
-                let vc = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.vc) as? ProfilePage
+               if let vc = storyboard?.instantiateViewController(withIdentifier: "mySegue1") as? ClinicsTableViewNew {
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    
+                }
+                }*/
+            
+            
+                /*let vc = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.vc) as? ProfilePage
                     self.view.window?.rootViewController = vc
-                    self.view.window?.makeKeyAndVisible()
+                    self.view.window?.makeKeyAndVisible()*/
                 
                 
                 //performSegue(withIdentifier: "Segue1", sender: self)
@@ -271,8 +293,11 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
                 
             view.window?.rootViewController = VCv
             view.window?.makeKeyAndVisible()*/
+        
             }
         }
+    
+   
          
     }
   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -288,19 +313,6 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         
    
   
-    
-    
-      
-      
-     
-    
-    
-    
-    
-    
-
-
-}
 
 struct Clinic {
     
@@ -308,4 +320,7 @@ struct Clinic {
     let name : String
     
 }
+
+
+
 

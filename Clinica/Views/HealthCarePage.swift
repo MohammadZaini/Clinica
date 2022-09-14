@@ -10,7 +10,7 @@ import UIKit
 
 class HealthCarePage: UIViewController, UITableViewDelegate , UITableViewDataSource {
     
-    var arrHealthCare = ["Headache","Headache","Headache","Headache","Headache","Headache","Headache","Headache","Headache","Headache","Headache","Headache"]
+    var arrHealthCare = ["Covid-19","Headache","Stomach cramps","Nose bleeding","Flu","Insomina"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrHealthCare.count
@@ -19,6 +19,7 @@ class HealthCarePage: UIViewController, UITableViewDelegate , UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = HealthCareTableView.dequeueReusableCell(withIdentifier: "HealthCareCella", for: indexPath)
         cell.textLabel?.text = arrHealthCare[indexPath.row]
+        cell.textLabel?.textColor = .white
         return cell
     }
     
