@@ -18,7 +18,15 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
     @IBOutlet weak var UploadPhotoButton: UIButton!
     
     @IBOutlet weak var progressView: UIProgressView!
+    
+    
+    
+    
     @IBAction func AddPhotoTapped(_ sender: UIButton) {
+        
+        UploadPhotoOutlet.isHidden = false
+        
+        
         ShowPhotoAlert()
     }
     @IBOutlet weak var emailLabel: UILabel!
@@ -27,8 +35,10 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
     
     @IBOutlet weak var lastName: UILabel!
     
+    @IBOutlet weak var UploadPhotoOutlet: UIButton!
     
     @IBAction func UploadphotoTapped(_ sender: UIButton) {
+        
         progressView.isHidden = false
         progressView.alpha = 1
         let randomID = UUID.init().uuidString
@@ -65,7 +75,9 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
         Utilities.styleHollowButton(UploadPhotoButton)
         PatientImage.layer.cornerRadius = PatientImage.frame.size.width / 2
         PatientImage.clipsToBounds = true
-        
+         
+        UploadPhotoOutlet.isHidden = true
+         
         loadData()
     }
     

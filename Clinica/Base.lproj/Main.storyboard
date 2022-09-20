@@ -195,8 +195,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="K1R-Ut-bVx">
-                                <rect key="frame" x="132" y="101.5" width="150" height="147.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="K1R-Ut-bVx">
+                                <rect key="frame" x="132" y="101.5" width="150" height="147"/>
                                 <color key="backgroundColor" red="0.83698886630000002" green="0.36939874290000002" blue="0.3372263908" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -243,28 +243,28 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FirstName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQD-IW-TUy">
-                                <rect key="frame" x="20" y="396" width="122" height="33"/>
+                                <rect key="frame" x="20" y="396" width="374" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZY-lr-EvA">
-                                <rect key="frame" x="20" y="489" width="188" height="41"/>
+                                <rect key="frame" x="20" y="489" width="374" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PhoneNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1r-Bn-mP5">
-                                <rect key="frame" x="20" y="538" width="188" height="41"/>
+                                <rect key="frame" x="20" y="538" width="374" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LastName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPl-N3-YDC">
-                                <rect key="frame" x="20" y="448" width="90" height="33"/>
+                                <rect key="frame" x="20" y="448" width="374" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -292,6 +292,7 @@
                         <outlet property="AddphotoButton" destination="ijd-ho-3SP" id="dXV-f8-EbL"/>
                         <outlet property="PatientImage" destination="K1R-Ut-bVx" id="E9m-Qw-nRc"/>
                         <outlet property="UploadPhotoButton" destination="ffI-UW-EPf" id="YMS-Dg-RYT"/>
+                        <outlet property="UploadPhotoOutlet" destination="ffI-UW-EPf" id="W5b-1L-J1n"/>
                         <outlet property="emailLabel" destination="JZY-lr-EvA" id="BTE-yC-hVP"/>
                         <outlet property="firstName" destination="DQD-IW-TUy" id="jDB-cZ-TMG"/>
                         <outlet property="lastName" destination="KPl-N3-YDC" id="Btf-iX-fRF"/>
@@ -1734,6 +1735,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
         <image name="location" catalog="system" width="128" height="118"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="teletype" catalog="system" width="128" height="98"/>
         <image name="thermometer.sun" catalog="system" width="103" height="128"/>
