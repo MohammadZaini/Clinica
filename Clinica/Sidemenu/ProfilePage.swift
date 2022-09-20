@@ -22,6 +22,11 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
         ShowPhotoAlert()
     }
     @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var firstName: UILabel!
+    @IBOutlet weak var phoneNumber: UILabel!
+    
+    @IBOutlet weak var lastName: UILabel!
+    
     
     @IBAction func UploadphotoTapped(_ sender: UIButton) {
         progressView.isHidden = false
@@ -60,6 +65,8 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
         Utilities.styleHollowButton(UploadPhotoButton)
         PatientImage.layer.cornerRadius = PatientImage.frame.size.width / 2
         PatientImage.clipsToBounds = true
+        
+        loadData()
     }
     
 
@@ -87,7 +94,7 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
         
         let picker = UIImagePickerController()
         picker.sourceType = type
-        picker.allowsEditing = true 
+        picker.allowsEditing = true
         picker.delegate = self
         present(picker, animated: true, completion: nil)
         
@@ -112,8 +119,40 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
     }
     
     
+    func loadData()  {
+        let db = Firestore.firestore()
+        
+       
+            db.collection("users").whereField("uid", isEqualTo: Auth.auth().currentUser!.uid).getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting from firestore: \(err)")
+                    
+                }else {
+                    
+                    for document in querySnapshot!.documents {
+                        
+                        print("\(document.documentID) => \(document.data())")
+                        print("should be shown documents :\(document.data())")
+                    
+                        let data =  document.data()
+                        
+                        self.emailLabel.text = data["email"] as? String
+                        self.firstName.text = data["firstname"] as? String
+                        self.lastName.text = data["lastname"] as? String
+                        self.phoneNumber.text = data["PhoneNumber"] as? String
+                        
+                        	
+                        
+                        
+                        
+                        
+                }
+        }
+    }
+    
+    
     //test
-   @Published var list = [Users]()
+   /*Published var list = [Users]()
     func getData(){
         // Get a reference to the database
         let db = Firestore.firestore()
@@ -133,7 +172,7 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
                 
                 
             }
-        }
+        }*/
         
         
     }

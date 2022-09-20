@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3528746C28DA3BDE008A8716 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528746B28DA3BDE008A8716 /* Service.swift */; };
 		35339BE528C7DCCB00F72A87 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BE428C7DCCA00F72A87 /* SignUpPage.swift */; };
 		35339BE728C7E22E00F72A87 /* Helpers in Resources */ = {isa = PBXBuildFile; fileRef = 35339BE628C7E22E00F72A87 /* Helpers */; };
 		35339BE928C7E23C00F72A87 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BE828C7E23C00F72A87 /* Utilities.swift */; };
@@ -49,6 +50,7 @@
 		157748DFA0AD46134DA0370D /* Pods_Clinica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clinica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B1C4CC7C0D8EAEFFFBF8CC /* Pods-Clinica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinica.release.xcconfig"; path = "Target Support Files/Pods-Clinica/Pods-Clinica.release.xcconfig"; sourceTree = "<group>"; };
 		2A66828FCC93048D5B5B1FE6 /* Pods-Clinica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinica.debug.xcconfig"; path = "Target Support Files/Pods-Clinica/Pods-Clinica.debug.xcconfig"; sourceTree = "<group>"; };
+		3528746B28DA3BDE008A8716 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		35339BE428C7DCCA00F72A87 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		35339BE628C7E22E00F72A87 /* Helpers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Helpers; sourceTree = "<group>"; };
 		35339BE828C7E23C00F72A87 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				35FDB8F628BE5C4F001F7231 /* MapVC.swift */,
+				3528746B28DA3BDE008A8716 /* Service.swift */,
 				35A2547D28B64E6A00C2FBB6 /* Clinica */,
 				35A2547C28B64E6A00C2FBB6 /* Products */,
 				7F4B5DA26A9D378694192D3A /* Pods */,
@@ -332,6 +335,7 @@
 				35A2549528B653C400C2FBB6 /* HealthCarePage.swift in Sources */,
 				35A2549928B6540D00C2FBB6 /* FavoritesPage.swift in Sources */,
 				35339BF128C8036400F72A87 /* HomeTabBar.swift in Sources */,
+				3528746C28DA3BDE008A8716 /* Service.swift in Sources */,
 				35339C0328CE92C600F72A87 /* NephrologyTableView.swift in Sources */,
 				35339BE928C7E23C00F72A87 /* Utilities.swift in Sources */,
 				35339BE528C7DCCB00F72A87 /* SignUpPage.swift in Sources */,

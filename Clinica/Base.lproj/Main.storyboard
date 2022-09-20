@@ -195,7 +195,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="K1R-Ut-bVx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="K1R-Ut-bVx">
                                 <rect key="frame" x="132" y="101.5" width="150" height="147.5"/>
                                 <color key="backgroundColor" red="0.83698886630000002" green="0.36939874290000002" blue="0.3372263908" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -243,28 +243,28 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FirstName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQD-IW-TUy">
-                                <rect key="frame" x="20" y="396" width="90" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LastName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPl-N3-YDC">
-                                <rect key="frame" x="118" y="396" width="90" height="33"/>
+                                <rect key="frame" x="20" y="396" width="122" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZY-lr-EvA">
-                                <rect key="frame" x="20" y="437" width="188" height="41"/>
+                                <rect key="frame" x="20" y="489" width="188" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PhoneNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1r-Bn-mP5">
-                                <rect key="frame" x="20" y="486" width="188" height="41"/>
+                                <rect key="frame" x="20" y="538" width="188" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LastName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPl-N3-YDC">
+                                <rect key="frame" x="20" y="448" width="90" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -293,12 +293,15 @@
                         <outlet property="PatientImage" destination="K1R-Ut-bVx" id="E9m-Qw-nRc"/>
                         <outlet property="UploadPhotoButton" destination="ffI-UW-EPf" id="YMS-Dg-RYT"/>
                         <outlet property="emailLabel" destination="JZY-lr-EvA" id="BTE-yC-hVP"/>
+                        <outlet property="firstName" destination="DQD-IW-TUy" id="jDB-cZ-TMG"/>
+                        <outlet property="lastName" destination="KPl-N3-YDC" id="Btf-iX-fRF"/>
+                        <outlet property="phoneNumber" destination="p1r-Bn-mP5" id="Smh-a9-BSp"/>
                         <outlet property="progressView" destination="Epv-uP-Kdb" id="bJJ-DV-gfG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58c-al-RKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1864" y="2537"/>
+            <point key="canvasLocation" x="1863.7681159420292" y="2536.6071428571427"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KH0-dZ-zp3">
@@ -358,6 +361,16 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxC-yG-e1H">
+                                <rect key="frame" x="99" y="472" width="241" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="khm-sZ-9WO" eventType="touchUpInside" id="aog-oO-O9w"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rsj-t5-tCd"/>
                         <color key="backgroundColor" red="0.20439612870000001" green="0.4696142673" blue="0.9647491574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -366,7 +379,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgw-YJ-bKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1129" y="1732"/>
+            <point key="canvasLocation" x="-1130.4347826086957" y="1731.6964285714284"/>
         </scene>
         <!--Booking Appointments Page-->
         <scene sceneID="90a-W9-zCB">
@@ -429,7 +442,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vve-Kv-8dY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1910.144927536232" y="1731.6964285714284"/>
+            <point key="canvasLocation" x="641" y="2471"/>
         </scene>
         <!--Clinics Table View New-->
         <scene sceneID="xac-q8-Adt">
@@ -461,8 +474,8 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wdf-io-8n2">
                                                     <rect key="frame" x="20" y="21" width="23.5" height="358"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Ib-GF-bwo">
-                                                            <rect key="frame" x="0.0" y="1.5" width="23.5" height="40.5"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Ib-GF-bwo">
+                                                            <rect key="frame" x="0.0" y="0.5" width="23.5" height="42"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teletype" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g3b-aA-uTL">
@@ -762,7 +775,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2D8-4W-WMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2935" y="2488"/>
+            <point key="canvasLocation" x="2526" y="2527"/>
         </scene>
         <!--Sign Up Page-->
         <scene sceneID="1WQ-b6-M9Q">
@@ -1241,7 +1254,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="367" id="dhp-S5-NR3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="367" id="dhp-S5-NR3" customClass="FavoriteTVCell" customModule="Clinica" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="367"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dhp-S5-NR3" id="306-TO-fxJ">
@@ -1314,6 +1327,20 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                                 </stackView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="appointmentImage" destination="JNz-cu-fmQ" id="eAe-n5-n63"/>
+                                            <outlet property="appointmentLabel" destination="wr1-yp-liT" id="YLa-kv-pLT"/>
+                                            <outlet property="doctorImage" destination="pWg-we-bd4" id="bT1-Om-zLC"/>
+                                            <outlet property="doctorLabel" destination="SMc-lT-ZZ3" id="c8Z-QM-Obv"/>
+                                            <outlet property="locationImage" destination="Bhh-aR-u1e" id="uMZ-0e-NDn"/>
+                                            <outlet property="locationLabel" destination="2H6-fh-N3w" id="iaE-7s-yxt"/>
+                                            <outlet property="reviewImage" destination="zRW-Cy-Jcj" id="VFw-yO-ZbS"/>
+                                            <outlet property="reviewLabel" destination="2w6-bb-ecV" id="pST-tr-dpy"/>
+                                            <outlet property="telephoneImage" destination="ORI-hB-L9G" id="Msz-9r-o9F"/>
+                                            <outlet property="telephoneLabel" destination="wun-kL-lwq" id="ikp-AT-Jnn"/>
+                                            <outlet property="workingHoursImage" destination="x3M-gA-GJz" id="YFV-09-Dpp"/>
+                                            <outlet property="workingHoursLabel" destination="5AA-ej-NGu" id="Dg5-OX-BT4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1334,7 +1361,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxH-js-Cw2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7059" y="726"/>
+            <point key="canvasLocation" x="2281" y="1304"/>
         </scene>
         <!--Login Sign Up Page-->
         <scene sceneID="sjw-7h-ueK">
@@ -1706,6 +1733,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
         <image name="list.triangle" catalog="system" width="128" height="91"/>
         <image name="location" catalog="system" width="128" height="118"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="teletype" catalog="system" width="128" height="98"/>
         <image name="thermometer.sun" catalog="system" width="103" height="128"/>

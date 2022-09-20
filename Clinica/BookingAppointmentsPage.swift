@@ -64,6 +64,7 @@ class BookingAppointmentsPage: UIViewController {
             if error == nil {
                 // No errors
                // self.test()
+              
                 
             }else{
                 

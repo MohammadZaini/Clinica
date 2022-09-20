@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class ClinicsTableViewCellNew: UITableViewCell {
     
@@ -44,7 +45,7 @@ class ClinicsTableViewCellNew: UITableViewCell {
     func setUpCell(firstImage : UIImage , secondImage : UIImage , thirdImage : UIImage,
                    forthImage : UIImage , fifthImage :UIImage , sixthImage :UIImage,
                    
-                   doctorName1 : String , TelephoneNumber1 : Int,
+                   doctorName1 : String , TelephoneNumber1 : String,
                    locationName1 : String ,WorkingHours : String , appointment : String ,review1 :String){
         
         personImage.image       = firstImage
@@ -56,7 +57,7 @@ class ClinicsTableViewCellNew: UITableViewCell {
        
         
         doctorName.text        = doctorName1
-        telephoneNumber.text   = "\(TelephoneNumber1)"
+        telephoneNumber.text   = TelephoneNumber1
         locationName.text      = locationName1
         reviewsLabel.text      = review1
         AppointmentLabel.text  = appointment

@@ -11,6 +11,8 @@ import UIKit
 class FavoritesPage: UIViewController {
 
     @IBOutlet weak var FavoriteTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
