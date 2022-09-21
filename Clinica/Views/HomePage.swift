@@ -267,12 +267,28 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
           if collectionView == self.ClinicsCollectionView{
            
            print("working!!!")
-              performSegue(withIdentifier: "theTestSegue", sender: self)
+              if indexPath.row == 0 {
+                  //performSegue(withIdentifier: "theTestSegue", sender: self)
+                 /* if let vc = storyboard?.instantiateViewController(withIdentifier: "theTestSegue") as? ClinicsTableViewNew {
+                       self.navigationController?.pushViewController(vc, animated: true)*/
+                      
+                      let clinics1 = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.Clinics) as? ClinicsTableViewNew
+                          self.view.window?.rootViewController = clinics1
+                          self.view.window?.makeKeyAndVisible()
+                  
+              }else if indexPath.row == 1{
+                  let clinics2 = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.dentalClinics) as? DentistryTableView
+                      self.view.window?.rootViewController = clinics2
+                      self.view.window?.makeKeyAndVisible()
+                  
+              }
+              
+              
             
-           /*if let vc = storyboard?.instantiateViewController(withIdentifier: "theTestSegue") as? ClinicsTableViewNew {
-                self.navigationController?.pushViewController(vc, animated: true)
+            
+           
                 
-           }*/
+           }
             
             /*if indexPath.row == 0 {
                 
@@ -306,7 +322,7 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
     
    
          
-    }
+    
   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Segue"{
             

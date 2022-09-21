@@ -37,6 +37,8 @@ class ClinicsTableViewCellNew: UITableViewCell {
     
     @IBOutlet weak var workingHoursLabel: UILabel!
     
+    @IBOutlet weak var addtoFavorite: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

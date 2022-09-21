@@ -17,6 +17,8 @@ struct Constants {
         static let vc = "Profile"
         static let settings = "Settings"
         static let BookingAppointments = "Appointments"
+        static let Clinics = "Clinics"
+        static let dentalClinics = "DentalClinics"
     }
     
     
