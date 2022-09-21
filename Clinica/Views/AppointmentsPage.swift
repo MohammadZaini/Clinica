@@ -79,6 +79,7 @@ class AppointmentsPage: UIViewController , UITableViewDelegate ,UITableViewDataS
                             
                             
                 }
+                        self.AppointmentsTV.reloadData()    
 
 }
                                                           }

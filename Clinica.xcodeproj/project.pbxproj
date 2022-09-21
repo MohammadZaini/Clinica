@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3528746C28DA3BDE008A8716 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528746B28DA3BDE008A8716 /* Service.swift */; };
+		3528746E28DAA3EA008A8716 /* ClinicaLS.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3528746D28DAA3E9008A8716 /* ClinicaLS.gif */; };
+		3528747028DAA483008A8716 /* LaunchScreenGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528746F28DAA483008A8716 /* LaunchScreenGif.swift */; };
 		35339BE528C7DCCB00F72A87 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BE428C7DCCA00F72A87 /* SignUpPage.swift */; };
 		35339BE728C7E22E00F72A87 /* Helpers in Resources */ = {isa = PBXBuildFile; fileRef = 35339BE628C7E22E00F72A87 /* Helpers */; };
 		35339BE928C7E23C00F72A87 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35339BE828C7E23C00F72A87 /* Utilities.swift */; };
@@ -51,6 +53,8 @@
 		27B1C4CC7C0D8EAEFFFBF8CC /* Pods-Clinica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinica.release.xcconfig"; path = "Target Support Files/Pods-Clinica/Pods-Clinica.release.xcconfig"; sourceTree = "<group>"; };
 		2A66828FCC93048D5B5B1FE6 /* Pods-Clinica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinica.debug.xcconfig"; path = "Target Support Files/Pods-Clinica/Pods-Clinica.debug.xcconfig"; sourceTree = "<group>"; };
 		3528746B28DA3BDE008A8716 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		3528746D28DAA3E9008A8716 /* ClinicaLS.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ClinicaLS.gif; sourceTree = "<group>"; };
+		3528746F28DAA483008A8716 /* LaunchScreenGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenGif.swift; sourceTree = "<group>"; };
 		35339BE428C7DCCA00F72A87 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		35339BE628C7E22E00F72A87 /* Helpers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Helpers; sourceTree = "<group>"; };
 		35339BE828C7E23C00F72A87 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -171,7 +175,9 @@
 				35A7290628BD326D00A76795 /* ClinicsCvHeader.swift */,
 				35A7290228BCF2A700A76795 /* TopCollectionViewCellHomePage.swift */,
 				35A2548728B64E6B00C2FBB6 /* Assets.xcassets */,
+				3528746D28DAA3E9008A8716 /* ClinicaLS.gif */,
 				35A2548928B64E6B00C2FBB6 /* LaunchScreen.storyboard */,
+				3528746F28DAA483008A8716 /* LaunchScreenGif.swift */,
 				35339BEE28C8005F00F72A87 /* GoogleService-Info.plist */,
 				35A2548C28B64E6B00C2FBB6 /* Info.plist */,
 			);
@@ -268,6 +274,7 @@
 				35A2548B28B64E6B00C2FBB6 /* LaunchScreen.storyboard in Resources */,
 				35A2548828B64E6B00C2FBB6 /* Assets.xcassets in Resources */,
 				35339BEF28C8005F00F72A87 /* GoogleService-Info.plist in Resources */,
+				3528746E28DAA3EA008A8716 /* ClinicaLS.gif in Resources */,
 				35A2548628B64E6A00C2FBB6 /* Main.storyboard in Resources */,
 				35339BE728C7E22E00F72A87 /* Helpers in Resources */,
 			);
@@ -323,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35339C0128CE6F4500F72A87 /* DentistryTVCell.swift in Sources */,
+				3528747028DAA483008A8716 /* LaunchScreenGif.swift in Sources */,
 				35339C4728D2976600F72A87 /* FavoriteTVCell.swift in Sources */,
 				35A2549E28B78EBA00C2FBB6 /* ClinicsTableView.swift in Sources */,
 				35339BEB28C7E24400F72A87 /* Constants.swift in Sources */,

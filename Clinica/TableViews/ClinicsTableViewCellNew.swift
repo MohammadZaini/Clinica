@@ -44,19 +44,19 @@ class ClinicsTableViewCellNew: UITableViewCell {
         // Initialization code
     }
     
-    func setUpCell(firstImage : UIImage , secondImage : UIImage , thirdImage : UIImage,
-                   forthImage : UIImage , fifthImage :UIImage , sixthImage :UIImage,
+    func setUpCell(/*firstImage : UIImage , secondImage : UIImage , thirdImage : UIImage,
+                   forthImage : UIImage , fifthImage :UIImage , sixthImage :UIImage,*/
                    
                    doctorName1 : String , TelephoneNumber1 : String,
                    locationName1 : String ,WorkingHours : String , appointment : String ,review1 :String){
         
-        personImage.image       = firstImage
+      /*  personImage.image       = firstImage
         locationImage.image     = secondImage
         TelephoneImage.image    = thirdImage
         workingHoursImage.image = forthImage
         appointmentImage.image  = fifthImage
         reviewsImage.image      = sixthImage
-       
+       */
         
         doctorName.text        = doctorName1
         telephoneNumber.text   = TelephoneNumber1

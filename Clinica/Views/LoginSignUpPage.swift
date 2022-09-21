@@ -7,14 +7,13 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class LoginSignUpPage: UIViewController {
 
     @IBOutlet weak var SignUpButton: UIButton!
     @IBOutlet weak var LoginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setUpElements()
     }
     

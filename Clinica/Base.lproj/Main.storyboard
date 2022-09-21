@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1450.7246376811595" y="-7.3660714285714279"/>
+            <point key="canvasLocation" x="1864" y="-72"/>
         </scene>
         <!--Clinics Table View-->
         <scene sceneID="SJf-f9-69z">
@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cib-cY-x2A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3961" y="1501"/>
+            <point key="canvasLocation" x="5074" y="2328"/>
         </scene>
         <!--MapVC-->
         <scene sceneID="klB-7G-rYV">
@@ -185,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NC7-iI-tem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4800" y="1501"/>
+            <point key="canvasLocation" x="5738" y="2328"/>
         </scene>
         <!--Profile Page-->
         <scene sceneID="84M-he-KcO">
@@ -302,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58c-al-RKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1130" y="2510"/>
+            <point key="canvasLocation" x="1093" y="1550"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KH0-dZ-zp3">
@@ -345,7 +345,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RdK-VP-0ye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-287" y="1645"/>
+            <point key="canvasLocation" x="3561" y="2328"/>
         </scene>
         <!--Setting Page-->
         <scene sceneID="pBr-nD-IFH">
@@ -380,7 +380,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgw-YJ-bKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1130.4347826086957" y="1731.6964285714284"/>
+            <point key="canvasLocation" x="-510" y="1550"/>
         </scene>
         <!--Booking Appointments Page-->
         <scene sceneID="90a-W9-zCB">
@@ -442,7 +442,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vve-Kv-8dY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2923" y="1531"/>
+            <point key="canvasLocation" x="4568" y="1531"/>
         </scene>
         <!--Clinics Table View New-->
         <scene sceneID="xac-q8-Adt">
@@ -629,8 +629,13 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7FY-9b-5XD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="G4u-YA-TvP">
+                    <connections>
+                        <action selector="refresh:" destination="1Qw-AX-qPO" id="7oa-x8-Zdv"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="761" y="1531"/>
+            <point key="canvasLocation" x="1864" y="1550"/>
         </scene>
         <!--Dentistry Table View-->
         <scene sceneID="ETC-i7-CW7">
@@ -786,8 +791,9 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2D8-4W-WMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="XA8-7x-HKN"/>
             </objects>
-            <point key="canvasLocation" x="709" y="2328"/>
+            <point key="canvasLocation" x="2777" y="1550"/>
         </scene>
         <!--Sign Up Page-->
         <scene sceneID="1WQ-b6-M9Q">
@@ -1370,12 +1376,12 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxH-js-Cw2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3288" y="2527"/>
+            <point key="canvasLocation" x="6307" y="1550"/>
         </scene>
         <!--Login Sign Up Page-->
         <scene sceneID="sjw-7h-ueK">
             <objects>
-                <viewController id="JBE-G4-PL6" customClass="LoginSignUpPage" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="loginSignup" storyboardIdentifier="loginSignup" id="JBE-G4-PL6" customClass="LoginSignUpPage" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P0o-t2-Kvr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1428,7 +1434,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2a-iU-5L9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540.57971014492762" y="-7.3660714285714279"/>
+            <point key="canvasLocation" x="801" y="-72"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dyP-fK-fue">
@@ -1446,7 +1452,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsR-Q7-qD2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-233" y="-7"/>
+            <point key="canvasLocation" x="-251" y="-72"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PZY-Bb-c44">
@@ -1464,7 +1470,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kf2-5c-UrL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1857" y="1732"/>
+            <point key="canvasLocation" x="-1243" y="1550"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="09T-RQ-sSQ">
@@ -1483,7 +1489,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhZ-kL-NW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1858" y="2510"/>
+            <point key="canvasLocation" x="248" y="1550"/>
         </scene>
         <!--Nephrology Table View-->
         <scene sceneID="ffM-xm-jXL">
@@ -1628,7 +1634,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ova-YG-AFA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4135" y="2527"/>
+            <point key="canvasLocation" x="4309" y="2328"/>
         </scene>
         <!--Health Care-->
         <scene sceneID="e1A-I0-1q7">
@@ -1721,7 +1727,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eba-Pf-PK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1864" y="1532"/>
+            <point key="canvasLocation" x="3620" y="1531"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

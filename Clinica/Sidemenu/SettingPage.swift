@@ -18,13 +18,18 @@ class SettingPage: UIViewController {
     }
     
 
+    func signOut(){
+        let signinControl = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.loginSignup) as? LoginSignUpPage
+        view.window?.rootViewController = signinControl
+        view.window?.makeKeyAndVisible()
+    }
+    
     @IBAction func signOutTapped(_ sender: UIButton) {
         
         
         do {
             try Auth.auth().signOut()
-            let navController = UINavigationController(rootViewController: LoginSignUpPage())
-            self.present(navController, animated: true , completion: nil)
+            signOut()
             
         }catch let error {
             print("failed to sign out with error...",error)
