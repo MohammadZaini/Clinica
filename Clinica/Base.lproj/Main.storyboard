@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cib-cY-x2A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4339" y="1734"/>
+            <point key="canvasLocation" x="3961" y="1501"/>
         </scene>
         <!--MapVC-->
         <scene sceneID="klB-7G-rYV">
@@ -185,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NC7-iI-tem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6052.1739130434789" y="1617.8571428571429"/>
+            <point key="canvasLocation" x="4800" y="1501"/>
         </scene>
         <!--Profile Page-->
         <scene sceneID="84M-he-KcO">
@@ -302,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58c-al-RKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1863.7681159420292" y="2536.6071428571427"/>
+            <point key="canvasLocation" x="-1130" y="2510"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KH0-dZ-zp3">
@@ -443,12 +443,12 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vve-Kv-8dY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="2471"/>
+            <point key="canvasLocation" x="2906" y="1501"/>
         </scene>
         <!--Clinics Table View New-->
         <scene sceneID="xac-q8-Adt">
             <objects>
-                <viewController storyboardIdentifier="Segue" id="1Qw-AX-qPO" customClass="ClinicsTableViewNew" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="theTestSegue" id="1Qw-AX-qPO" customClass="ClinicsTableViewNew" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="ClinicsVC" id="XA6-mF-DdH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -628,7 +628,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7FY-9b-5XD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1575" y="1601"/>
+            <point key="canvasLocation" x="1864" y="1501"/>
         </scene>
         <!--Dentistry Table View-->
         <scene sceneID="ETC-i7-CW7">
@@ -949,7 +949,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="playback" reuseIdentifier="ClinicCell" id="2az-ub-NrQ" customClass="ClinicsCollectionViewCell" customModule="Clinica" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="61" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Du9-LI-9dL" customClass="ClinicsCollectionViewCell" customModule="Clinica" customModuleProvider="target">
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -971,13 +971,13 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="mo9-dL-GMJ" firstAttribute="top" secondItem="Du9-LI-9dL" secondAttribute="topMargin" id="8pc-0K-cRf"/>
-                                                <constraint firstItem="IhG-E6-VhP" firstAttribute="leading" secondItem="Du9-LI-9dL" secondAttribute="leading" constant="8" id="RiU-t6-AJs"/>
-                                                <constraint firstItem="mo9-dL-GMJ" firstAttribute="leading" secondItem="Du9-LI-9dL" secondAttribute="leading" constant="8" id="sI6-J6-3tY"/>
-                                                <constraint firstAttribute="bottom" secondItem="IhG-E6-VhP" secondAttribute="bottom" id="zHl-cP-5IE"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="mo9-dL-GMJ" firstAttribute="top" secondItem="2az-ub-NrQ" secondAttribute="topMargin" id="8pc-0K-cRf"/>
+                                            <constraint firstItem="IhG-E6-VhP" firstAttribute="leading" secondItem="2az-ub-NrQ" secondAttribute="leading" constant="8" id="RiU-t6-AJs"/>
+                                            <constraint firstItem="mo9-dL-GMJ" firstAttribute="leading" secondItem="2az-ub-NrQ" secondAttribute="leading" constant="8" id="sI6-J6-3tY"/>
+                                            <constraint firstAttribute="bottom" secondItem="IhG-E6-VhP" secondAttribute="bottom" id="zHl-cP-5IE"/>
+                                        </constraints>
                                         <size key="customSize" width="150" height="150"/>
                                         <connections>
                                             <outlet property="ClinicImage" destination="mo9-dL-GMJ" id="lnv-Uh-CH9"/>
@@ -986,7 +986,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="headerCell" id="Z4G-jr-KFj" customClass="ClinicsCvHeader" customModule="Clinica" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="headerCell" id="Z4G-jr-KFj" customClass="ClinicsCvHeader" customModule="Clinica" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -997,6 +997,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <viewLayoutGuide key="safeArea" id="czz-T3-jp0"/>
                                     <constraints>
                                         <constraint firstItem="vzJ-ml-01f" firstAttribute="top" secondItem="Z4G-jr-KFj" secondAttribute="top" id="53h-co-s1x"/>
                                         <constraint firstAttribute="trailing" secondItem="vzJ-ml-01f" secondAttribute="trailing" constant="2" id="BrS-5R-Mhy"/>
@@ -1146,9 +1147,6 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.20439612870000001" green="0.4696142673" blue="0.9647491574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <connections>
-                                            <segue destination="1Qw-AX-qPO" kind="show" id="3xC-Te-KUn"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1362,7 +1360,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxH-js-Cw2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2281" y="1304"/>
+            <point key="canvasLocation" x="3288" y="2527"/>
         </scene>
         <!--Login Sign Up Page-->
         <scene sceneID="sjw-7h-ueK">
@@ -1475,7 +1473,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhZ-kL-NW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2631.8840579710145" y="1722.9910714285713"/>
+            <point key="canvasLocation" x="-1858" y="2510"/>
         </scene>
         <!--Nephrology Table View-->
         <scene sceneID="ffM-xm-jXL">
@@ -1620,7 +1618,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ova-YG-AFA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4420" y="2594"/>
+            <point key="canvasLocation" x="4135" y="2527"/>
         </scene>
         <!--Health Care-->
         <scene sceneID="e1A-I0-1q7">
@@ -1713,13 +1711,12 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eba-Pf-PK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="635" y="1655"/>
+            <point key="canvasLocation" x="1133" y="2527"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="xuE-RS-fdZ"/>
         <segue reference="ucg-xZ-XG7"/>
-        <segue reference="wT1-rA-cS5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.forward" catalog="system" width="128" height="106"/>

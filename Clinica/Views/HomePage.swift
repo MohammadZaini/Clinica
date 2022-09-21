@@ -51,6 +51,8 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
             /*let profile : ClinicsTableViewNew = self.storyboard?.instantiateViewController(withIdentifier: "Segue") as! ClinicsTableViewNew
             self.navigationController?.pushViewController(profile, animated: true)*/
         }else if indexPath.row == 2 {
+
+            
             let appointments = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.BookingAppointments) as? BookingAppointmentsPage
                 self.view.window?.rootViewController = appointments
                 self.view.window?.makeKeyAndVisible()
@@ -127,6 +129,10 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
 
         ClinicsCollectionView.delegate = self
         ClinicsCollectionView.dataSource = self
+        
+        ClinicsCollectionView.isUserInteractionEnabled = true
+        TopCollectionView.isUserInteractionEnabled = false
+ 
     
         
     
@@ -261,11 +267,12 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
           if collectionView == self.ClinicsCollectionView{
            
            print("working!!!")
+              performSegue(withIdentifier: "theTestSegue", sender: self)
             
-           if let vc = storyboard?.instantiateViewController(withIdentifier: "theTestSegue") as? ClinicsTableViewNew {
+           /*if let vc = storyboard?.instantiateViewController(withIdentifier: "theTestSegue") as? ClinicsTableViewNew {
                 self.navigationController?.pushViewController(vc, animated: true)
                 
-            }
+           }*/
             
             /*if indexPath.row == 0 {
                 
