@@ -11,9 +11,18 @@ import FirebaseFirestore
 
 class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDataSource , UISearchBarDelegate {
     
-
+        
      //var arrSection = ["First Clinic","Second Clinic","Third Clinic"]
      var arrClinics = [Clinics]()
+    
+    let refreshControl = UIRefreshControl()
+    
+    @objc func updateData(){
+        refreshControl.endRefreshing()
+        ClinicaTableView.reloadData()
+        
+        }
+  
     
     
      //var filterdData = [String]()
@@ -31,6 +40,10 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
         print("Clinics Array :\(arrClinics.count)")
         
         loadData()
+        
+        refreshControl.addTarget(self, action: #selector(updateData), for: .valueChanged)
+        ClinicaTableView.addSubview(refreshControl)
+        
         
     
         
@@ -52,7 +65,7 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
 
     }
     
-    let refreshControl = UIRefreshControl()
+   
    /*func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         
@@ -86,7 +99,7 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
           
          // let data = arrClinics[indexPath.row]
          // cell.setUpCell(firstImage: data.doctorPhoto, secondImage: data.telephonePhoto, thirdImage: data.locationPhoto, forthImage: data.reviewPhoto, doctorName1: data.doctorN,                      TelephoneNumber1: data.telePhoneNum, locationName1: data.locationN, review1: data.reviews)*/
-      cell.setUpCell(doctorName1: data.doctorN, TelephoneNumber1: data.telePhoneNum, locationName1: data.locationN, WorkingHours: data.WorkingHoursLbl, appointment: data.Appointmentlbl, review1: data.reviews)
+      cell.setUpCell(ClinicName1: data.ClinicName, doctorName1: data.doctorN, TelephoneNumber1: data.telePhoneNum, locationName1: data.locationN, WorkingHours: data.WorkingHoursLbl, appointment: data.Appointmentlbl, review1: data.reviews)
      
           
           return cell
@@ -114,7 +127,7 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
                         
                        // self.arrClinics.append(Clinics.init(doctorPhoto: UIImage(systemName: "person")!, telephonePhoto: UIImage(systemName: "teletype")!, locationPhoto: UIImage(systemName: "location.fill")!, WorkingHoursPhoto: UIImage(systemName: "clock")!, AppointmentPhoto: UIImage(systemName: "calendar")!, reviewPhoto: UIImage(systemName: "doc.text.fill")!, doctorN: document.get("Doctor Name") as! String, telePhoneNum: document.get("Clinic Number") as! String, locationN: document.get("Clinic Location") as! String, WorkingHoursLbl: document.get("Working Hours") as! String, Appointmentlbl: document.get("Booking appointment") as! String, reviews: document.get("Reviews") as! String))
                         
-                        self.arrClinics.append(Clinics.init(doctorN: document.get("Doctor Name") as! String, telePhoneNum: document.get("Clinic Number") as! String, locationN: document.get("Clinic Location") as! String, WorkingHoursLbl: document.get("Working Hours") as! String, Appointmentlbl: document.get("Booking appointment") as! String, reviews: document.get("Reviews") as! String))
+                        self.arrClinics.append(Clinics.init(ClinicName: document.get("ClinicName") as! String, doctorN: document.get("Doctor Name") as! String, telePhoneNum: document.get("Clinic Number") as! String, locationN: document.get("Clinic Location") as! String, WorkingHoursLbl: document.get("Working Hours") as! String, Appointmentlbl: document.get("Booking appointment") as! String, reviews: document.get("Reviews") as! String))
                         
                        
                         print("\(self.arrClinics) from array###")
@@ -164,7 +177,7 @@ struct Clinics {
     let AppointmentPhoto    : UIImage
     let reviewPhoto         : UIImage
 */
-    //let ClinicName      : String
+    let ClinicName      : String
     let doctorN         : String
     let telePhoneNum    : String
     let locationN       : String

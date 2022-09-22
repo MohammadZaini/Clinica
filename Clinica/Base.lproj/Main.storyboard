@@ -345,7 +345,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RdK-VP-0ye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3480" y="2328"/>
+            <point key="canvasLocation" x="3271" y="2396"/>
         </scene>
         <!--Setting Page-->
         <scene sceneID="pBr-nD-IFH">
@@ -472,69 +472,69 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wdf-io-8n2">
-                                                    <rect key="frame" x="20" y="21" width="23.5" height="358"/>
+                                                    <rect key="frame" x="20" y="41" width="23.5" height="338"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Ib-GF-bwo">
-                                                            <rect key="frame" x="0.0" y="0.5" width="23.5" height="42"/>
+                                                            <rect key="frame" x="0.0" y="0.5" width="23.5" height="38.5"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teletype" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g3b-aA-uTL">
-                                                            <rect key="frame" x="0.0" y="63.5" width="23.5" height="41"/>
+                                                            <rect key="frame" x="0.0" y="60" width="23.5" height="38"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Rhi-R6-X6Q">
-                                                            <rect key="frame" x="0.0" y="127" width="23.5" height="41.5"/>
+                                                            <rect key="frame" x="0.0" y="120.5" width="23.5" height="38"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fdm-0z-r9A">
-                                                            <rect key="frame" x="0.0" y="189.5" width="23.5" height="42"/>
+                                                            <rect key="frame" x="0.0" y="179.5" width="23.5" height="38.5"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g4I-mF-QD8">
-                                                            <rect key="frame" x="0.0" y="253" width="23.5" height="40.5"/>
+                                                            <rect key="frame" x="0.0" y="239.5" width="23.5" height="37.5"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.text" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pTf-MQ-Qal">
-                                                            <rect key="frame" x="0.0" y="315" width="23.5" height="43"/>
+                                                            <rect key="frame" x="0.0" y="298.5" width="23.5" height="39.5"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2uz-ub-glM">
-                                                    <rect key="frame" x="63.5" y="21" width="41.5" height="358"/>
+                                                    <rect key="frame" x="63.5" y="41" width="41.5" height="338"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6x1-en-P5d">
-                                                            <rect key="frame" x="0.0" y="0.0" width="41.5" height="43"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="41.5" height="39.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNP-8J-4gv">
-                                                            <rect key="frame" x="0.0" y="63" width="41.5" height="43"/>
+                                                            <rect key="frame" x="0.0" y="59.5" width="41.5" height="40"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxR-5X-CwJ">
-                                                            <rect key="frame" x="0.0" y="126" width="41.5" height="43"/>
+                                                            <rect key="frame" x="0.0" y="119.5" width="41.5" height="39.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5H-Dr-eH2">
-                                                            <rect key="frame" x="0.0" y="189" width="41.5" height="43"/>
+                                                            <rect key="frame" x="0.0" y="179" width="41.5" height="39.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXn-bV-ihP">
-                                                            <rect key="frame" x="0.0" y="252" width="41.5" height="43"/>
+                                                            <rect key="frame" x="0.0" y="238.5" width="41.5" height="40"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8w-Ir-tb9">
-                                                            <rect key="frame" x="0.0" y="315" width="41.5" height="43"/>
+                                                            <rect key="frame" x="0.0" y="298.5" width="41.5" height="39.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -542,25 +542,25 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kri-pN-wcc">
-                                                    <rect key="frame" x="363.5" y="279" width="50.5" height="31"/>
+                                                    <rect key="frame" x="365" y="284" width="49" height="31"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right" catalog="system" title=" "/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="arrow.forward.circle" catalog="system" title=" "/>
                                                     <connections>
                                                         <segue destination="ZNc-tH-72S" kind="show" id="xuE-RS-fdZ"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7y-i1-Xhm">
-                                                    <rect key="frame" x="363.5" y="342" width="50.5" height="31"/>
+                                                    <rect key="frame" x="365" y="343.5" width="49" height="31"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.forward" catalog="system" title=" "/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="arrow.forward.circle" catalog="system" title=" "/>
                                                     <connections>
                                                         <segue destination="yzK-be-jDR" kind="show" id="Bus-cW-p7F"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bf3-tY-cDn">
-                                                    <rect key="frame" x="363" y="27" width="51" height="31"/>
+                                                    <rect key="frame" x="363" y="45.5" width="51" height="31"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="star" catalog="system" title=" ">
                                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -569,25 +569,36 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                                         <action selector="addToFavoriteTapped:" destination="sqp-ck-RDR" eventType="touchUpInside" id="vYu-cZ-YP8"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9R-jc-EC0">
+                                                    <rect key="frame" x="20" y="11" width="374" height="26"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="kri-pN-wcc" secondAttribute="trailing" id="CmT-EH-p9H"/>
                                                 <constraint firstItem="2uz-ub-glM" firstAttribute="leading" secondItem="Wdf-io-8n2" secondAttribute="trailing" constant="20" id="DDL-Pg-Y9o"/>
                                                 <constraint firstItem="Wdf-io-8n2" firstAttribute="leading" secondItem="mbb-F3-Hbm" secondAttribute="leadingMargin" id="K02-By-vZf"/>
-                                                <constraint firstItem="Wdf-io-8n2" firstAttribute="top" secondItem="mbb-F3-Hbm" secondAttribute="topMargin" constant="10" id="Wde-aV-bek"/>
+                                                <constraint firstItem="o9R-jc-EC0" firstAttribute="trailing" secondItem="mbb-F3-Hbm" secondAttribute="trailingMargin" id="QJg-9r-IaO"/>
+                                                <constraint firstItem="Wdf-io-8n2" firstAttribute="top" secondItem="mbb-F3-Hbm" secondAttribute="topMargin" constant="30" id="Wde-aV-bek"/>
                                                 <constraint firstAttribute="trailing" secondItem="t7y-i1-Xhm" secondAttribute="trailing" id="Wpt-fv-dcl"/>
                                                 <constraint firstAttribute="trailing" secondItem="bf3-tY-cDn" secondAttribute="trailing" id="YVv-l2-93C"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Wdf-io-8n2" secondAttribute="bottom" constant="10" id="Z3i-fE-xcq"/>
                                                 <constraint firstItem="kri-pN-wcc" firstAttribute="centerY" secondItem="bXn-bV-ihP" secondAttribute="centerY" id="Zwg-FB-jMl"/>
+                                                <constraint firstItem="o9R-jc-EC0" firstAttribute="top" secondItem="mbb-F3-Hbm" secondAttribute="topMargin" id="ceX-y6-ThL"/>
                                                 <constraint firstItem="t7y-i1-Xhm" firstAttribute="centerY" secondItem="d8w-Ir-tb9" secondAttribute="centerY" id="fOn-KZ-AYV"/>
+                                                <constraint firstItem="Wdf-io-8n2" firstAttribute="top" secondItem="o9R-jc-EC0" secondAttribute="bottom" constant="4" id="lcs-8j-U4W"/>
                                                 <constraint firstItem="bf3-tY-cDn" firstAttribute="centerY" secondItem="6x1-en-P5d" secondAttribute="centerY" id="nkv-70-ley"/>
-                                                <constraint firstItem="2uz-ub-glM" firstAttribute="top" secondItem="mbb-F3-Hbm" secondAttribute="topMargin" constant="10" id="oNH-9K-CfB"/>
+                                                <constraint firstItem="2uz-ub-glM" firstAttribute="top" secondItem="mbb-F3-Hbm" secondAttribute="topMargin" constant="30" id="oNH-9K-CfB"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="2uz-ub-glM" secondAttribute="bottom" constant="10" id="oq6-ys-nMF"/>
+                                                <constraint firstItem="o9R-jc-EC0" firstAttribute="leading" secondItem="mbb-F3-Hbm" secondAttribute="leadingMargin" id="vJB-Yv-kjR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <connections>
                                             <outlet property="AppointmentLabel" destination="bXn-bV-ihP" id="r7I-YH-UPc"/>
+                                            <outlet property="ClinicName" destination="o9R-jc-EC0" id="DIa-w5-FYA"/>
                                             <outlet property="TelephoneImage" destination="Rhi-R6-X6Q" id="OLv-BG-yHH"/>
                                             <outlet property="addtoFavorite" destination="bf3-tY-cDn" id="iD6-Ts-FzM"/>
                                             <outlet property="appointmentImage" destination="g4I-mF-QD8" id="18b-qr-lTE"/>
@@ -734,16 +745,16 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6w-8U-B3V">
-                                                    <rect key="frame" x="363.5" y="324" width="50.5" height="31"/>
+                                                    <rect key="frame" x="365" y="324" width="49" height="31"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right" catalog="system" title=" "/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="arrow.forward.circle" catalog="system" title=" "/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLR-Sm-rN3">
-                                                    <rect key="frame" x="363.5" y="265.5" width="50.5" height="31"/>
+                                                    <rect key="frame" x="365" y="265.5" width="49" height="31"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right" catalog="system" title=" "/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="arrow.forward.circle" catalog="system" title=" "/>
                                                     <connections>
                                                         <segue destination="ZNc-tH-72S" kind="show" id="vJj-9f-0q6"/>
                                                     </connections>
@@ -1115,7 +1126,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                             <constraint firstItem="pe2-GM-nqj" firstAttribute="leading" secondItem="cBF-Ex-4Xx" secondAttribute="leading" id="ncB-JL-k1d"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="house" catalog="system" selectedImage="house" id="KOf-Aj-ejH"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="cross.case.fill" catalog="system" selectedImage="house" id="KOf-Aj-ejH"/>
                     <navigationItem key="navigationItem" title="Home" id="AJc-Qi-LLY"/>
                     <connections>
                         <outlet property="ClinicsCollectionView" destination="Olg-5q-rF8" id="WfL-fs-oZG"/>
@@ -1288,69 +1299,69 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ixa-ir-4ia">
-                                                    <rect key="frame" x="20" y="21" width="23.5" height="305"/>
+                                                    <rect key="frame" x="20" y="36" width="23.5" height="290"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pWg-we-bd4">
-                                                            <rect key="frame" x="0.0" y="1.5" width="23.5" height="31.5"/>
+                                                            <rect key="frame" x="0.0" y="1.5" width="23.5" height="29"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teletype" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ORI-hB-L9G">
-                                                            <rect key="frame" x="0.0" y="54.5" width="23.5" height="32.5"/>
+                                                            <rect key="frame" x="0.0" y="52" width="23.5" height="30"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Bhh-aR-u1e">
-                                                            <rect key="frame" x="0.0" y="109.5" width="23.5" height="32.5"/>
+                                                            <rect key="frame" x="0.0" y="104.5" width="23.5" height="30"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="x3M-gA-GJz">
-                                                            <rect key="frame" x="0.0" y="163" width="23.5" height="33"/>
+                                                            <rect key="frame" x="0.0" y="155.5" width="23.5" height="30.5"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JNz-cu-fmQ">
-                                                            <rect key="frame" x="0.0" y="217.5" width="23.5" height="32"/>
+                                                            <rect key="frame" x="0.0" y="207.5" width="23.5" height="29.5"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zRW-Cy-Jcj">
-                                                            <rect key="frame" x="0.0" y="271" width="23.5" height="34"/>
+                                                            <rect key="frame" x="0.0" y="258.5" width="23.5" height="31.5"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </imageView>
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5qD-18-CHO">
-                                                    <rect key="frame" x="63.5" y="21" width="41.5" height="305"/>
+                                                    <rect key="frame" x="63.5" y="36" width="41.5" height="290"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-lT-ZZ3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="41.5" height="34"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="41.5" height="31.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wun-kL-lwq">
-                                                            <rect key="frame" x="0.0" y="54" width="41.5" height="34.5"/>
+                                                            <rect key="frame" x="0.0" y="51.5" width="41.5" height="32"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H6-fh-N3w">
-                                                            <rect key="frame" x="0.0" y="108.5" width="41.5" height="34"/>
+                                                            <rect key="frame" x="0.0" y="103.5" width="41.5" height="31.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AA-ej-NGu">
-                                                            <rect key="frame" x="0.0" y="162.5" width="41.5" height="34"/>
+                                                            <rect key="frame" x="0.0" y="155" width="41.5" height="31.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr1-yp-liT">
-                                                            <rect key="frame" x="0.0" y="216.5" width="41.5" height="34.5"/>
+                                                            <rect key="frame" x="0.0" y="206.5" width="41.5" height="32"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w6-bb-ecV">
-                                                            <rect key="frame" x="0.0" y="271" width="41.5" height="34"/>
+                                                            <rect key="frame" x="0.0" y="258.5" width="41.5" height="31.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -1358,38 +1369,48 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG1-3A-0wT">
-                                                    <rect key="frame" x="343.5" y="239.5" width="50.5" height="31"/>
+                                                    <rect key="frame" x="345" y="243" width="49" height="31"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right" catalog="system" title=" "/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="arrow.forward.circle" catalog="system" title=" "/>
                                                     <connections>
                                                         <segue destination="kzG-G7-zgE" kind="show" id="J8E-XN-RY6"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muq-7m-Izw">
-                                                    <rect key="frame" x="343.5" y="293.5" width="50.5" height="31"/>
+                                                    <rect key="frame" x="345" y="294.5" width="49" height="31"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right" catalog="system" title=" "/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="arrow.forward.circle" catalog="system" title=" "/>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxP-LP-j5t">
+                                                    <rect key="frame" x="20" y="11" width="374" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.20439612870000001" green="0.4696142673" blue="0.9647491574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstItem="IG1-3A-0wT" firstAttribute="centerY" secondItem="wr1-yp-liT" secondAttribute="centerY" id="2Dr-Lh-PyA"/>
                                                 <constraint firstItem="5qD-18-CHO" firstAttribute="leading" secondItem="ixa-ir-4ia" secondAttribute="trailing" constant="20" id="5q0-GV-hay"/>
                                                 <constraint firstItem="IG1-3A-0wT" firstAttribute="trailing" secondItem="306-TO-fxJ" secondAttribute="trailingMargin" id="9jN-pe-dUU"/>
-                                                <constraint firstItem="ixa-ir-4ia" firstAttribute="top" secondItem="306-TO-fxJ" secondAttribute="topMargin" constant="10" id="B0s-Is-apy"/>
+                                                <constraint firstItem="ixa-ir-4ia" firstAttribute="top" secondItem="306-TO-fxJ" secondAttribute="topMargin" constant="25" id="B0s-Is-apy"/>
                                                 <constraint firstItem="ixa-ir-4ia" firstAttribute="leading" secondItem="306-TO-fxJ" secondAttribute="leadingMargin" id="CGw-5N-Hd9"/>
+                                                <constraint firstItem="QxP-LP-j5t" firstAttribute="trailing" secondItem="306-TO-fxJ" secondAttribute="trailingMargin" id="Qfl-eQ-tFM"/>
                                                 <constraint firstItem="Muq-7m-Izw" firstAttribute="centerY" secondItem="2w6-bb-ecV" secondAttribute="centerY" id="TuR-EJ-xTy"/>
                                                 <constraint firstItem="5qD-18-CHO" firstAttribute="leading" secondItem="ixa-ir-4ia" secondAttribute="trailing" constant="20" id="hFS-3r-l9E"/>
+                                                <constraint firstItem="QxP-LP-j5t" firstAttribute="leading" secondItem="306-TO-fxJ" secondAttribute="leadingMargin" id="jO8-ee-tka"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Muq-7m-Izw" secondAttribute="trailing" id="q25-S8-c16"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ixa-ir-4ia" secondAttribute="bottom" constant="10" id="sWf-Mr-U0K"/>
+                                                <constraint firstItem="QxP-LP-j5t" firstAttribute="top" secondItem="306-TO-fxJ" secondAttribute="topMargin" id="spx-8o-8gj"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="5qD-18-CHO" secondAttribute="bottom" constant="10" id="vyQ-dm-QYO"/>
-                                                <constraint firstItem="5qD-18-CHO" firstAttribute="top" secondItem="306-TO-fxJ" secondAttribute="topMargin" constant="10" id="you-ta-3My"/>
+                                                <constraint firstItem="5qD-18-CHO" firstAttribute="top" secondItem="306-TO-fxJ" secondAttribute="topMargin" constant="25" id="you-ta-3My"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.20439612870000001" green="0.4696142673" blue="0.9647491574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
+                                            <outlet property="ClinicName" destination="QxP-LP-j5t" id="uxV-b7-c5n"/>
                                             <outlet property="appointmentImage" destination="JNz-cu-fmQ" id="eAe-n5-n63"/>
                                             <outlet property="appointmentLabel" destination="wr1-yp-liT" id="YLa-kv-pLT"/>
                                             <outlet property="doctorImage" destination="pWg-we-bd4" id="bT1-Om-zLC"/>
@@ -1423,7 +1444,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxH-js-Cw2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6450.7246376811599" y="1549.5535714285713"/>
+            <point key="canvasLocation" x="6060.8695652173919" y="1494.6428571428571"/>
         </scene>
         <!--Login Sign Up Page-->
         <scene sceneID="sjw-7h-ueK">
@@ -1687,7 +1708,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
         <scene sceneID="e1A-I0-1q7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hHI-Ma-faz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Health Care" image="thermometer.sun.fill" catalog="system" selectedImage="thermometer.sun" id="Cf7-tQ-dpW"/>
+                    <tabBarItem key="tabBarItem" title="Health Care" image="cross.case.fill" catalog="system" selectedImage="cross.case" id="Cf7-tQ-dpW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vHU-E9-6hf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1765,7 +1786,7 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="2kW-7u-s9k"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OLI-Ot-tKS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1797,17 +1818,19 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vJj-9f-0q6"/>
+        <segue reference="xuE-RS-fdZ"/>
         <segue reference="Bus-cW-p7F"/>
         <segue reference="J8E-XN-RY6"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <image name="arrowshape.turn.up.forward" catalog="system" width="128" height="106"/>
+        <image name="arrow.forward.circle" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="command" catalog="system" width="128" height="115"/>
+        <image name="cross.case" catalog="system" width="128" height="100"/>
+        <image name="cross.case.fill" catalog="system" width="128" height="100"/>
         <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="doc.text" catalog="system" width="115" height="128"/>
         <image name="doctor5" width="400" height="200"/>
@@ -1820,8 +1843,6 @@ Preventive medications such as metoprolol (Lopressor), propranolol (Innopran, In
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="teletype" catalog="system" width="128" height="98"/>
-        <image name="thermometer.sun" catalog="system" width="103" height="128"/>
-        <image name="thermometer.sun.fill" catalog="system" width="103" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

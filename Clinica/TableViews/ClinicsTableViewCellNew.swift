@@ -25,6 +25,7 @@ class ClinicsTableViewCellNew: UITableViewCell {
     @IBOutlet weak var appointmentImage: UIImageView!
     
     
+    @IBOutlet weak var ClinicName: UILabel!
     
     @IBOutlet weak var doctorName: UILabel!
     
@@ -44,6 +45,7 @@ class ClinicsTableViewCellNew: UITableViewCell {
     
     @IBAction func addToFavoriteTapped(_ sender: UIButton) {
         
+        let ClinicN = ClinicName.text!
         let docName = doctorName.text!
         let TelePh = telephoneNumber.text!
         let loc = locationName.text!
@@ -53,7 +55,7 @@ class ClinicsTableViewCellNew: UITableViewCell {
         
         let db = Firestore.firestore()
         
-        db.collection("Favorite").addDocument(data: ["Doctor Name": docName, "Clinic Number": TelePh, "Clinic Location": loc, "Working Hours": workH, "Booking appointment": appoint, "Reviews": rev, "user_id" : Auth.auth().currentUser!.uid]) { error in
+        db.collection("Favorite").addDocument(data: ["ClinicName": ClinicN ,"Doctor Name": docName, "Clinic Number": TelePh, "Clinic Location": loc, "Working Hours": workH, "Booking appointment": appoint, "Reviews": rev, "user_id" : Auth.auth().currentUser!.uid]) { error in
             
             //check for errors
             
@@ -81,9 +83,9 @@ class ClinicsTableViewCellNew: UITableViewCell {
         // Initialization code
     }
     
-    func setUpCell(doctorName1 : String , TelephoneNumber1 : String, locationName1 : String ,WorkingHours : String , appointment : String ,review1 :String){
+    func setUpCell(ClinicName1 : String ,doctorName1 : String , TelephoneNumber1 : String, locationName1 : String ,WorkingHours : String , appointment : String ,review1 :String){
         
-     
+        ClinicName.text        = ClinicName1
         doctorName.text        = doctorName1
         telephoneNumber.text   = TelephoneNumber1
         locationName.text      = locationName1

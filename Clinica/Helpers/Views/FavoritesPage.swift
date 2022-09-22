@@ -42,7 +42,7 @@ class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
        // let data = arrClinics[indexPath.row]
        // cell.setUpCell(firstImage: data.doctorPhoto, secondImage: data.telephonePhoto, thirdImage: data.locationPhoto, forthImage: data.reviewPhoto, doctorName1: data.doctorN,                      TelephoneNumber1: data.telePhoneNum, locationName1: data.locationN, review1: data.reviews)*/
-    cell.setUpCell(doctorName1: data.doctorN, TelephoneNumber1: data.telePhoneNum, locationName1: data.locationN, WorkingHours: data.WorkingHoursLbl, appointment: data.Appointmentlbl, review1: data.reviews)
+        cell.setUpCell(ClinicName1: data.ClinicN, doctorName1: data.doctorN, TelephoneNumber1: data.telePhoneNum, locationName1: data.locationN, WorkingHours: data.WorkingHoursLbl, appointment: data.Appointmentlbl, review1: data.reviews)
    
         
         return cell
@@ -63,6 +63,8 @@ class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSourc
 
             return UISwipeActionsConfiguration(actions: [deleteAction])
         }
+    
+   
 
     
     
@@ -94,7 +96,8 @@ class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSourc
                         
                        // self.arrClinics.append(Clinics.init(doctorPhoto: UIImage(systemName: "person")!, telephonePhoto: UIImage(systemName: "teletype")!, locationPhoto: UIImage(systemName: "location.fill")!, WorkingHoursPhoto: UIImage(systemName: "clock")!, AppointmentPhoto: UIImage(systemName: "calendar")!, reviewPhoto: UIImage(systemName: "doc.text.fill")!, doctorN: document.get("Doctor Name") as! String, telePhoneNum: document.get("Clinic Number") as! String, locationN: document.get("Clinic Location") as! String, WorkingHoursLbl: document.get("Working Hours") as! String, Appointmentlbl: document.get("Booking appointment") as! String, reviews: document.get("Reviews") as! String))
                         
-                        self.FavoriteArray.append(Favorite.init(doctorN: document.get("Doctor Name") as! String, telePhoneNum: document.get("Clinic Number") as! String, locationN: document.get("Clinic Location") as! String, WorkingHoursLbl: document.get("Working Hours") as! String, Appointmentlbl: document.get("Booking appointment") as! String, reviews: document.get("Reviews") as! String))
+                        
+                        self.FavoriteArray.append(Favorite.init(ClinicN: document.get("ClinicName") as! String, doctorN: document.get("Doctor Name") as! String, telePhoneNum: document.get("Clinic Number") as! String, locationN: document.get("Clinic Location") as! String, WorkingHoursLbl: document.get("Working Hours") as! String, Appointmentlbl: document.get("Booking appointment") as! String, reviews: document.get("Reviews") as! String))
                         
                        
                         print("\(self.FavoriteArray) from array###")
@@ -112,7 +115,8 @@ class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSourc
 }
 
 struct Favorite {
-  
+    
+    let ClinicN         : String
     let doctorN         : String
     let telePhoneNum    : String
     let locationN       : String

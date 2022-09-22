@@ -18,6 +18,7 @@ class FavoriteTVCell: UITableViewCell {
     @IBOutlet weak var reviewImage: UIImageView!
     
     
+    @IBOutlet weak var ClinicName: UILabel!
     @IBOutlet weak var doctorLabel: UILabel!
     @IBOutlet weak var telephoneLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
@@ -66,9 +67,9 @@ class FavoriteTVCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setUpCell(doctorName1 : String , TelephoneNumber1 : String, locationName1 : String ,WorkingHours : String , appointment : String ,review1 :String){
+    func setUpCell(  ClinicName1 : String ,doctorName1 : String , TelephoneNumber1 : String, locationName1 : String ,WorkingHours : String , appointment : String ,review1 :String){
         
-     
+        ClinicName.text         = ClinicName1
         doctorLabel.text        = doctorName1
         telephoneLabel.text     = TelephoneNumber1
         locationLabel.text      = locationName1
