@@ -22,7 +22,7 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         let cell = sideMenuTableView.dequeueReusableCell(withIdentifier: "sideCell", for: indexPath) as! SideMenuTVCell
         cell.sideMenuImage.image = arrSideMenuImages[indexPath.row]
         cell.sideMenuLabel.text = arrSideMenu[indexPath.row]
-        cell.backgroundColor = .systemOrange
+        
         cell.tintColor = .white
         return   cell
     }
@@ -138,10 +138,10 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         sideMenuTableView.delegate = self
         sideMenuTableView.dataSource = self
         sideMenuView.isHidden = true
-        sideMenuTableView.backgroundColor = UIColor.groupTableViewBackground
+       // sideMenuTableView.backgroundColor = UIColor.groupTableViewBackground
         isSideMenuOpen = false
         sideMenuView.layer.cornerRadius = 15
-        sideMenuTableView.backgroundColor = .systemOrange
+        //sideMenuTableView.backgroundColor = .systemOrange
         
         
         
@@ -252,7 +252,7 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
             
             if indexPath.row == 0 {
                 
-                let vc = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.vc) as? ProfilePage
+                let vc = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.ClinicsTableView) as? ClinicsTableViewNew
                     self.view.window?.rootViewController = vc
                     self.view.window?.makeKeyAndVisible()
                 
@@ -265,6 +265,12 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
                 
             view.window?.rootViewController = VCv
             view.window?.makeKeyAndVisible()*/
+            } else if indexPath.row == 1 {
+                let vc = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.DentalClinics) as? DentistryTableView
+                    self.view.window?.rootViewController = vc
+                    self.view.window?.makeKeyAndVisible()
+                
+                
             }
         }
          
