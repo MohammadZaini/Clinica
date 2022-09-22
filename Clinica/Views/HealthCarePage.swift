@@ -25,6 +25,10 @@ class HealthCarePage: UIViewController, UITableViewDelegate , UITableViewDataSou
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+         return 70
+     }
+    
     
 
     @IBOutlet weak var HealthCareTableView: UITableView!

@@ -10,7 +10,7 @@ import UIKit
 
 class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout ,UITableViewDelegate , UITableViewDataSource {
     var arrSideMenu = ["Profile","Settings","Sign Out"]
-    var arrSideMenuImages = [UIImage(systemName: "person")!, UIImage(systemName: "command")!,UIImage(systemName:"arrowshape.turn.up.backward")!]
+    var arrSideMenuImages = [UIImage(systemName: "person")!, UIImage(systemName: "gearshape")!,UIImage(systemName:"arrowshape.turn.up.backward")!]
     var isSideMenuOpen : Bool = false
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
