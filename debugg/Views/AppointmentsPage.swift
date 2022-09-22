@@ -14,15 +14,24 @@ import FirebaseFirestore
 class AppointmentsPage: UIViewController , UITableViewDelegate ,UITableViewDataSource {
    
     var AppointmentsArray = [Appointment]()
+     
+    let refreshControl = UIRefreshControl()
     
-
-
+    @objc func updateData(){
+        refreshControl.endRefreshing()
+        AppointmentsTV.reloadData()
+        
+        }
+  
     @IBOutlet weak var AppointmentsTV: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         AppointmentsTV.dataSource = self
         AppointmentsTV.delegate = self
+        
+        refreshControl.addTarget(self, action: #selector(updateData), for: .valueChanged)
+        AppointmentsTV.addSubview(refreshControl)
         
        /*AppointmentsArray.append(Appointment.init(AppointmentImage: UIImage(systemName: "calendar")!, theAppointment: "Wednesday, September 21, 2022 at 6:55 PM"))
         AppointmentsArray.append(Appointment.init(AppointmentImage: UIImage(systemName: "calendar")!, theAppointment: "Monday, September 12, 2022 at 3:14 PM"))

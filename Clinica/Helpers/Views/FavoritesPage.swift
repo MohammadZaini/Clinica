@@ -13,6 +13,16 @@ class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     var FavoriteArray = [Favorite]()
     
+    
+    let refreshControl = UIRefreshControl()
+    
+    @objc func updateData(){
+        refreshControl.endRefreshing()
+        FavoriteTableView.reloadData()
+        
+        }
+  
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return FavoriteArray.count
     }
@@ -65,7 +75,11 @@ class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSourc
 
         FavoriteTableView.delegate = self
         FavoriteTableView.dataSource = self
+        
         loadData()
+        
+        refreshControl.addTarget(self, action: #selector(updateData), for: .valueChanged)
+        FavoriteTableView.addSubview(refreshControl)
     }
     
     func loadData()  {
