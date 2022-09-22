@@ -24,13 +24,3 @@ class FavoritesPage: UIViewController {
     
 
 }
-
-struct favorite {
-    
-    let doctorN         : String
-    let telePhoneNum    : String
-    let locationN       : String
-    let WorkingHoursLbl : String
-    let Appointmentlbl  : String
-    let reviews         : String
-}

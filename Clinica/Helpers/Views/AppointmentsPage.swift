@@ -63,54 +63,6 @@ class AppointmentsPage: UIViewController , UITableViewDelegate ,UITableViewDataS
     }
     
     
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completionHandler) in
-            self.AppointmentsArray.remove(at: indexPath.row)
-            self.AppointmentsTV.beginUpdates()
-            self.AppointmentsTV.deleteRows(at: [indexPath], with: .automatic)
-            self.AppointmentsTV.endUpdates()
-            
-            self.deleteData()
-
-            
-    
-            
-            completionHandler(true)
-            
-            
-        }
-        self.deleteData()
-        return UISwipeActionsConfiguration(actions: [deleteAction])
-    }
-    
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
-        if editingStyle == .delete{
-            
-            //let patientAppointment  = AppointmentsArray[indexPath.row]
-            self.deleteData()
-         
-        }else{
-            self.deleteData()
-        }
-    }
-    
-    
-    
-    func deleteData() {
-        let db = Firestore.firestore()
-        db.collection("Appointments").document(Auth.auth().currentUser!.uid).delete() { err in
-            if let err = err {
-                print("Error removing document: \(err)")
-            } else {
-                
-                print("Document successfully removed!")
-            }
-        }
-    }
-    
-    
     func loadData()  {
             let db = Firestore.firestore()
         db.collection("Appointments").whereField("user_id", isEqualTo: Auth.auth().currentUser!.uid).getDocuments() { (querySnapshot, err) in

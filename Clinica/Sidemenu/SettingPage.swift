@@ -18,8 +18,9 @@ class SettingPage: UIViewController {
     }
     
 
-    func signOut(){
+   func signOut(){
         let signinControl = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.loginSignup) as? LoginSignUpPage
+       
         view.window?.rootViewController = signinControl
         view.window?.makeKeyAndVisible()
     }
@@ -29,7 +30,7 @@ class SettingPage: UIViewController {
         
         do {
             try Auth.auth().signOut()
-            signOut()
+           signOut()
             
         }catch let error {
             print("failed to sign out with error...",error)

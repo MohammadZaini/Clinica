@@ -76,7 +76,7 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
             
           let data = arrClinics[indexPath.row]
       
-      cell.addtoFavorite.addTarget(self, action: #selector(addToFavorite(sender:)), for: .touchUpInside)
+     cell.addtoFavorite.addTarget(self, action: #selector(addToFavorite(sender:)), for: .touchUpInside)
       
      /*cell.setUpCell(doctorName1: data.doctorN, TelephoneNumber1: data.telePhoneNum, locationName1: data.locationN, WorkingHours: data.WorkingHoursLbl, appointment: data.Appointmentlbl, review1: data.reviews)*/
       
@@ -96,6 +96,7 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
         print("Button Index = \(sender.tag)")
         
      sender.setImage(UIImage(systemName: "star.fill"), for: .normal)
+        self.loadData()
         
         
     }
@@ -115,7 +116,7 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
                         
                         self.arrClinics.append(Clinics.init(doctorN: document.get("Doctor Name") as! String, telePhoneNum: document.get("Clinic Number") as! String, locationN: document.get("Clinic Location") as! String, WorkingHoursLbl: document.get("Working Hours") as! String, Appointmentlbl: document.get("Booking appointment") as! String, reviews: document.get("Reviews") as! String))
                         
-                        /*self.requestsArray.append(Requests.init(profilePic: UIImage(systemName: "person.circle")! , units: "\( document.get("number_of_units")!)", bloodType: "\(document.get("blood_type")!)", hospital: "\( document.get("hospital")!)",phone: "\(document.get("patient_phone")!)"))*/
+                       
                         print("\(self.arrClinics) from array###")
                         
                     }

@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseFirestore
+import FirebaseAuth
 
 class ClinicsTableViewCellNew: UITableViewCell {
     
@@ -39,31 +40,56 @@ class ClinicsTableViewCellNew: UITableViewCell {
     
     @IBOutlet weak var addtoFavorite: UIButton!
     
+    
+    
+    @IBAction func addToFavoriteTapped(_ sender: UIButton) {
+        
+        let docName = doctorName.text!
+        let TelePh = telephoneNumber.text!
+        let loc = locationName.text!
+        let workH = workingHoursLabel.text!
+        let appoint = AppointmentLabel.text!
+        let rev = reviewsLabel.text!
+        
+        let db = Firestore.firestore()
+        
+        db.collection("Favorite").addDocument(data: ["Doctor Name": docName, "Clinic Number": TelePh, "Clinic Location": loc, "Working Hours": workH, "Booking appointment": appoint, "Reviews": rev, "user_id" : Auth.auth().currentUser!.uid]) { error in
+            
+            //check for errors
+            
+            if error == nil {
+                // No errors
+               // self.test()
+              
+                
+            }else{
+                
+                // Handle the error
+                
+               print("There is an error!!")
+                
+            }
+            
+            
+            
+        }
+        
+        
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    func setUpCell(/*firstImage : UIImage , secondImage : UIImage , thirdImage : UIImage,
-                   forthImage : UIImage , fifthImage :UIImage , sixthImage :UIImage,*/
-                   
-                   doctorName1 : String , TelephoneNumber1 : String,
-                   locationName1 : String ,WorkingHours : String , appointment : String ,review1 :String){
+    func setUpCell(doctorName1 : String , TelephoneNumber1 : String, locationName1 : String ,WorkingHours : String , appointment : String ,review1 :String){
         
-      /*  personImage.image       = firstImage
-        locationImage.image     = secondImage
-        TelephoneImage.image    = thirdImage
-        workingHoursImage.image = forthImage
-        appointmentImage.image  = fifthImage
-        reviewsImage.image      = sixthImage
-       */
-        
+     
         doctorName.text        = doctorName1
         telephoneNumber.text   = TelephoneNumber1
         locationName.text      = locationName1
-        reviewsLabel.text      = review1
+        workingHoursLabel.text = review1
         AppointmentLabel.text  = appointment
-        workingHoursLabel.text = WorkingHours
+        reviewsLabel.text      = WorkingHours
         
         
         
