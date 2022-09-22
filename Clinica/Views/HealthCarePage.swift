@@ -10,15 +10,18 @@ import UIKit
 
 class HealthCarePage: UIViewController, UITableViewDelegate , UITableViewDataSource {
     
-    var arrHealthCare = ["Headache","Headache","Headache","Headache","Headache","Headache","Headache","Headache","Headache","Headache","Headache","Headache"]
+    var arrHealthCare = ["Covid-19","Headache","Stomach Cramps","Nose Bleeding","Flu","Insomina"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrHealthCare.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = HealthCareTableView.dequeueReusableCell(withIdentifier: "HealthCareCella", for: indexPath)
+        let cell = HealthCareTableView.dequeueReusableCell(withIdentifier: "HealthCareCell", for: indexPath)
         cell.textLabel?.text = arrHealthCare[indexPath.row]
+        
+        cell.textLabel?.textColor = .white
+        
         return cell
     }
     
@@ -31,6 +34,7 @@ class HealthCarePage: UIViewController, UITableViewDelegate , UITableViewDataSou
 
         HealthCareTableView.delegate = self
         HealthCareTableView.dataSource = self
+        
     }
     
 
