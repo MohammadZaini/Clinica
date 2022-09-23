@@ -51,7 +51,14 @@ class BookingAppointmentsPage: UIViewController {
         
         if AppointmentTextfield.text == "" {
             self.showAlert()
+            
         }else{
+            
+            
+            let alert = UIAlertController(title: "Alert", message: "Appointment has been booked successfully", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "close", style: .default))
+            self.present(alert,animated: true,completion: nil)
+            
             
         let appointmentDate = AppointmentTextfield.text!
         
@@ -65,7 +72,6 @@ class BookingAppointmentsPage: UIViewController {
                 // No errors
                // self.test()
               
-                
             }else{
                 
                 // Handle the error
@@ -80,6 +86,7 @@ class BookingAppointmentsPage: UIViewController {
         
         //self.performSegue(withIdentifier: "appointmentSegue", sender: self)
             self.test()
+            
         //self.fetchData()
         }
     }

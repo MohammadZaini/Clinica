@@ -39,6 +39,8 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
     
     @IBAction func UploadphotoTapped(_ sender: UIButton) {
         
+        UploadPhotoOutlet.isHidden = true
+        
         progressView.isHidden = false
         progressView.alpha = 1
         let randomID = UUID.init().uuidString
@@ -64,6 +66,8 @@ class ProfilePage: UIViewController , UIImagePickerControllerDelegate, UINavigat
             
                 print("you are \(pctThere) complete")
             self?.progressView.progress = Float(pctThere)
+            
+            self?.progressView.isHidden = true
         }
         
     }
