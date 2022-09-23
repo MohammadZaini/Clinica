@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var EmailTextfield: UITextField!
     
+    @IBOutlet weak var HelloLabel: UILabel!
     
     @IBOutlet weak var PasswordTextfield: UITextField!
     
@@ -69,6 +70,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        HelloLabel.text = NSLocalizedString("hello", comment: "")
         setUpElements()
         //checkAndAdd()
         
