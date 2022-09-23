@@ -25,7 +25,7 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
   
     
     
-     //var filterdData = [String]()
+   // var filteredData : [String] = []
  
     @IBOutlet weak var SearchBar: UISearchBar!
     @IBOutlet weak var ClinicaTableView: UITableView!
@@ -45,9 +45,10 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
         ClinicaTableView.addSubview(refreshControl)
         
         
+        
     
         
-       // filterdData = ["\(arrClinics)"]
+       // filteredData = ["\(arrClinics)"]
         
                 
         /*arrClinics.append(Clinics.init(doctorPhoto: UIImage(systemName: "person")!, telephonePhoto: UIImage(systemName: "teletype")!, locationPhoto: UIImage(systemName: "location.fill" )!, reviewPhoto: UIImage(systemName: "doc.text.fill")!, doctorN: "Dr.Ahmad", telePhoneNum:  0775148625, locationN: "KHalda", reviews: "Reviews"))*/
@@ -80,6 +81,7 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
        print("This is the array count :\(arrClinics.count)")
+       
        return arrClinics.count
        
          }

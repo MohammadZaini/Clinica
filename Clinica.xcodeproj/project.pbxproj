@@ -10,6 +10,7 @@
 		351EC37F28DB972300003487 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC37E28DB972300003487 /* SignUpPage.swift */; };
 		351EC38128DCCCB800003487 /* AppointmentTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC38028DCCCB800003487 /* AppointmentTVCell.swift */; };
 		351EC38328DCCDFB00003487 /* FavoriteTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC38228DCCDFB00003487 /* FavoriteTVCell.swift */; };
+		351EC38528DD2F4400003487 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC38428DD2F4400003487 /* SettingsVC.swift */; };
 		3528746C28DA3BDE008A8716 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528746B28DA3BDE008A8716 /* Service.swift */; };
 		3528746E28DAA3EA008A8716 /* ClinicaLS.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3528746D28DAA3E9008A8716 /* ClinicaLS.gif */; };
 		3528747028DAA483008A8716 /* LaunchScreenGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528746F28DAA483008A8716 /* LaunchScreenGif.swift */; };
@@ -57,6 +58,7 @@
 		351EC37E28DB972300003487 /* SignUpPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpPage.swift; path = ../../Clinica23/Clinica/Views/SignUpPage.swift; sourceTree = "<group>"; };
 		351EC38028DCCCB800003487 /* AppointmentTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppointmentTVCell.swift; path = ../../Clinica23/Clinica/Views/AppointmentTVCell.swift; sourceTree = "<group>"; };
 		351EC38228DCCDFB00003487 /* FavoriteTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoriteTVCell.swift; path = Helpers/Views/FavoriteTVCell.swift; sourceTree = "<group>"; };
+		351EC38428DD2F4400003487 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		3528746B28DA3BDE008A8716 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		3528746D28DAA3E9008A8716 /* ClinicaLS.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ClinicaLS.gif; sourceTree = "<group>"; };
 		3528746F28DAA483008A8716 /* LaunchScreenGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenGif.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				35A2547E28B64E6A00C2FBB6 /* AppDelegate.swift */,
 				35A2548028B64E6A00C2FBB6 /* SceneDelegate.swift */,
 				35A2548428B64E6A00C2FBB6 /* Main.storyboard */,
+				351EC38428DD2F4400003487 /* SettingsVC.swift */,
 				35339BF628C91C1C00F72A87 /* BookingAppointmentsPage.swift */,
 				35339BF828CA3C0F00F72A87 /* users.swift */,
 				35339BF028C8036400F72A87 /* HomeTabBar.swift */,
@@ -345,6 +348,7 @@
 				35A7290728BD326D00A76795 /* ClinicsCvHeader.swift in Sources */,
 				35AA818F28DB93A700952452 /* ViewController.swift in Sources */,
 				35AA818828DB928600952452 /* ClinicsTableView.swift in Sources */,
+				351EC38528DD2F4400003487 /* SettingsVC.swift in Sources */,
 				35339BF128C8036400F72A87 /* HomeTabBar.swift in Sources */,
 				3528746C28DA3BDE008A8716 /* Service.swift in Sources */,
 				35339C0328CE92C600F72A87 /* NephrologyTableView.swift in Sources */,
