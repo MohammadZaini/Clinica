@@ -11,6 +11,7 @@
 		351EC38128DCCCB800003487 /* AppointmentTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC38028DCCCB800003487 /* AppointmentTVCell.swift */; };
 		351EC38328DCCDFB00003487 /* FavoriteTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC38228DCCDFB00003487 /* FavoriteTVCell.swift */; };
 		351EC38528DD2F4400003487 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC38428DD2F4400003487 /* SettingsVC.swift */; };
+		351EC38A28DE324500003487 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 351EC38C28DE324500003487 /* Localizable.strings */; };
 		3528746C28DA3BDE008A8716 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528746B28DA3BDE008A8716 /* Service.swift */; };
 		3528746E28DAA3EA008A8716 /* ClinicaLS.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3528746D28DAA3E9008A8716 /* ClinicaLS.gif */; };
 		3528747028DAA483008A8716 /* LaunchScreenGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528746F28DAA483008A8716 /* LaunchScreenGif.swift */; };
@@ -59,6 +60,10 @@
 		351EC38028DCCCB800003487 /* AppointmentTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppointmentTVCell.swift; path = ../../Clinica23/Clinica/Views/AppointmentTVCell.swift; sourceTree = "<group>"; };
 		351EC38228DCCDFB00003487 /* FavoriteTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoriteTVCell.swift; path = Helpers/Views/FavoriteTVCell.swift; sourceTree = "<group>"; };
 		351EC38428DD2F4400003487 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		351EC38628DE31AB00003487 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		351EC38728DE31AC00003487 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		351EC38B28DE324500003487 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		351EC38D28DE324A00003487 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3528746B28DA3BDE008A8716 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		3528746D28DAA3E9008A8716 /* ClinicaLS.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ClinicaLS.gif; sourceTree = "<group>"; };
 		3528746F28DAA483008A8716 /* LaunchScreenGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenGif.swift; sourceTree = "<group>"; };
@@ -173,6 +178,7 @@
 				35A0EA1F28DB910600F54968 /* Utilities.swift */,
 				351EC37E28DB972300003487 /* SignUpPage.swift */,
 				35A0EA2428DB915600F54968 /* LoginSignUpPage.swift */,
+				351EC38C28DE324500003487 /* Localizable.strings */,
 				35AA817F28DB928600952452 /* AppointmentsPage.swift */,
 				351EC38028DCCCB800003487 /* AppointmentTVCell.swift */,
 				35AA818128DB928600952452 /* ClinicsCollectionViewCell.swift */,
@@ -256,6 +262,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 35A2547228B64E6A00C2FBB6;
 			productRefGroup = 35A2547C28B64E6A00C2FBB6 /* Products */;
@@ -277,6 +284,7 @@
 				35A2548828B64E6B00C2FBB6 /* Assets.xcassets in Resources */,
 				35339BEF28C8005F00F72A87 /* GoogleService-Info.plist in Resources */,
 				3528746E28DAA3EA008A8716 /* ClinicaLS.gif in Resources */,
+				351EC38A28DE324500003487 /* Localizable.strings in Resources */,
 				35A2548628B64E6A00C2FBB6 /* Main.storyboard in Resources */,
 				35A0EA2328DB913800F54968 /* Views in Resources */,
 			);
@@ -371,10 +379,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		351EC38C28DE324500003487 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				351EC38B28DE324500003487 /* ar */,
+				351EC38D28DE324A00003487 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		35A2548428B64E6A00C2FBB6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				35A2548528B64E6A00C2FBB6 /* Base */,
+				351EC38628DE31AB00003487 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -383,6 +401,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				35A2548A28B64E6B00C2FBB6 /* Base */,
+				351EC38728DE31AC00003487 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -394,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -454,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

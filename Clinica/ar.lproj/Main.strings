@@ -1,0 +1,333 @@
+
+/* Class = "UILabel"; text = "Sign Up"; ObjectID = "1SJ-EU-Mtd"; */
+"1SJ-EU-Mtd.text" = "Sign Up";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "1a2-5I-uXb"; */
+"1a2-5I-uXb.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "1ou-jI-5Lg"; */
+"1ou-jI-5Lg.placeholder" = "First Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2H6-fh-N3w"; */
+"2H6-fh-N3w.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2w6-bb-ecV"; */
+"2w6-bb-ecV.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Appointments"; ObjectID = "4G8-sB-pAG"; */
+"4G8-sB-pAG.title" = "Appointments";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "4Io-sN-K3l"; */
+"4Io-sN-K3l.title" = "Home";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5AA-ej-NGu"; */
+"5AA-ej-NGu.text" = "Label";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "6x1-en-P5d"; */
+"6x1-en-P5d.text" = "1";
+
+/* Class = "UIButton"; configuration.title = "Delete account"; ObjectID = "7EF-be-MZL"; */
+"7EF-be-MZL.configuration.title" = "Delete account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7EF-be-MZL"; */
+"7EF-be-MZL.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Error"; ObjectID = "7lE-Bx-Fgk"; */
+"7lE-Bx-Fgk.text" = "Error";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8da-EG-u9h"; */
+"8da-EG-u9h.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Favorite"; ObjectID = "8jq-he-GFl"; */
+"8jq-he-GFl.title" = "Favorite";
+
+/* Class = "UISearchBar"; placeholder = "Search Clinics"; ObjectID = "9u9-Vz-NEl"; */
+"9u9-Vz-NEl.placeholder" = "Search Clinics";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "AJc-Qi-LLY"; */
+"AJc-Qi-LLY.title" = "Home";
+
+/* Class = "UIButton"; normalTitle = "Nearby Clinics"; ObjectID = "BJX-pc-krI"; */
+"BJX-pc-krI.normalTitle" = "Nearby Clinics";
+
+/* Class = "UIButton"; configuration.title = " "; ObjectID = "C6w-8U-B3V"; */
+"C6w-8U-B3V.configuration.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "C6w-8U-B3V"; */
+"C6w-8U-B3V.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Health Care"; ObjectID = "Cf7-tQ-dpW"; */
+"Cf7-tQ-dpW.title" = "Health Care";
+
+/* Class = "UILabel"; text = "Hello!"; ObjectID = "Cga-ON-Vhc"; */
+"Cga-ON-Vhc.text" = "Hello!";
+
+/* Class = "UILabel"; text = "FirstName"; ObjectID = "DQD-IW-TUy"; */
+"DQD-IW-TUy.text" = "FirstName";
+
+/* Class = "UIButton"; configuration.title = "Change Password"; ObjectID = "Dun-wP-Vim"; */
+"Dun-wP-Vim.configuration.title" = "Change Password";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Dun-wP-Vim"; */
+"Dun-wP-Vim.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "First Name               :"; ObjectID = "Fr0-5r-85G"; */
+"Fr0-5r-85G.text" = "First Name               :";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HaT-dy-Cnf"; */
+"HaT-dy-Cnf.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "Hl5-ki-yJZ"; */
+"Hl5-ki-yJZ.placeholder" = "Email";
+
+/* Class = "UITextField"; text = "Zaini@outlook.com"; ObjectID = "Hl5-ki-yJZ"; */
+"Hl5-ki-yJZ.text" = "Zaini@outlook.com";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "IFL-sm-PdX"; */
+"IFL-sm-PdX.text" = "Settings";
+
+/* Class = "UIButton"; configuration.title = " "; ObjectID = "IG1-3A-0wT"; */
+"IG1-3A-0wT.configuration.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "IG1-3A-0wT"; */
+"IG1-3A-0wT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IhG-E6-VhP"; */
+"IhG-E6-VhP.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Iwq-tG-TLP"; */
+"Iwq-tG-TLP.text" = "Label";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "JNP-8J-4gv"; */
+"JNP-8J-4gv.text" = "2";
+
+/* Class = "UILabel"; text = "Email "; ObjectID = "JZY-lr-EvA"; */
+"JZY-lr-EvA.text" = "Email ";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "KOf-Aj-ejH"; */
+"KOf-Aj-ejH.title" = "Home";
+
+/* Class = "UILabel"; text = "LastName"; ObjectID = "KPl-N3-YDC"; */
+"KPl-N3-YDC.text" = "LastName";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "Kt1-rX-jYW"; */
+"Kt1-rX-jYW.title" = "Settings";
+
+/* Class = "UINavigationItem"; title = "Favorite"; ObjectID = "Ktv-QZ-zDT"; */
+"Ktv-QZ-zDT.title" = "Favorite";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "L2H-fG-vn9"; */
+"L2H-fG-vn9.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "MIE-qk-eZR"; */
+"MIE-qk-eZR.normalTitle" = "Sign Up";
+
+/* Class = "UIButton"; configuration.title = " "; ObjectID = "Muq-7m-Izw"; */
+"Muq-7m-Izw.configuration.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Muq-7m-Izw"; */
+"Muq-7m-Izw.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Appointments"; ObjectID = "OtU-VX-dzb"; */
+"OtU-VX-dzb.title" = "Appointments";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "P9u-fF-qfu"; */
+"P9u-fF-qfu.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = " "; ObjectID = "PST-8n-RPk"; */
+"PST-8n-RPk.configuration.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "PST-8n-RPk"; */
+"PST-8n-RPk.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Pu4-ib-B3u"; */
+"Pu4-ib-B3u.text" = "Label";
+
+/* Class = "UILabel"; text = "Last Name               :"; ObjectID = "QAj-GU-a0r"; */
+"QAj-GU-a0r.text" = "Last Name               :";
+
+/* Class = "UILabel"; text = "Phone Number       :"; ObjectID = "QYb-TL-N5Q"; */
+"QYb-TL-N5Q.text" = "Phone Number       :";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QxP-LP-j5t"; */
+"QxP-LP-j5t.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SMc-lT-ZZ3"; */
+"SMc-lT-ZZ3.text" = "Label";
+
+/* Class = "UILabel"; text = "Eye Clinics"; ObjectID = "Sfb-dM-EUL"; */
+"Sfb-dM-EUL.text" = "Eye Clinics";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "TFA-ue-gIb"; */
+"TFA-ue-gIb.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "WhG-JZ-C2j"; */
+"WhG-JZ-C2j.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Whf-9G-1ly"; */
+"Whf-9G-1ly.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Health Care"; ObjectID = "XZ8-Jc-h0H"; */
+"XZ8-Jc-h0H.title" = "Health Care";
+
+/* Class = "UIButton"; configuration.title = "Languagues"; ObjectID = "YNs-pE-vNZ"; */
+"YNs-pE-vNZ.configuration.title" = "Languagues";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YNs-pE-vNZ"; */
+"YNs-pE-vNZ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bXn-bV-ihP"; */
+"bXn-bV-ihP.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = " "; ObjectID = "bf3-tY-cDn"; */
+"bf3-tY-cDn.configuration.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bf3-tY-cDn"; */
+"bf3-tY-cDn.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Log In"; ObjectID = "bud-Ry-kKy"; */
+"bud-Ry-kKy.configuration.title" = "Log In";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bud-Ry-kKy"; */
+"bud-Ry-kKy.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "ccG-DM-hSv"; */
+"ccG-DM-hSv.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ccG-DM-hSv"; */
+"ccG-DM-hSv.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "d8w-Ir-tb9"; */
+"d8w-Ir-tb9.text" = "Label";
+
+/* Class = "UILabel"; text = "4"; ObjectID = "f5H-Dr-eH2"; */
+"f5H-Dr-eH2.text" = "4";
+
+/* Class = "UIButton"; configuration.title = "Upload photo"; ObjectID = "ffI-UW-EPf"; */
+"ffI-UW-EPf.configuration.title" = "Upload photo";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ffI-UW-EPf"; */
+"ffI-UW-EPf.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Profile"; ObjectID = "gS2-jL-UpC"; */
+"gS2-jL-UpC.configuration.title" = "Profile";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gS2-jL-UpC"; */
+"gS2-jL-UpC.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gor-68-xCS"; */
+"gor-68-xCS.text" = "Label";
+
+/* Class = "UILabel"; text = "Email                          :"; ObjectID = "gp6-k2-Udd"; */
+"gp6-k2-Udd.text" = "Email                          :";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "hTD-RP-EjX"; */
+"hTD-RP-EjX.placeholder" = "Phone Number";
+
+/* Class = "UILabel"; text = "Rest in a quiet, dark room\nHot or cold compresses to your head or neck\nMassage and small amounts of caffeine\nOver-the-counter medications such as ibuprofen (Advil, Motrin IB, others), acetaminophen (Tylenol, others) and aspirin\nPrescription medications including triptans, such as sumatriptan (Imitrex) and zolmitriptan (Zomig)\nPreventive medications such as metoprolol (Lopressor), propranolol (Innopran, Inderal, others), amitriptyline, divalproex (Depakote), topiramate (Qudexy XR, Trokendi XR ,Topamax) or erenumab-aooe (Aimovig)"; ObjectID = "hdI-xF-TZG"; */
+"hdI-xF-TZG.text" = "Rest in a quiet, dark room\nHot or cold compresses to your head or neck\nMassage and small amounts of caffeine\nOver-the-counter medications such as ibuprofen (Advil, Motrin IB, others), acetaminophen (Tylenol, others) and aspirin\nPrescription medications including triptans, such as sumatriptan (Imitrex) and zolmitriptan (Zomig)\nPreventive medications such as metoprolol (Lopressor), propranolol (Innopran, Inderal, others), amitriptyline, divalproex (Depakote), topiramate (Qudexy XR, Trokendi XR ,Topamax) or erenumab-aooe (Aimovig)";
+
+/* Class = "UIButton"; configuration.title = "Sign Out"; ObjectID = "hxC-yG-e1H"; */
+"hxC-yG-e1H.configuration.title" = "Sign Out";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hxC-yG-e1H"; */
+"hxC-yG-e1H.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Add photo"; ObjectID = "ijd-ho-3SP"; */
+"ijd-ho-3SP.configuration.title" = "Add photo";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ijd-ho-3SP"; */
+"ijd-ho-3SP.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = " "; ObjectID = "jLR-Sm-rN3"; */
+"jLR-Sm-rN3.configuration.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jLR-Sm-rN3"; */
+"jLR-Sm-rN3.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jbv-Zz-0Jn"; */
+"jbv-Zz-0Jn.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "ka7-pv-KQo"; */
+"ka7-pv-KQo.normalTitle" = "Log in";
+
+/* Class = "UIButton"; configuration.title = " "; ObjectID = "kri-pN-wcc"; */
+"kri-pN-wcc.configuration.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kri-pN-wcc"; */
+"kri-pN-wcc.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sign Out"; ObjectID = "lsF-C9-olY"; */
+"lsF-C9-olY.configuration.title" = "Sign Out";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lsF-C9-olY"; */
+"lsF-C9-olY.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "mEm-a7-zQp"; */
+"mEm-a7-zQp.placeholder" = "Password";
+
+/* Class = "UITextField"; text = "Zaini!@#"; ObjectID = "mEm-a7-zQp"; */
+"mEm-a7-zQp.text" = "Zaini!@#";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "mov-js-CKa"; */
+"mov-js-CKa.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ncy-Se-8zc"; */
+"ncy-Se-8zc.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "o9R-jc-EC0"; */
+"o9R-jc-EC0.text" = "Label";
+
+/* Class = "UILabel"; text = "PhoneNumber"; ObjectID = "p1r-Bn-mP5"; */
+"p1r-Bn-mP5.text" = "PhoneNumber";
+
+/* Class = "UILabel"; text = "Treatment"; ObjectID = "pNi-iK-CVw"; */
+"pNi-iK-CVw.text" = "Treatment";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pYF-Zo-FKw"; */
+"pYF-Zo-FKw.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Confirm the appointment"; ObjectID = "pda-BQ-ag4"; */
+"pda-BQ-ag4.configuration.title" = "Confirm the appointment";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pda-BQ-ag4"; */
+"pda-BQ-ag4.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = " "; ObjectID = "pe2-GM-nqj"; */
+"pe2-GM-nqj.configuration.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pe2-GM-nqj"; */
+"pe2-GM-nqj.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = " "; ObjectID = "t7y-i1-Xhm"; */
+"t7y-i1-Xhm.configuration.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "t7y-i1-Xhm"; */
+"t7y-i1-Xhm.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = " "; ObjectID = "vNn-7J-OXI"; */
+"vNn-7J-OXI.configuration.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vNn-7J-OXI"; */
+"vNn-7J-OXI.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vzJ-ml-01f"; */
+"vzJ-ml-01f.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "wnY-AJ-mDn"; */
+"wnY-AJ-mDn.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wr1-yp-liT"; */
+"wr1-yp-liT.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wun-kL-lwq"; */
+"wun-kL-lwq.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "yXr-VN-Pc6"; */
+"yXr-VN-Pc6.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "yxR-5X-CwJ"; */
+"yxR-5X-CwJ.text" = "3";
+
+/* Class = "UILabel"; text = "Error"; ObjectID = "z3q-sL-KiB"; */
+"z3q-sL-KiB.text" = "Error";

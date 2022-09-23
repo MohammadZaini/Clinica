@@ -44,7 +44,7 @@ class AppointmentsPage: UIViewController , UITableViewDelegate ,UITableViewDataS
         AppointmentsArray.append(Appointment.init(AppointmentImage: UIImage(systemName: "calendar")!, theAppointment: "Tuesday, November 15, 2022 at 7:59 PM"))
         AppointmentsArray.append(Appointment.init(AppointmentImage: UIImage(systemName: "calendar")!, theAppointment: "Thursday, October 6, 2022 at 8:00 PM"))*/
         
-        
+    
         
         
         loadData()
@@ -83,12 +83,13 @@ class AppointmentsPage: UIViewController , UITableViewDelegate ,UITableViewDataS
                 completionHandler(true)
             }
             
-            //self.deleteAppointment()
+            self.deleteAppointment()
 
             return UISwipeActionsConfiguration(actions: [deleteAction])
         }
 
     
+   
     
     func loadData()  {
             let db = Firestore.firestore()
@@ -103,17 +104,50 @@ class AppointmentsPage: UIViewController , UITableViewDelegate ,UITableViewDataS
                             print("\(document.documentID) => \(document.data())")
                             self.AppointmentsArray.append(Appointment.init(AppointmentImage: UIImage(systemName: "calendar")!, theAppointment: "\(document.get("Date")!)"))
                             
+                            //let  docID = document.documentID
+                            
                             
                             
                 }
                         self.AppointmentsTV.reloadData()    
 
 }
-                                                          }
-                                                          }
+            
+        
+            
+        }
+        
+        
+    
+            }
+    
+    
+    
+    func deleteAppointment(){
+        
+        let db = Firestore.firestore()
+      
+      
+        
+        db.collection("Appointments").document().delete() { err in
+            if let err = err {
+                print("Error removing document: \(err)")
+                
+                
+            } else {
+                
+              
+                print("Document successfully removed!")
+            }
+        }
+    }
 
+
+    
 struct Appointment{
     let AppointmentImage : UIImage
     let theAppointment : String
     
-}}
+}
+    
+}
