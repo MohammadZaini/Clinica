@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseFirestore
+import FirebaseAuth
 
 class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
@@ -84,9 +85,12 @@ class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSourc
         FavoriteTableView.addSubview(refreshControl)
     }
     
+
+
+    
     func loadData()  {
         let db = Firestore.firestore()
-            db.collection("Favorite").getDocuments() { (querySnapshot, err) in
+        db.collection("Favorite").whereField("user_id", isEqualTo: Auth.auth().currentUser!.uid).getDocuments() { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting from firestore: \(err)")
                     

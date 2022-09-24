@@ -12,6 +12,9 @@
 		351EC38328DCCDFB00003487 /* FavoriteTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC38228DCCDFB00003487 /* FavoriteTVCell.swift */; };
 		351EC38528DD2F4400003487 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC38428DD2F4400003487 /* SettingsVC.swift */; };
 		351EC38A28DE324500003487 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 351EC38C28DE324500003487 /* Localizable.strings */; };
+		351EC38F28DF1CD300003487 /* CovidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC38E28DF1CD300003487 /* CovidVC.swift */; };
+		351EC39128DF214600003487 /* HeadacheVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC39028DF214600003487 /* HeadacheVC.swift */; };
+		351EC39328DF25B000003487 /* StomacheCrampsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351EC39228DF25B000003487 /* StomacheCrampsVC.swift */; };
 		3528746C28DA3BDE008A8716 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528746B28DA3BDE008A8716 /* Service.swift */; };
 		3528746E28DAA3EA008A8716 /* ClinicaLS.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3528746D28DAA3E9008A8716 /* ClinicaLS.gif */; };
 		3528747028DAA483008A8716 /* LaunchScreenGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528746F28DAA483008A8716 /* LaunchScreenGif.swift */; };
@@ -64,6 +67,9 @@
 		351EC38728DE31AC00003487 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		351EC38B28DE324500003487 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		351EC38D28DE324A00003487 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		351EC38E28DF1CD300003487 /* CovidVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CovidVC.swift; path = /Users/htu/Desktop/Clinica/Clinica/CovidVC.swift; sourceTree = "<absolute>"; };
+		351EC39028DF214600003487 /* HeadacheVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheVC.swift; sourceTree = "<group>"; };
+		351EC39228DF25B000003487 /* StomacheCrampsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StomacheCrampsVC.swift; path = /Users/htu/Desktop/Clinica/Clinica/StomacheCrampsVC.swift; sourceTree = "<absolute>"; };
 		3528746B28DA3BDE008A8716 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		3528746D28DAA3E9008A8716 /* ClinicaLS.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ClinicaLS.gif; sourceTree = "<group>"; };
 		3528746F28DAA483008A8716 /* LaunchScreenGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenGif.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 		35A2547228B64E6A00C2FBB6 = {
 			isa = PBXGroup;
 			children = (
+				351EC39028DF214600003487 /* HeadacheVC.swift */,
 				35FDB8F628BE5C4F001F7231 /* MapVC.swift */,
 				3528746B28DA3BDE008A8716 /* Service.swift */,
 				35A2547D28B64E6A00C2FBB6 /* Clinica */,
@@ -176,6 +183,8 @@
 				35A0EA1A28DB8EBF00F54968 /* Helpers */,
 				35A0EA1E28DB910600F54968 /* Constants.swift */,
 				35A0EA1F28DB910600F54968 /* Utilities.swift */,
+				351EC38E28DF1CD300003487 /* CovidVC.swift */,
+				351EC39228DF25B000003487 /* StomacheCrampsVC.swift */,
 				351EC37E28DB972300003487 /* SignUpPage.swift */,
 				35A0EA2428DB915600F54968 /* LoginSignUpPage.swift */,
 				351EC38C28DE324500003487 /* Localizable.strings */,
@@ -339,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351EC38F28DF1CD300003487 /* CovidVC.swift in Sources */,
 				35339C0128CE6F4500F72A87 /* DentistryTVCell.swift in Sources */,
 				35AA818528DB928600952452 /* Views in Sources */,
 				35AA818B28DB928600952452 /* HealthCarePage.swift in Sources */,
@@ -361,9 +371,11 @@
 				3528746C28DA3BDE008A8716 /* Service.swift in Sources */,
 				35339C0328CE92C600F72A87 /* NephrologyTableView.swift in Sources */,
 				35339BF728C91C1E00F72A87 /* BookingAppointmentsPage.swift in Sources */,
+				351EC39128DF214600003487 /* HeadacheVC.swift in Sources */,
 				35A0EA2028DB910600F54968 /* Constants.swift in Sources */,
 				35A728FD28BBB97500A76795 /* ClinicsTableViewNew.swift in Sources */,
 				35A2547F28B64E6A00C2FBB6 /* AppDelegate.swift in Sources */,
+				351EC39328DF25B000003487 /* StomacheCrampsVC.swift in Sources */,
 				35A728FF28BBB9BC00A76795 /* ClinicsTableViewCellNew.swift in Sources */,
 				35A2548128B64E6A00C2FBB6 /* SceneDelegate.swift in Sources */,
 				35FDB8F728BE5C4F001F7231 /* MapVC.swift in Sources */,

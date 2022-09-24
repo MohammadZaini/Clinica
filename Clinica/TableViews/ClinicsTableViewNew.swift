@@ -91,7 +91,7 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
             
           let data = arrClinics[indexPath.row]
       
-     cell.addtoFavorite.addTarget(self, action: #selector(addToFavorite(sender:)), for: .touchUpInside)
+      cell.addtoFavorite.addTarget(self, action: #selector(addToFavorite(sender:)), for: .touchUpInside)
       
      /*cell.setUpCell(doctorName1: data.doctorN, TelephoneNumber1: data.telePhoneNum, locationName1: data.locationN, WorkingHours: data.WorkingHoursLbl, appointment: data.Appointmentlbl, review1: data.reviews)*/
       
@@ -112,6 +112,8 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
         
      sender.setImage(UIImage(systemName: "star.fill"), for: .normal)
         self.loadData()
+        
+        
         
         
     }
