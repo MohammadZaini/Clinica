@@ -54,6 +54,7 @@ class ClinicsTableViewCellNew: UITableViewCell {
         let rev = reviewsLabel.text!
         
         let db = Firestore.firestore()
+          
         
         db.collection("Favorite").addDocument(data: ["ClinicName": ClinicN ,"Doctor Name": docName, "Clinic Number": TelePh, "Clinic Location": loc, "Working Hours": workH, "Booking appointment": appoint, "Reviews": rev, "user_id" : Auth.auth().currentUser!.uid]) { error in
             

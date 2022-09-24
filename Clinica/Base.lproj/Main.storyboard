@@ -172,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cib-cY-x2A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5074" y="2328"/>
+            <point key="canvasLocation" x="6187" y="3043"/>
         </scene>
         <!--MapVC-->
         <scene sceneID="klB-7G-rYV">
@@ -202,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NC7-iI-tem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5738" y="2328"/>
+            <point key="canvasLocation" x="6955" y="3043"/>
         </scene>
         <!--Profile Page-->
         <scene sceneID="84M-he-KcO">
@@ -347,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58c-al-RKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1092.753623188406" y="1549.5535714285713"/>
+            <point key="canvasLocation" x="-642" y="1550"/>
         </scene>
         <!--Insomnia-->
         <scene sceneID="WLK-hs-bhe">
@@ -441,7 +441,7 @@ Melatonin is generally safe to use for short periods of time.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yt3-ea-2bM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-723" y="2427"/>
+            <point key="canvasLocation" x="639" y="2341"/>
         </scene>
         <!--FluVC-->
         <scene sceneID="smh-5f-oXv">
@@ -513,7 +513,7 @@ When you come down with the flu virus, the last thing you want to do is head to 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZR-NY-Nx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16" y="2422"/>
+            <point key="canvasLocation" x="1384" y="2342"/>
         </scene>
         <!--Nose BleedingVC-->
         <scene sceneID="QWe-Zk-WOz">
@@ -605,7 +605,7 @@ Talk to your GP if you experience nosebleeds frequently and aren't able to preve
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7G-g6-tYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="725" y="2419"/>
+            <point key="canvasLocation" x="2180" y="2342"/>
         </scene>
         <!--Stomache CrampsVC-->
         <scene sceneID="tp9-5e-YcJ">
@@ -671,7 +671,7 @@ The pain is in your lower right abdomen and tender to the touch, and you also ha
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbv-VZ-V6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1423" y="2419"/>
+            <point key="canvasLocation" x="3004" y="2342"/>
         </scene>
         <!--HeadacheVC-->
         <scene sceneID="mqZ-IF-YV5">
@@ -769,7 +769,7 @@ Get medical care right away for:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZn-n4-eEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2181" y="2419"/>
+            <point key="canvasLocation" x="3762" y="2342"/>
         </scene>
         <!--CovidVC-->
         <scene sceneID="KH0-dZ-zp3">
@@ -822,7 +822,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RdK-VP-0ye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2876.811594202899" y="2418.75"/>
+            <point key="canvasLocation" x="4512" y="2342"/>
         </scene>
         <!--Setting Page-->
         <scene sceneID="pBr-nD-IFH">
@@ -857,12 +857,12 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgw-YJ-bKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-510" y="1550"/>
+            <point key="canvasLocation" x="-252" y="2342"/>
         </scene>
         <!--Booking Appointments Page-->
         <scene sceneID="90a-W9-zCB">
             <objects>
-                <viewController storyboardIdentifier="Appointments" id="kzG-G7-zgE" customClass="BookingAppointmentsPage" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Appointments" hidesBottomBarWhenPushed="YES" id="kzG-G7-zgE" customClass="BookingAppointmentsPage" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ezo-IJ-GYB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -919,12 +919,12 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vve-Kv-8dY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5483" y="1550"/>
+            <point key="canvasLocation" x="6293" y="2342"/>
         </scene>
         <!--Clinics Table View New-->
         <scene sceneID="xac-q8-Adt">
             <objects>
-                <viewController storyboardIdentifier="ClinicsVC" id="1Qw-AX-qPO" customClass="ClinicsTableViewNew" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClinicsVC" hidesBottomBarWhenPushed="YES" id="1Qw-AX-qPO" customClass="ClinicsTableViewNew" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="ClinicsVC" id="XA6-mF-DdH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1020,7 +1020,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="arrow.forward.circle" catalog="system" title=" "/>
                                                     <connections>
-                                                        <segue destination="ZNc-tH-72S" kind="show" id="xuE-RS-fdZ"/>
+                                                        <segue destination="kzG-G7-zgE" kind="show" id="iUc-br-mid"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7y-i1-Xhm">
@@ -1028,9 +1028,6 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="arrow.forward.circle" catalog="system" title=" "/>
-                                                    <connections>
-                                                        <segue destination="yzK-be-jDR" kind="show" id="Bus-cW-p7F"/>
-                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bf3-tY-cDn">
                                                     <rect key="frame" x="363" y="50" width="51" height="31"/>
@@ -1110,7 +1107,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2773.913043478261" y="1549.5535714285713"/>
+            <point key="canvasLocation" x="5493" y="1570"/>
         </scene>
         <!--Dentistry Table View-->
         <scene sceneID="ETC-i7-CW7">
@@ -1214,7 +1211,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="arrow.forward.circle" catalog="system" title=" "/>
                                                     <connections>
-                                                        <segue destination="ZNc-tH-72S" kind="show" id="vJj-9f-0q6"/>
+                                                        <segue destination="kzG-G7-zgE" kind="show" id="0Fv-KD-8f6"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -1269,7 +1266,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2D8-4W-WMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="XA8-7x-HKN"/>
             </objects>
-            <point key="canvasLocation" x="3597" y="1584"/>
+            <point key="canvasLocation" x="5380" y="2342"/>
         </scene>
         <!--Sign Up Page-->
         <scene sceneID="1WQ-b6-M9Q">
@@ -1378,7 +1375,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYb-f7-B6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247.82608695652175" y="726.5625"/>
+            <point key="canvasLocation" x="-1549" y="743"/>
         </scene>
         <!--Home-->
         <scene sceneID="rzW-WB-d4Z">
@@ -1595,7 +1592,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="he2-Vy-BAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2773.913043478261" y="726.5625"/>
+            <point key="canvasLocation" x="425" y="1550"/>
         </scene>
         <!--Home Tab Bar-->
         <scene sceneID="pbK-Tf-Uth">
@@ -1610,9 +1607,9 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                     <connections>
                         <segue destination="s8q-7P-vHR" kind="relationship" relationship="viewControllers" id="KD4-Yo-cUt"/>
                         <segue destination="hHI-Ma-faz" kind="relationship" relationship="viewControllers" id="6NC-eY-PmN"/>
-                        <segue destination="Ajs-Cq-YWh" kind="relationship" relationship="viewControllers" id="JMd-n1-qFw"/>
-                        <segue destination="yzK-be-jDR" kind="relationship" relationship="viewControllers" id="EWe-2q-f8a"/>
-                        <segue destination="bOp-gp-nX5" kind="relationship" relationship="viewControllers" id="1qx-cg-vO6"/>
+                        <segue destination="Dfe-UL-4pe" kind="relationship" relationship="viewControllers" id="frZ-Dr-4fT"/>
+                        <segue destination="8yz-WC-dl8" kind="relationship" relationship="viewControllers" id="HWF-e5-DP6"/>
+                        <segue destination="bOp-gp-nX5" kind="relationship" relationship="viewControllers" id="Z3C-Op-MNK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUM-hD-6Av" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1661,7 +1658,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5R3-jk-QN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4597.1014492753629" y="742.63392857142856"/>
+            <point key="canvasLocation" x="1383" y="1550"/>
         </scene>
         <!--Appointments-->
         <scene sceneID="7RU-fz-HSu">
@@ -1733,7 +1730,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRV-L6-KCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6430.434782608696" y="733.92857142857144"/>
+            <point key="canvasLocation" x="2299" y="1550"/>
         </scene>
         <!--Favorite-->
         <scene sceneID="XYV-3i-g0x">
@@ -1902,7 +1899,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxH-js-Cw2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6212" y="1584"/>
+            <point key="canvasLocation" x="3348" y="1570"/>
         </scene>
         <!--Login Sign Up Page-->
         <scene sceneID="sjw-7h-ueK">
@@ -1996,7 +1993,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kf2-5c-UrL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1243" y="1550"/>
+            <point key="canvasLocation" x="-1152" y="2342"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="09T-RQ-sSQ">
@@ -2015,7 +2012,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhZ-kL-NW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="248" y="1550"/>
+            <point key="canvasLocation" x="-641" y="743"/>
         </scene>
         <!--Nephrology Table View-->
         <scene sceneID="ffM-xm-jXL">
@@ -2160,7 +2157,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ova-YG-AFA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4309" y="2328"/>
+            <point key="canvasLocation" x="5381" y="3075"/>
         </scene>
         <!--Health Care-->
         <scene sceneID="e1A-I0-1q7">
@@ -2182,47 +2179,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocU-Tv-dXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3686.9565217391305" y="742.63392857142856"/>
-        </scene>
-        <!--Appointments-->
-        <scene sceneID="kjQ-JO-yAf">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eaK-OG-GRX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ajs-Cq-YWh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Appointments" image="calendar" catalog="system" selectedImage="calendar" id="4G8-sB-pAG"/>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="0qD-9E-IcQ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lrY-Bk-hJN">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="5zY-Xe-77j" kind="relationship" relationship="rootViewController" id="xTi-IQ-l5C"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="5520.289855072464" y="733.92857142857144"/>
-        </scene>
-        <!--Favorite-->
-        <scene sceneID="lSP-cC-3n0">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yzK-be-jDR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorite" image="star" catalog="system" selectedImage="star" id="8jq-he-GFl"/>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="45K-h8-nty"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SUh-x9-UtA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="DQU-ch-039" kind="relationship" relationship="rootViewController" id="sLv-RY-bdP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4dT-Fv-mFJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7217.3913043478269" y="726.5625"/>
+            <point key="canvasLocation" x="1383" y="743"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Zyx-Ry-wXu">
@@ -2232,9 +2189,8 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS2-jL-UpC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS2-jL-UpC">
                                 <rect key="frame" x="20" y="106" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Profile"/>
@@ -2242,23 +2198,20 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                                     <action selector="ProfileTapped:" destination="OvR-ng-GjI" eventType="touchUpInside" id="9Ru-Tt-lyb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dun-wP-Vim">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dun-wP-Vim">
                                 <rect key="frame" x="20" y="172" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Change Password"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNs-pE-vNZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNs-pE-vNZ">
                                 <rect key="frame" x="20" y="238" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Languagues"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsF-C9-olY">
-                                <rect key="frame" x="20" y="302" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsF-C9-olY">
+                                <rect key="frame" x="20" y="287" width="374" height="31"/>
                                 <color key="tintColor" red="1" green="0.088182586385378681" blue="0.097544822257182084" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
@@ -2266,9 +2219,12 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                                     <action selector="SignOutTapped:" destination="OvR-ng-GjI" eventType="touchUpInside" id="jPU-qo-6G7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EF-be-MZL">
-                                <rect key="frame" x="20" y="358" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EF-be-MZL">
+                                <rect key="frame" x="20" y="343" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lCY-Vh-k6M"/>
+                                </constraints>
                                 <color key="tintColor" red="1" green="0.088182586389999998" blue="0.097544822259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Delete account"/>
@@ -2279,47 +2235,32 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bQr-1U-hhf"/>
                         <color key="backgroundColor" red="0.20439612870000001" green="0.4696142673" blue="0.9647491574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="bQr-1U-hhf" firstAttribute="trailing" secondItem="lsF-C9-olY" secondAttribute="trailing" constant="20" id="7mp-0f-fsN"/>
+                            <constraint firstItem="gS2-jL-UpC" firstAttribute="leading" secondItem="bQr-1U-hhf" secondAttribute="leading" constant="20" id="A0K-mv-pMV"/>
+                            <constraint firstItem="bQr-1U-hhf" firstAttribute="trailing" secondItem="YNs-pE-vNZ" secondAttribute="trailing" constant="20" id="B2b-af-fzZ"/>
+                            <constraint firstItem="7EF-be-MZL" firstAttribute="leading" secondItem="bQr-1U-hhf" secondAttribute="leading" constant="20" id="Eaj-QQ-dPl"/>
+                            <constraint firstItem="YNs-pE-vNZ" firstAttribute="top" secondItem="Dun-wP-Vim" secondAttribute="bottom" constant="35" id="Ieg-BK-BTb"/>
+                            <constraint firstItem="lsF-C9-olY" firstAttribute="leading" secondItem="bQr-1U-hhf" secondAttribute="leading" constant="20" id="NM2-E3-2PH"/>
+                            <constraint firstItem="7EF-be-MZL" firstAttribute="top" secondItem="lsF-C9-olY" secondAttribute="bottom" constant="25" id="Xdv-rY-M7S"/>
+                            <constraint firstItem="bQr-1U-hhf" firstAttribute="trailing" secondItem="Dun-wP-Vim" secondAttribute="trailing" constant="20" id="YKp-sm-ISm"/>
+                            <constraint firstItem="bQr-1U-hhf" firstAttribute="trailing" secondItem="gS2-jL-UpC" secondAttribute="trailing" constant="20" id="ZRS-1O-NgZ"/>
+                            <constraint firstItem="lsF-C9-olY" firstAttribute="top" secondItem="YNs-pE-vNZ" secondAttribute="bottom" constant="18" id="aOx-9I-aE0"/>
+                            <constraint firstItem="Dun-wP-Vim" firstAttribute="leading" secondItem="bQr-1U-hhf" secondAttribute="leading" constant="20" id="c9e-ER-ToX"/>
+                            <constraint firstItem="YNs-pE-vNZ" firstAttribute="leading" secondItem="bQr-1U-hhf" secondAttribute="leading" constant="20" id="eL5-9C-lbY"/>
+                            <constraint firstItem="gS2-jL-UpC" firstAttribute="top" secondItem="bQr-1U-hhf" secondAttribute="top" constant="18" id="hDP-ci-Hnz"/>
+                            <constraint firstItem="bQr-1U-hhf" firstAttribute="bottom" secondItem="7EF-be-MZL" secondAttribute="bottom" constant="420" id="jrg-2g-YdK"/>
+                            <constraint firstItem="bQr-1U-hhf" firstAttribute="trailing" secondItem="7EF-be-MZL" secondAttribute="trailing" constant="20" id="zxj-rD-mtK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="34p-pj-BDb"/>
+                    <connections>
+                        <outlet property="DeleteBtnOutlet" destination="7EF-be-MZL" id="JLs-Jf-VFu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJ5-3t-hkc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9152.1739130434798" y="699.77678571428567"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="Qcq-XW-kSE">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uye-Hn-xlK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="4Io-sN-K3l"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mHS-tx-2h2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IWV-wp-W38" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1093" y="734"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="FEd-xp-PII">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZNc-tH-72S" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="2kW-7u-s9k"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OLI-Ot-tKS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="kzG-G7-zgE" kind="relationship" relationship="rootViewController" id="ezT-Ly-sf9"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eba-Pf-PK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4528.985507246377" y="1530.8035714285713"/>
+            <point key="canvasLocation" x="4403" y="1570"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cgc-g0-aIr">
@@ -2340,7 +2281,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwE-Po-lfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1863.7681159420292" y="1549.5535714285713"/>
+            <point key="canvasLocation" x="5493" y="743"/>
         </scene>
         <!--Settings-->
         <scene sceneID="uha-ka-q6M">
@@ -2362,7 +2303,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEV-oU-0n2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8242.0289855072479" y="699.77678571428567"/>
+            <point key="canvasLocation" x="4404" y="743"/>
         </scene>
         <!--Home-->
         <scene sceneID="Kqw-ru-h7V">
@@ -2384,13 +2325,55 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePI-9M-3W4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1863.7681159420292" y="726.5625"/>
+            <point key="canvasLocation" x="426" y="743"/>
+        </scene>
+        <!--Appointments-->
+        <scene sceneID="vxX-t7-0RG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dfe-UL-4pe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Appointments" image="calendar" catalog="system" selectedImage="calendar" id="Wle-we-6RK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qmd-uM-J7m">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5zY-Xe-77j" kind="relationship" relationship="rootViewController" id="ioa-Mm-3VD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wz-OZ-BIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2300" y="743"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="ZkT-a7-Xcw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8yz-WC-dl8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorite" image="star" catalog="system" selectedImage="star" id="P15-eX-f0x"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jvg-ik-Qcu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DQU-ch-039" kind="relationship" relationship="rootViewController" id="64b-OF-l7c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlz-T7-VBZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3349" y="743"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xuE-RS-fdZ"/>
-        <segue reference="EWe-2q-f8a"/>
-        <segue reference="J8E-XN-RY6"/>
+        <segue reference="iUc-br-mid"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>

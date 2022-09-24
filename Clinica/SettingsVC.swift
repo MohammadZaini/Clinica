@@ -29,11 +29,12 @@ class SettingsVC: UIViewController {
         self.navigationController?.pushViewController(profile, animated: true)
     }
     
+    @IBOutlet weak var DeleteBtnOutlet: UIButton!
     
     @IBAction func DeleteAccountTapped(_ sender: UIButton) {
+        self.showAlert()
         
-        
-       let db = Firestore.firestore()
+      /* let db = Firestore.firestore()
         
         let user = Auth.auth().currentUser
 
@@ -46,7 +47,7 @@ class SettingsVC: UIViewController {
               print("Account has been deleted successfully")
               self.signOut()
           }
-        }
+        }*/
     }
     
     @IBAction func SignOutTapped(_ sender: UIButton) {
@@ -59,21 +60,42 @@ class SettingsVC: UIViewController {
             print("failed to sign out with error...",error)
         }
     }
+    
+    
+    func showAlert(){
+        
+        let alert = UIAlertController(title: "Account Deletion", message: "Are you sure you want to delete your account?", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { action in
+            
+            let db = Firestore.firestore()
+             
+             let user = Auth.auth().currentUser
+
+             user?.delete { error in
+               if let error = error {
+                 // An error happened.
+                   print("Didn't work!!")
+               } else {
+                 // Account deleted.
+                   print("Account has been deleted successfully")
+                   self.signOut()
+               }
+             }
+            
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        Utilities.styleFilledButton(DeleteBtnOutlet)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+ 
 
 }
