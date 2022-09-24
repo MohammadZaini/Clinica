@@ -139,7 +139,7 @@ class HomePage: UIViewController ,UICollectionViewDelegate ,UICollectionViewData
         startTimer()
         PageControl.numberOfPages = arrTopVC.count
         
-        ClinicsCollectionView.backgroundColor = .systemBlue
+       // ClinicsCollectionView.backgroundColor = .systemBlue
         
         
         TopCollectionView.delegate = self

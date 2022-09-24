@@ -29,6 +29,31 @@ class HealthCarePage: UIViewController, UITableViewDelegate , UITableViewDataSou
          return 70
      }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == 0 {
+            
+            let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "Covid19")  as! CovidVC
+            
+            self.navigationController?.pushViewController(storyboard, animated: true)
+            
+        }else if indexPath.row == 1 {
+            
+            let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "Headache")  as! HeadacheVC
+            
+            self.navigationController?.pushViewController(storyboard, animated: true)
+            
+        }else if indexPath.row == 2 {
+            let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "Stomache")  as! StomacheCrampsVC
+            
+            self.navigationController?.pushViewController(storyboard, animated: true)
+            
+            
+        }
+        
+        
+    }
+    
     
 
     @IBOutlet weak var HealthCareTableView: UITableView!
