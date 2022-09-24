@@ -49,7 +49,26 @@ class HealthCarePage: UIViewController, UITableViewDelegate , UITableViewDataSou
             self.navigationController?.pushViewController(storyboard, animated: true)
             
             
+        }else if indexPath.row == 3 {
+            
+            let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "NoseBleeding")  as! NoseBleedingVC
+            
+            self.navigationController?.pushViewController(storyboard, animated: true)
+            
+        }else if indexPath.row == 4 {
+            
+            let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "Flu")  as! FluVC
+            
+            self.navigationController?.pushViewController(storyboard, animated: true)
+            
+        }else if indexPath.row == 5 {
+            
+            let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "InsomniaID")  as! Insomnia
+            
+            self.navigationController?.pushViewController(storyboard, animated: true)
+            
         }
+                    
         
         
     }

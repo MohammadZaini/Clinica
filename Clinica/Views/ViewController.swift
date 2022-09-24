@@ -22,7 +22,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var RemeberMeButton: UIButton!
     
-   /*@IBAction func RememberMeTapped(_ sender: UIButton) {
+    @IBAction func SignUpTapped(_ sender: UIButton) {
+        
+        
+        let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "SignUp")  as! SignUpPage
+                    
+                    self.navigationController?.pushViewController(storyboard, animated: true)
+
+        
+    }
+    /*@IBAction func RememberMeTapped(_ sender: UIButton) {
         
         if(AgreeIconClick == false) {
 
