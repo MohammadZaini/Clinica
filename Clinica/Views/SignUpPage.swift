@@ -27,6 +27,10 @@ class SignUpPage: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    
+        
+        
         validateFields()
         setUpElements()
     }
