@@ -18,8 +18,12 @@ class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSourc
     let refreshControl = UIRefreshControl()
     
     @objc func updateData(){
-        refreshControl.endRefreshing()
-        FavoriteTableView.reloadData()
+        
+        print("start refreshing")
+        
+        loadData()
+       refreshControl.endRefreshing()
+        //FavoriteTableView.reloadData()
         
         }
   
@@ -66,6 +70,7 @@ class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSourc
         }
     
    
+   
 
     
     
@@ -89,6 +94,22 @@ class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSourc
 
     
     func loadData()  {
+        
+        //FavoriteArray.removeAll()
+        if FavoriteTableView.refreshControl?.isRefreshing == true {
+            
+            print("refreshing data")
+        }else{
+            
+            
+            print("fetching data")
+        }
+        
+        
+        
+        
+        
+        
         let db = Firestore.firestore()
         db.collection("Favorite").whereField("user_id", isEqualTo: Auth.auth().currentUser!.uid).getDocuments() { (querySnapshot, err) in
                 if let err = err {
@@ -107,7 +128,13 @@ class FavoritesPage: UIViewController, UITableViewDelegate, UITableViewDataSourc
                         print("\(self.FavoriteArray) from array###")
                         
                     }
-                    self.FavoriteTableView.reloadData()
+                    
+                    DispatchQueue.main.async {
+                        self.FavoriteTableView.refreshControl?.endRefreshing()
+                        self.FavoriteTableView.reloadData()
+                    }
+                    
+                  
                 }
         }
     }
@@ -128,3 +155,5 @@ struct Favorite {
     let Appointmentlbl  : String
     let reviews         : String
 }
+
+

@@ -53,11 +53,13 @@ class BookingAppointmentsPage: UIViewController {
             self.showAlert()
             
         }else{
+              
             
-            
+              
             let alert = UIAlertController(title: "Alert", message: "Appointment has been booked successfully", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "close", style: .default))
             self.present(alert,animated: true,completion: nil)
+            
             
             
         let appointmentDate = AppointmentTextfield.text!
@@ -71,10 +73,21 @@ class BookingAppointmentsPage: UIViewController {
             if error == nil {
                 // No errors
                // self.test()
+               /* if self.AppointmentTextfield.text as! NSObject == db.collection("Appointments").document("Date"){
+                    
+                    print("There is a duplicated appointmetn")
+                    
+                }else{
+                    print("There is nothing to show")
+                }*/
+                
+               
               
             }else{
                 
                 // Handle the error
+                
+                
                 
                 self.showAlert()
                 

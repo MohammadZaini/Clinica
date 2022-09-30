@@ -18,8 +18,10 @@ class AppointmentsPage: UIViewController , UITableViewDelegate ,UITableViewDataS
     let refreshControl = UIRefreshControl()
     
     @objc func updateData(){
+        
+        loadData()
         refreshControl.endRefreshing()
-        AppointmentsTV.reloadData()
+        //AppointmentsTV.reloadData()
         
         }
   

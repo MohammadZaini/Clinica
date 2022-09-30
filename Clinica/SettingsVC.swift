@@ -14,7 +14,7 @@ import FirebaseAuth
 class SettingsVC: UIViewController {
     
     func signOut(){
-         let signinControl = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.loginSignup) as? LoginSignUpPage
+         let signinControl = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.LogInPage) as? ViewController
         
          view.window?.rootViewController = signinControl
          view.window?.makeKeyAndVisible()
@@ -52,13 +52,15 @@ class SettingsVC: UIViewController {
     
     @IBAction func SignOutTapped(_ sender: UIButton) {
         
-        do {
+        
+        self.showSignOutAlert()
+       /* do {
             try Auth.auth().signOut()
            signOut()
             
         }catch let error {
             print("failed to sign out with error...",error)
-        }
+        }*/
     }
     
     
@@ -71,13 +73,18 @@ class SettingsVC: UIViewController {
             let db = Firestore.firestore()
              
              let user = Auth.auth().currentUser
-
+            
+            //if db.collection("users").whereField("uid", isEqualTo: Auth.auth().currentUser!.uid)
+                
              user?.delete { error in
                if let error = error {
                  // An error happened.
-                   print("Didn't work!!")
+                  
+                   print("The user has not been deleted because of :\(error.localizedDescription)")
                } else {
                  // Account deleted.
+                   
+                   db.collection("users").whereField("uid", isEqualTo: Auth.auth().currentUser!.uid)
                    print("Account has been deleted successfully")
                    self.signOut()
                }
@@ -87,6 +94,31 @@ class SettingsVC: UIViewController {
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
+    }
+    
+    
+    
+    
+    func showSignOutAlert(){
+        let alert = UIAlertController(title: "Signing Out", message: "Are you sure you want to sign out?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Sign Out", style: .destructive, handler: { action in
+            
+            do {
+                try Auth.auth().signOut()
+                self.signOut()
+                
+            }catch let error {
+                print("failed to sign out with error...",error)
+            }
+            
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+        
+        
+        
+        
     }
     
     override func viewDidLoad() {

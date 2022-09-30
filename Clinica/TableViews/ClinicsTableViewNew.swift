@@ -111,12 +111,14 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
         print("Button Index = \(sender.tag)")
         
      sender.setImage(UIImage(systemName: "star.fill"), for: .normal)
-        self.loadData()
+        //self.loadData()
         
         
         
         
     }
+    
+    
     
     
     func loadData()  {
@@ -133,7 +135,7 @@ class ClinicsTableViewNew: UIViewController, UITableViewDelegate , UITableViewDa
                         
                         self.arrClinics.append(Clinics.init(ClinicName: document.get("ClinicName") as! String, doctorN: document.get("Doctor Name") as! String, telePhoneNum: document.get("Clinic Number") as! String, locationN: document.get("Clinic Location") as! String, WorkingHoursLbl: document.get("Working Hours") as! String, Appointmentlbl: document.get("Booking appointment") as! String, reviews: document.get("Reviews") as! String))
                         
-                       
+                        
                         
                        
                         print("\(self.arrClinics) from array###")

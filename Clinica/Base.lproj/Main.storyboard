@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInPage" id="BYZ-38-t0r" customClass="ViewController" customModule="Clinica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -360,7 +360,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FDx-M6-zBp">
                                 <rect key="frame" x="10" y="74" width="394" height="788"/>
                                 <color key="backgroundColor" red="0.20439612870000001" green="0.4696142673" blue="0.9647491574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <mutableString key="text">8 Home Remedies for Insomnia:
+                                <string key="text">8 Home Remedies for Insomnia:
 
 1-	Mindfulness meditation:
 Mindfulness meditation consists of slow, steady breathing while sitting quietly. You observe your breath, body, thoughts, feelings, and sensations as they rise and pass.
@@ -423,7 +423,7 @@ It may cause:
 •	stomach cramps.
 •	wakefulness in the night.
 Melatonin is generally safe to use for short periods of time.
-</mutableString>
+</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -454,7 +454,7 @@ Melatonin is generally safe to use for short periods of time.
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MQ1-gw-WUt">
                                 <rect key="frame" x="10" y="74" width="394" height="788"/>
                                 <color key="backgroundColor" red="0.20439612870000001" green="0.4696142673" blue="0.9647491574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <mutableString key="text">Here’s 10 ways to treat flu symptoms at home so you can get relief while your body fights the virus.
+                                <string key="text">Here’s 10 ways to treat flu symptoms at home so you can get relief while your body fights the virus.
 
 1-Rest up.
 
@@ -495,7 +495,7 @@ Some prefer flu symptom relief in a comforting, hot medicated drink. FluTherapy 
 
 10-Keep cold, flu, and comfort relief close.
 When you come down with the flu virus, the last thing you want to do is head to the store and browse through the cold and flu aisle. Keep the cold and flu symptom relief products you need at home, so you can get relief when you need it, fast. It has ingredients that will comfort you when you have cold or flu. It comes with cold &amp; flu essentials to help you feel better when you’re under the weather, like DayQuil and NyQuil SEVERE Liquicaps™, and more.
-</mutableString>
+</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -526,7 +526,7 @@ When you come down with the flu virus, the last thing you want to do is head to 
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c4c-Xi-21e">
                                 <rect key="frame" x="10" y="74" width="394" height="788"/>
                                 <color key="backgroundColor" red="0.20439612870000001" green="0.4696142673" blue="0.9647491574" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <mutableString key="text">What to do
+                                <string key="text">What to do
 To stop a nosebleed:
 
 •	sit down and firmly pinch the soft part of your nose, just above your nostrils, for at least 10-15 minutes
@@ -587,7 +587,7 @@ Things you can do to prevent nosebleeds include:
 •	wear a head guard during activities in which your nose or head could get injured.
 •	always follow the instructions that come with nasal decongestants – overusing these can cause nosebleeds.
 Talk to your GP if you experience nosebleeds frequently and aren't able to prevent them. They may refer you to an ENT specialist for an assessment.
-</mutableString>
+</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1375,7 +1375,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYb-f7-B6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1549" y="743"/>
+            <point key="canvasLocation" x="-639.13043478260875" y="742.63392857142856"/>
         </scene>
         <!--Home-->
         <scene sceneID="rzW-WB-d4Z">
@@ -1921,7 +1921,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                         <connections>
-                                            <segue destination="Crc-aN-xA9" kind="show" id="aVN-0b-A2k"/>
+                                            <segue destination="Crc-aN-xA9" kind="show" id="vHw-p3-tez"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bud-Ry-kKy">
@@ -2012,7 +2012,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhZ-kL-NW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-641" y="743"/>
+            <point key="canvasLocation" x="268.1159420289855" y="742.63392857142856"/>
         </scene>
         <!--Nephrology Table View-->
         <scene sceneID="ffM-xm-jXL">
@@ -2179,7 +2179,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocU-Tv-dXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="743"/>
+            <point key="canvasLocation" x="2292.753623188406" y="742.63392857142856"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Zyx-Ry-wXu">
@@ -2212,7 +2212,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsF-C9-olY">
                                 <rect key="frame" x="20" y="287" width="374" height="31"/>
-                                <color key="tintColor" red="1" green="0.088182586385378681" blue="0.097544822257182084" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
                                 <connections>
@@ -2281,7 +2281,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwE-Po-lfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5493" y="743"/>
+            <point key="canvasLocation" x="6402.898550724638" y="742.63392857142856"/>
         </scene>
         <!--Settings-->
         <scene sceneID="uha-ka-q6M">
@@ -2303,7 +2303,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEV-oU-0n2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4404" y="743"/>
+            <point key="canvasLocation" x="5313.04347826087" y="742.63392857142856"/>
         </scene>
         <!--Home-->
         <scene sceneID="Kqw-ru-h7V">
@@ -2325,7 +2325,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePI-9M-3W4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="426" y="743"/>
+            <point key="canvasLocation" x="1334.7826086956522" y="742.63392857142856"/>
         </scene>
         <!--Appointments-->
         <scene sceneID="vxX-t7-0RG">
@@ -2347,7 +2347,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wz-OZ-BIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2300" y="743"/>
+            <point key="canvasLocation" x="3208.6956521739135" y="742.63392857142856"/>
         </scene>
         <!--Favorite-->
         <scene sceneID="ZkT-a7-Xcw">
@@ -2369,7 +2369,7 @@ If you have a fever, cough and difficulty breathing, seek medical attention. Cal
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlz-T7-VBZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3349" y="743"/>
+            <point key="canvasLocation" x="4257.971014492754" y="742.63392857142856"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
